@@ -39,8 +39,13 @@ export default function AgroAmazonasSite() {
       <footer className="site-footer">
         <h3 className="footer-title">Fale conosco</h3>
         <div className="footer-contact">
-          <p><Phone className="icon" /> (92) 8113-6607 | (92) 9330-6826 | (92) 9160-7182 | (92) 9195-2657</p>
-          <p><Mail className="icon" /> agrodefesaevento@gmail.com</p>
+          <p>
+            <Phone className="icon" /> (92) 8113-6607 | (92) 9330-6826 | (92)
+            9160-7182 | (92) 9195-2657
+          </p>
+          <p>
+            <Mail className="icon" /> agrodefesaevento@gmail.com
+          </p>
         </div>
       </footer>
     </div>
