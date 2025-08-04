@@ -4,8 +4,24 @@
   text-align: center;
   background: linear-gradient(to bottom, #064e3b, #047857);
   color: #ffffff;
-  background-image: url('../../assets/BannerDefesa.PNG');
+  background-image: url("../../assets/BannerDefesa.PNG");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+/* Para tablets */
+@media (max-width: 900px) {
+  .hero-img {
+    height: 50vh;
+    padding: 2rem 1rem;
+  }
+}
+
+/* Para smartphones */
+@media (max-width: 600px) {
+  .hero-img {
+    height: 30vh;
+    padding: 1rem 0.5rem;
+  }
 }

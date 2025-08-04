@@ -1,9 +1,18 @@
 .site-container {
   width: 100%;
   overflow-x: hidden;
-  background: #F4f4f4;
-  color: #4D4D4D;
+  background: #f4f4f4;
+  color: #4d4d4d;
   min-height: 100vh;
+  /* FLEX-BOX */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.flex-item {
+  width: 100%;
+  padding: 1rem; /* rem é relativo ao tamanho da fonte raiz */
+  /* width: 100%; ou max-width: 600px; se necessário */
 }
 
 .carousel-section {

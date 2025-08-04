@@ -1,5 +1,5 @@
 import Carousel from "../components/carousel/Carousel";
-import './AgroAmazonasSite.css';
+import "./AgroAmazonasSite.css";
 import Feature from "../components/feature/Feature";
 import Benefits from "../components/benefits/Benefits";
 import Location from "../components/location/Location";
@@ -11,12 +11,12 @@ export default function AgroAmazonasSite() {
   return (
     <div className="site-container">
       <Layout>
-        <Hero />
-        <Feature />
-        <Benefits />
-        <Location />
-        <Carousel />
-        <About />
+        <Hero className="flex-item" />
+        <Feature className="flex-item" />
+        <Benefits className="flex-item" />
+        <Location className="flex-item" />
+        <Carousel className="flex-item" />
+        <About className="flex-item" />
       </Layout>
     </div>
   );
