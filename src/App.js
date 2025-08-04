@@ -1,5 +1,5 @@
 import React from "react";
-import AgroAmazonasSite from "./components/AgroAmazonasSite";
+import AgroAmazonasSite from "./pages/AgroAmazonasSite.js";
 
 function App() {
   return <AgroAmazonasSite />;

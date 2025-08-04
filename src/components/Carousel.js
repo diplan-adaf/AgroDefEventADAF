@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import carrosselImg1 from "../assets/carrossel1.svg";
 import carrosselImg2 from "../assets/carrossel2.svg";
 import carrosselImg3 from "../assets/carrossel3.svg";
@@ -7,7 +6,7 @@ import carrosselImg5 from "../assets/carrossel5.svg";
 import carrosselImg6 from "../assets/carrossel6.svg";
 import carrosselImg7 from "../assets/carrossel7.svg";
 import carrosselImg8 from "../assets/carrossel8.svg";
-import "./AgroAmazonasSite.css";
+import { useState, useEffect } from "react";
 
 export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -31,7 +30,7 @@ export default function Carousel() {
       setCurrentIndex((prevIndex) => 
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 1500); // 0.5 segundos = 500ms
+    }, 4000); // 0.5 segundos = 500ms
 
     return () => clearInterval(interval);
   }, [images.length, isAutoPlay]);
