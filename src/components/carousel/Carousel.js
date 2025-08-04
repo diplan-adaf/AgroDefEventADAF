@@ -56,8 +56,8 @@ export default function Carousel() {
   };
 
   return (
-    <div>
-      <h2>STANDS</h2>
+    <div className="carousel-section">
+      <h1>STANDS</h1>
       
       <div className="carousel-container">
       {/* Seta esquerda */}

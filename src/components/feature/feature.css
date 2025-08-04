@@ -1,0 +1,11 @@
+.feature-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  justify-content: start;
+}
+
+.feature-container p{
+  width: 90%;
+}

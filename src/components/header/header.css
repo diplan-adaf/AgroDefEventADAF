@@ -1,9 +1,15 @@
 .site-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px; /* ajuste conforme necessário */
-  background-color: rgb(18, 158, 100);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background-color: #064e3b;/* Cor #064e3b com 80% opacidade */
+  backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+  -webkit-backdrop-filter: blur(10px); /* Suporte para Safari */
+
+  padding: 1rem 2rem;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .site-nav {
@@ -16,5 +22,18 @@
 .site-header a {
   color: #ffffff; /* cor do texto */
   text-decoration: none; /* remove o sublinhado *//* deixa o texto em negrito */
-  font-size: 20px;
+  font-size: 16px;
+}
+
+.button-link-header {
+  background-color: #facc15;
+  color: #1f2937;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
