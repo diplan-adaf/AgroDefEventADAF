@@ -10,6 +10,38 @@
   background-position: center;
 }
 
+/* Para telas grandes: 2560x1440 */
+@media (min-width: 2000px) {
+  .hero-img {
+    height: 80vh;
+    padding: 6rem 3rem;
+  }
+}
+
+/* Para 1920x1080 */
+@media (min-width: 1700px) and (max-width: 1999px) {
+  .hero-img {
+    height: 75vh;
+    padding: 5rem 2.5rem;
+  }
+}
+
+/* Para 1680x1050 */
+@media (min-width: 1500px) and (max-width: 1699px) {
+  .hero-img {
+    height: 70vh;
+    padding: 4.5rem 2rem;
+  }
+}
+
+/* Para 1440x900 */
+@media (min-width: 1200px) and (max-width: 1499px) {
+  .hero-img {
+    height: 65vh;
+    padding: 4rem 1.5rem;
+  }
+}
+
 /* Para tablets */
 @media (max-width: 900px) {
   .hero-img {
