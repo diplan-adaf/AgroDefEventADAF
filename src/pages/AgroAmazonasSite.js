@@ -1,6 +1,6 @@
-import Carousel from "../components/Carousel";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Carousel from "../components/carousel/Carousel";
+import Header from "../components/header/Header";
+import Footer from "../components/footer/Footer";
 import './AgroAmazonasSite.css';
 
 export default function AgroAmazonasSite() {

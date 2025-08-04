@@ -7,6 +7,7 @@ import carrosselImg6 from "../assets/carrossel6.svg";
 import carrosselImg7 from "../assets/carrossel7.svg";
 import carrosselImg8 from "../assets/carrossel8.svg";
 import { useState, useEffect } from "react";
+import "./Carousel.css"; // Importando o CSS do Carousel
 
 export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);

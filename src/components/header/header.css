@@ -1,0 +1,55 @@
+.site-header {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(to bottom, #064e3b, #047857);
+  color: #ffffff;
+}
+
+.site-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.site-subtitle {
+  font-size: 1.5rem;
+  color: #bbf7d0;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.site-description {
+  font-size: 1.125rem;
+  color: #e0f2f1;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.site-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.button-link {
+  background-color: #facc15;
+  color: #1f2937;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.button-link:hover {
+  background-color: #fde047;
+}
+
+.instagram .icon {
+  color: #1f2937;
+}
