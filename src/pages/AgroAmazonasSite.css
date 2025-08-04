@@ -1,8 +1,8 @@
 .site-container {
   width: 100%;
   overflow-x: hidden;
-  background: linear-gradient(to bottom, #065f46, #10b981);
-  color: white;
+  background: #F4f4f4;
+  color: #4D4D4D;
   min-height: 100vh;
 }
 

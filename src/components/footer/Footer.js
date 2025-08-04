@@ -1,5 +1,5 @@
 import { Mail, Phone } from "lucide-react";
-import "./Footer.css"; // Assuming you have a CSS file for styling
+import "./footer.css"; // Assuming you have a CSS file for styling
 
 export default function Footer(){
     return(

@@ -1,0 +1,11 @@
+.hero-img {
+  height: calc(100vh - 60px);
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(to bottom, #064e3b, #047857);
+  color: #ffffff;
+  background-image: url('../../assets/BannerDefesa.PNG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

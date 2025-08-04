@@ -1,13 +1,13 @@
-import carrosselImg1 from "../assets/carrossel1.svg";
-import carrosselImg2 from "../assets/carrossel2.svg";
-import carrosselImg3 from "../assets/carrossel3.svg";
-import carrosselImg4 from "../assets/carrossel4.svg";
-import carrosselImg5 from "../assets/carrossel5.svg";
-import carrosselImg6 from "../assets/carrossel6.svg";
-import carrosselImg7 from "../assets/carrossel7.svg";
-import carrosselImg8 from "../assets/carrossel8.svg";
+import carrosselImg1 from "../../assets/carrossel1.svg";
+import carrosselImg2 from "../../assets/carrossel2.svg";
+import carrosselImg3 from "../../assets//carrossel3.svg";
+import carrosselImg4 from "../../assets/carrossel4.svg";
+import carrosselImg5 from "../../assets/carrossel5.svg";
+import carrosselImg6 from "../../assets/carrossel6.svg";
+import carrosselImg7 from "../../assets/carrossel7.svg";
+import carrosselImg8 from "../../assets/carrossel8.svg";
 import { useState, useEffect } from "react";
-import "./Carousel.css"; // Importando o CSS do Carousel
+import "./carousel.css"; // Importando o CSS do Carousel
 
 export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -56,7 +56,10 @@ export default function Carousel() {
   };
 
   return (
-    <div className="carousel-container">
+    <div>
+      <h2>STANDS</h2>
+      
+      <div className="carousel-container">
       {/* Seta esquerda */}
       <button className="carousel-arrow carousel-arrow-left" onClick={goToPrevious}>
         <span>‹</span>
@@ -85,6 +88,7 @@ export default function Carousel() {
           />
         ))}
       </div>
+    </div>
     </div>
   );
 }

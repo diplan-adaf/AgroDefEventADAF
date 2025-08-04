@@ -8,7 +8,7 @@ body {
 .site-container {
   width: 100%;
   overflow-x: hidden;
-  background: linear-gradient(to bottom, #065f46, #10b981);
+  background: linear-gradient(to bottom, #c9cecc, #10b981);
   color: white;
   min-height: 100vh;
 }
