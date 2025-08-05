@@ -33,6 +33,15 @@ export default function Benefits() {
           >
             <Instagram className="icon" /> Instagram
           </a>
+                    <a
+            href="https://forms.gle/fp6bfcybtcYaoTKo8"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button-link"
+          >
+            Garanta seu Stand
+          </a>
+
         </div>
     </div>
   );
