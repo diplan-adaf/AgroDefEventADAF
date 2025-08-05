@@ -6,7 +6,6 @@ import Location from "../components/location/Location";
 import About from "../components/aboutUs/about";
 import Layout from "../components/Layout";
 import Hero from "../components/hero/Hero";
-import Suporte from "../components/suporte/Suporte";
 
 import standImg1 from "../assets/saida-1.svg";
 import standImg2 from "../assets/saida-2.svg";
@@ -44,9 +43,6 @@ export default function AgroAmazonasSite() {
         <section id="event">
           <Feature className="flex-item" />
         </section>
-        <section id="about">
-          <About className="flex-item" />
-        </section>
         <section id="benefits">
           <Benefits className="flex-item" />
         </section>
@@ -62,8 +58,9 @@ export default function AgroAmazonasSite() {
         <section>
           <Carousel className="flex-item" images={standsPlanta} title="POSIÇÃO DOS STANDS" />
         </section>
-
-        <Suporte className="flex-item" />
+        <section id="about">
+          <About className="flex-item" />
+        </section>
       </Layout>
     </div>
   );
