@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/AgroDefEventADAF/static/css/main.a4b38f75.css",
+    "main.js": "/AgroDefEventADAF/static/js/main.8d8b5ddc.js",
+    "static/js/453.c8b3b5c0.chunk.js": "/AgroDefEventADAF/static/js/453.c8b3b5c0.chunk.js",
+    "static/media/velho.png": "/AgroDefEventADAF/static/media/velho.96df94b2d268a6484001.png",
+    "static/media/planta-1.svg": "/AgroDefEventADAF/static/media/planta-1.3e2293f26fc119b5cffef450e10c2c4e.svg",
+    "static/media/planta-2.svg": "/AgroDefEventADAF/static/media/planta-2.ad9a29078974d7065c2f9a37ae0b9363.svg",
+    "static/media/saida-5.svg": "/AgroDefEventADAF/static/media/saida-5.ad7f5991743bf05c12d64af6e59302d8.svg",
+    "static/media/saida-2.svg": "/AgroDefEventADAF/static/media/saida-2.4c50c3acc08c77224d2ccfee61a7661e.svg",
+    "static/media/saida-3.svg": "/AgroDefEventADAF/static/media/saida-3.6971ce9db6c0f07d46f5ae932bb8ae6c.svg",
+    "static/media/saida-6.svg": "/AgroDefEventADAF/static/media/saida-6.50f9a96c71eb0518edf4c8a1b0fc015a.svg",
+    "static/media/saida-4.svg": "/AgroDefEventADAF/static/media/saida-4.8cb0a0a1228678f7ca5491c93cbbcf89.svg",
+    "static/media/saida-7.svg": "/AgroDefEventADAF/static/media/saida-7.bd24c770768bc4f7398773e51b2cb184.svg",
+    "static/media/saida-1.svg": "/AgroDefEventADAF/static/media/saida-1.0df8712164ea8ed395fd4ffd2a3d8637.svg",
+    "static/media/saida-8.svg": "/AgroDefEventADAF/static/media/saida-8.48de97f0e3dd571fec5b7005c2b5bca3.svg",
+    "static/media/descricaoBanner.png": "/AgroDefEventADAF/static/media/descricaoBanner.eec4d776e499797bbb3e.png",
+    "index.html": "/AgroDefEventADAF/index.html",
+    "main.a4b38f75.css.map": "/AgroDefEventADAF/static/css/main.a4b38f75.css.map",
+    "main.8d8b5ddc.js.map": "/AgroDefEventADAF/static/js/main.8d8b5ddc.js.map",
+    "453.c8b3b5c0.chunk.js.map": "/AgroDefEventADAF/static/js/453.c8b3b5c0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a4b38f75.css",
+    "static/js/main.8d8b5ddc.js"
+  ]
+}
