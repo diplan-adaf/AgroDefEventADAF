@@ -1,0 +1,111 @@
+.about-container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem 6rem 2rem;
+  background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.about-container h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #1e293b;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(135deg, #1e293b 0%, #475569 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-container p, span {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #475569;
+  text-align: justify;
+  max-width: 800px;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+}
+
+/* Responsividade para notebooks */
+@media (max-width: 1200px) {
+  .about-container {
+    margin: 3rem auto;
+    padding: 3rem 1.5rem 5rem 1.5rem;
+  }
+  
+  .about-container h1 {
+    font-size: 3rem;
+  }
+  
+  .about-container p, span {
+    font-size: 1.125rem;
+  }
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+  .about-container {
+    margin: 2rem auto;
+    padding: 2.5rem 1rem 4rem 1rem;
+  }
+  
+  .about-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-container p, span {
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: left;
+  }
+}
+
+/* Responsividade para smartphones */
+@media (max-width: 480px) {
+  .about-container {
+    margin: 1.5rem auto;
+    padding: 2rem 0.5rem 3rem 0.5rem;
+  }
+  
+  .about-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-container p, span {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Animação de entrada */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-container {
+  animation: fadeInUp 0.8s ease-out;
+}

@@ -1,0 +1,109 @@
+.site-footer {
+  background-color: #064e3b;
+  color: #f3f4f6;
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-top: 4rem;
+}
+
+.footer-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer-contact p {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  font-size: 1rem;
+}
+
+.footer-contact .icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+/* Responsividade para notebooks */
+@media (max-width: 1200px) {
+  .site-footer {
+    padding: 2.5rem 1rem;
+    margin-top: 3rem;
+  }
+  
+  .footer-title {
+    font-size: 1.125rem;
+  }
+  
+  .footer-contact p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+  }
+  
+  .footer-title {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .footer-contact p {
+    font-size: 0.9rem;
+    gap: 0.25rem;
+  }
+  
+  .footer-contact .icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Responsividade para smartphones */
+@media (max-width: 480px) {
+  .site-footer {
+    padding: 1.5rem 0.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .footer-title {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-contact p {
+    font-size: 0.8rem;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin: 0.75rem 0;
+  }
+  
+  .footer-contact .icon {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+/* Responsividade específica para telefones muito pequenos */
+@media (max-width: 360px) {
+  .site-footer {
+    padding: 1rem 0.25rem;
+  }
+  
+  .footer-contact p {
+    font-size: 0.75rem;
+  }
+  
+  .footer-contact .icon {
+    width: 12px;
+    height: 12px;
+  }
+}

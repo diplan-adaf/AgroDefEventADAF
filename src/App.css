@@ -1,38 +1,120 @@
-.App {
+/* Estilos globais para responsividade */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Melhorias para imagens responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Melhorias para links responsivos */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Melhorias para botões responsivos */
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+/* Melhorias para inputs responsivos */
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Container responsivo global */
+.responsive-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Utilitários responsivos */
+.text-center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-left {
+  text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.text-right {
+  text-align: right;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.visible {
+  display: block !important;
+}
+
+/* Breakpoints responsivos */
+@media (max-width: 1200px) {
+  .responsive-container {
+    padding: 0 2rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 768px) {
+  .responsive-container {
+    padding: 0 1rem;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .hidden-mobile {
+    display: none !important;
+  }
+  
+  .visible-mobile {
+    display: block !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-container {
+    padding: 0 0.5rem;
+  }
+}
+
+/* Melhorias para acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Melhorias para modo escuro (se implementado no futuro) */
+@media (prefers-color-scheme: dark) {
+  /* Estilos para modo escuro podem ser adicionados aqui */
+}
+
+/* Melhorias para impressão */
+@media print {
+  .site-header,
+  .site-footer,
+  .mobile-menu-btn {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
   }
 }
