@@ -1,10 +1,11 @@
 import "./hero.css";
+import descricaoBanner from "../../assets/descricaoBanner.png";
 
 export default function Hero() {
   return (
     <>
       <div className="hero-img">
-        <img src="/home/victor/Documentos/matheuscodes/AgroDefesa/src/assets/descricaoBanner.png" alt="Hero" />
+        <img src={descricaoBanner} alt="Hero" />
       </div>
     </>
       

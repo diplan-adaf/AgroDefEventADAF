@@ -4,18 +4,52 @@
   background: #f4f4f4;
   color: #4d4d4d;
   min-height: 100vh;
-  /* FLEX-BOX */
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .flex-item {
   width: 100%;
-  padding: 1rem; /* rem é relativo ao tamanho da fonte raiz */
-  /* width: 100%; ou max-width: 600px; se necessário */
+  padding: 1rem;
 }
 
 .carousel-section {
   margin-top: 2rem;
   padding: 0 1rem;
+}
+
+/* Responsividade para notebooks */
+@media (max-width: 1200px) {
+  .flex-item {
+    padding: 0.75rem;
+  }
+  
+  .carousel-section {
+    padding: 0 0.75rem;
+  }
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+  .flex-item {
+    padding: 0.5rem;
+  }
+  
+  .carousel-section {
+    padding: 0 0.5rem;
+    margin-top: 1.5rem;
+  }
+}
+
+/* Responsividade para smartphones */
+@media (max-width: 480px) {
+  .flex-item {
+    padding: 0.25rem;
+  }
+  
+  .carousel-section {
+    padding: 0 0.25rem;
+    margin-top: 1rem;
+  }
 }

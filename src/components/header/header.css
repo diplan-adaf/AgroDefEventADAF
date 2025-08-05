@@ -2,11 +2,9 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-
-  background-color: #064e3b;/* Cor #064e3b com 80% opacidade */
-  backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
-  -webkit-backdrop-filter: blur(10px); /* Suporte para Safari */
-
+  background-color: #064e3b;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   padding: 1rem 2rem;
   color: white;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
@@ -14,15 +12,51 @@
 
 .site-nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-brand h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.nav-links {
+  display: flex;
   gap: 60px;
-  justify-content: center;
   align-items: center;
 }
 
 .site-header a {
-  color: #ffffff; /* cor do texto */
-  text-decoration: none; /* remove o sublinhado *//* deixa o texto em negrito */
+  color: #ffffff;
+  text-decoration: none;
   font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.site-header a:hover {
+  color: #facc15;
+}
+
+.site-header a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #facc15;
+  transition: width 0.3s ease;
+}
+
+.site-header a:hover::after {
+  width: 100%;
 }
 
 .button-link-header {
@@ -36,4 +70,103 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+  .site-header {
+    padding: 1rem;
+  }
+  
+  .nav-links {
+    gap: 40px;
+  }
+  
+  .site-header a {
+    font-size: 14px;
+  }
+  
+  .nav-brand h2 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Responsividade para smartphones */
+@media (max-width: 600px) {
+  .site-header {
+    padding: 0.75rem 1rem;
+  }
+  
+  .nav-links {
+    position: fixed;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #064e3b;
+    flex-direction: column;
+    gap: 0;
+    padding: 2rem 0;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-links.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .nav-links a {
+    padding: 1rem 2rem;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 16px;
+  }
+  
+  .nav-links a:last-child {
+    border-bottom: none;
+  }
+  
+  .mobile-menu-btn {
+    display: block;
+  }
+  
+  .nav-brand h2 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Animações */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.nav-links.active {
+  animation: slideDown 0.3s ease-out;
 }

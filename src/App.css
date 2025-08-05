@@ -1,20 +1,120 @@
+/* Estilos globais para responsividade */
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
-  background: #f4f4f4;
-}
-
-.site-container {
-  width: 100%;
   overflow-x: hidden;
-  background: linear-gradient(to bottom, #c9cecc, #10b981);
-  color: white;
-  min-height: 100vh;
 }
 
+/* Melhorias para imagens responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+}
 
-.icon {
-  width: 1.25rem;
-  height: 1.25rem;
+/* Melhorias para links responsivos */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Melhorias para botões responsivos */
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+/* Melhorias para inputs responsivos */
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Container responsivo global */
+.responsive-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Utilitários responsivos */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.visible {
+  display: block !important;
+}
+
+/* Breakpoints responsivos */
+@media (max-width: 1200px) {
+  .responsive-container {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .responsive-container {
+    padding: 0 1rem;
+  }
+  
+  .hidden-mobile {
+    display: none !important;
+  }
+  
+  .visible-mobile {
+    display: block !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-container {
+    padding: 0 0.5rem;
+  }
+}
+
+/* Melhorias para acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Melhorias para modo escuro (se implementado no futuro) */
+@media (prefers-color-scheme: dark) {
+  /* Estilos para modo escuro podem ser adicionados aqui */
+}
+
+/* Melhorias para impressão */
+@media print {
+  .site-header,
+  .site-footer,
+  .mobile-menu-btn {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
 }

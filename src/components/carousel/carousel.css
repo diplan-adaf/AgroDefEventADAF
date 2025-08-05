@@ -19,8 +19,7 @@
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   position: relative;
-background-color: #FAF3EA;
-  
+  background-color: #FAF3EA;
 }
 
 .carousel-slide {
@@ -34,12 +33,11 @@ background-color: #FAF3EA;
 .carousel-img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Mantém a proporção da imagem sem cortar */
+  object-fit: contain;
   max-width: 100%;
   max-height: 100%;
   transition: opacity 0.3s ease-in-out;
 }
-
 
 .carousel-section h1 {
   font-size: 3.5rem;
@@ -56,29 +54,61 @@ background-color: #FAF3EA;
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Responsividade para notebooks */
+@media (max-width: 1200px) {
+  .carousel-section {
+    margin: 3rem auto;
+    padding: 4rem 1.5rem;
+  }
+  
+  .carousel-section h1 {
+    font-size: 3rem;
+  }
+  
+  .carousel-container {
+    width: 92%;
+  }
+}
 
-/* Responsividade para dispositivos móveis */
+/* Responsividade para tablets */
 @media (max-width: 768px) {
   .carousel-section {
-    height: 500px;
+    margin: 2rem auto;
+    padding: 3rem 1rem;
+  }
+  
+  .carousel-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
   }
   
   .carousel-container {
     width: 95%;
   }
   
-  .carousel-img {
-    object-fit: contain;
+  .carousel-slide {
+    height: 70%;
   }
 }
 
+/* Responsividade para smartphones */
 @media (max-width: 480px) {
   .carousel-section {
-    height: 400px;
+    margin: 1.5rem auto;
+    padding: 2rem 0.5rem;
+  }
+  
+  .carousel-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
   
   .carousel-container {
     width: 98%;
+  }
+  
+  .carousel-slide {
+    height: 60%;
   }
 }
 
@@ -120,6 +150,39 @@ background-color: #FAF3EA;
   line-height: 1;
 }
 
+/* Responsividade das setas */
+@media (max-width: 768px) {
+  .carousel-arrow {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+  }
+  
+  .carousel-arrow-left {
+    left: 5px;
+  }
+  
+  .carousel-arrow-right {
+    right: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+  
+  .carousel-arrow-left {
+    left: 3px;
+  }
+  
+  .carousel-arrow-right {
+    right: 3px;
+  }
+}
+
 /* Indicadores do carrossel */
 .carousel-indicators {
   position: absolute;
@@ -148,5 +211,30 @@ background-color: #FAF3EA;
 .carousel-indicator.active {
   background-color: #ffffff;
   transform: scale(1.2);
+}
+
+/* Responsividade dos indicadores */
+@media (max-width: 768px) {
+  .carousel-indicators {
+    bottom: 15px;
+    gap: 6px;
+  }
+  
+  .carousel-indicator {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-indicators {
+    bottom: 10px;
+    gap: 4px;
+  }
+  
+  .carousel-indicator {
+    width: 8px;
+    height: 8px;
+  }
 }
 
