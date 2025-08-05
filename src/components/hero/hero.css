@@ -4,11 +4,24 @@
   text-align: center;
   background: linear-gradient(to bottom, #064e3b, #047857);
   color: #ffffff;
-  background-image: url("../../assets/BannerDefesa.PNG");
+  background-image: url("../../assets/velho.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
+
+
+.descricao-img{
+  position: absolute;
+  top: 2rem;      
+  right: 10rem;    
+  z-index: 50;
+  width: 200px;
+  height: auto;
+  background: none;
+}
+
 
 /* Para tablets */
 @media (max-width: 900px) {
