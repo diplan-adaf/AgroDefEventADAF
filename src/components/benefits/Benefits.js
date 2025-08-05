@@ -6,7 +6,7 @@ export default function Benefits() {
   return (
     <div className="benefits-container">
       <h1>O QUE OFERECEMOS?</h1>
-      <div class="feature-card">
+      <div className="feature-card">
         <ul>
             <li>Mais de 140 estandes com expositores de toda a cadeia produtiva.</li>
             <li>Palestras, workshops e talk shows com mais de 40 especialistas</li>
