@@ -41,14 +41,21 @@ export default function AgroAmazonasSite() {
     <div className="site-container">
       <Layout>
         <Hero className="flex-item" />
-        <Feature className="flex-item" />
-        <Benefits className="flex-item" />
+        <section id="event">
+          <Feature className="flex-item" />
+        </section>
+        <section id="about">
+          <About className="flex-item" />
+        </section>
+        <section id="benefits">
+          <Benefits className="flex-item" />
+        </section>
+        
         <section id="location">
           <Location className="flex-item" />
         </section>
         <Carousel className="flex-item" images={stands} title="STANDS" />
         <Carousel className="flex-item" images={standsPlanta} title="POSIÇÃO DOS STANDS" />
-        <About className="flex-item" />
         <Suporte className="flex-item" />
       </Layout>
     </div>
