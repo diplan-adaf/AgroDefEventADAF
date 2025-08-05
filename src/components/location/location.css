@@ -1,7 +1,7 @@
 .location-container {
   width: 100%;
   max-width: 1200px;
-  margin: 4rem auto;
+  margin: 4rem auto 6rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,7 +58,7 @@
 /* Responsividade para notebooks */
 @media (max-width: 1200px) {
   .location-container {
-    margin: 3rem auto;
+    margin: 4rem auto 6rem 0;
     padding: 4rem 1.5rem;
   }
   
@@ -74,7 +74,7 @@
 /* Responsividade para tablets */
 @media (max-width: 768px) {
   .location-container {
-    margin: 2rem auto;
+    margin: 4rem auto 6rem 0;
     padding: 3rem 1rem;
   }
   
@@ -96,7 +96,7 @@
 /* Responsividade para smartphones */
 @media (max-width: 480px) {
   .location-container {
-    margin: 1.5rem auto;
+    margin: 4rem auto 6rem 0;
     padding: 2rem 0.5rem;
   }
   

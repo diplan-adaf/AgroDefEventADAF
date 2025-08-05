@@ -1,7 +1,7 @@
 .carousel-section {
   width: 100%;
   max-width: 1200px;
-  margin: 4rem auto;
+  margin:  0 auto 10rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,7 +57,7 @@
 /* Responsividade para notebooks */
 @media (max-width: 1200px) {
   .carousel-section {
-    margin: 3rem auto;
+    margin: 8rem auto;
     padding: 4rem 1.5rem;
   }
   
@@ -73,7 +73,7 @@
 /* Responsividade para tablets */
 @media (max-width: 768px) {
   .carousel-section {
-    margin: 2rem auto;
+    margin: 8rem auto;
     padding: 3rem 1rem;
   }
   
@@ -94,7 +94,7 @@
 /* Responsividade para smartphones */
 @media (max-width: 480px) {
   .carousel-section {
-    margin: 1.5rem auto;
+    margin: 4rem auto;
     padding: 2rem 0.5rem;
   }
   
