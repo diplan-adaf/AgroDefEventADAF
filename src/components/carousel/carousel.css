@@ -1,4 +1,4 @@
-.carousel-section{
+.carousel-section {
   width: 100%;
   height: 800px;
   display: flex;
@@ -6,31 +6,58 @@
   align-items: center;
 }
 
-
 .carousel-container {
-  width: 70%;
+  height: 100%;
+  width: 90%;
   border-radius: 0.75rem;
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   position: relative;
+background-color: #FAF3EA;
+  
 }
 
 .carousel-slide {
   width: 100%;
-  height: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .carousel-img {
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Mantém a proporção da imagem sem cortar */
+  max-width: 100%;
+  max-height: 100%;
   transition: opacity 0.3s ease-in-out;
 }
 
-.carousel-img {
-  width: 50%; /* Faz a imagem ocupar toda a largura do slide */
-  height: 50%; /* Faz a imagem ocupar toda a altura do slide */
-  object-fit: cover; /* Garante que a imagem cubra todo o espaço, sem distorcer (pode cortar as bordas) */
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  .carousel-section {
+    height: 500px;
+  }
+  
+  .carousel-container {
+    width: 95%;
+  }
+  
+  .carousel-img {
+    object-fit: contain;
+  }
 }
 
+@media (max-width: 480px) {
+  .carousel-section {
+    height: 400px;
+  }
+  
+  .carousel-container {
+    width: 98%;
+  }
+}
 
 /* Setas de navegação do carrossel */
 .carousel-arrow {
