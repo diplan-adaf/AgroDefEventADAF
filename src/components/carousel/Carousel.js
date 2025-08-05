@@ -1,11 +1,11 @@
-import carrosselImg1 from "../../assets/carrossel1.svg";
-import carrosselImg2 from "../../assets/carrossel2.svg";
-import carrosselImg3 from "../../assets//carrossel3.svg";
-import carrosselImg4 from "../../assets/carrossel4.svg";
-import carrosselImg5 from "../../assets/carrossel5.svg";
-import carrosselImg6 from "../../assets/carrossel6.svg";
-import carrosselImg7 from "../../assets/carrossel7.svg";
-import carrosselImg8 from "../../assets/carrossel8.svg";
+import carrosselImg1 from "../../assets/saida-1.svg";
+import carrosselImg2 from "../../assets/saida-2.svg";
+import carrosselImg3 from "../../assets/saida-3.svg";
+import carrosselImg4 from "../../assets/saida-4.svg";
+import carrosselImg5 from "../../assets/saida-5.svg";
+import carrosselImg6 from "../../assets/saida-6.svg";
+import carrosselImg7 from "../../assets/saida-7.svg";
+import carrosselImg8 from "../../assets/saida-8.svg";
 import { useState, useEffect } from "react";
 import "./carousel.css"; // Importando o CSS do Carousel
 
