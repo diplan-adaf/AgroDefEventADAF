@@ -19,6 +19,18 @@
   padding: 0 1rem;
 }
 
+
+.site-buttons{
+  margin-bottom: 4rem;
+}
+
+#button-stand {
+  width: 40% !important;
+  padding:2rem;
+  text-align: center ;
+  margin: 0 auto 6rem auto;
+}
+
 /* Responsividade para notebooks */
 @media (max-width: 1200px) {
   .flex-item {
@@ -51,5 +63,12 @@
   .carousel-section {
     padding: 0 0.25rem;
     margin-top: 1rem;
+  }
+
+  #button-stand {
+    width: 60% !important;
+    padding:1.5rem;
+    text-align: center ;
+    margin: 0 auto 2rem auto;
   }
 }
