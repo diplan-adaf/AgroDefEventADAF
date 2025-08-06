@@ -1,7 +1,7 @@
 import { Instagram, Menu, X } from "lucide-react";
 import { useState } from "react";
 import "./header.css";
-
+import adaf from "../../assets/adaf.png";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -16,8 +16,8 @@ export default function Header() {
   return (
     <header className="site-header">
       <nav className="site-nav">
-        <div className="nav-brand">
-          <h2>Agro Amazonas</h2>
+        <div className={`nav-brand ${isMenuOpen ? "hide-brand" : ""}`}>
+          <img src={adaf} alt="Agro Amazonas" />
         </div>
         
         {/* Menu desktop */}
