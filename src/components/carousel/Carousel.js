@@ -38,7 +38,7 @@ export default function Carousel({ images, title = "STANDS" }) {
 
   return (
     <div className="carousel-section">
-      <h1>{title}</h1>
+      <h2>{title}</h2>
       <div className="carousel-container">
         <button className="carousel-arrow carousel-arrow-left" onClick={goToPrevious}>
           <span>‹</span>

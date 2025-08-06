@@ -6,6 +6,10 @@ import Location from "../components/location/Location";
 import About from "../components/aboutUs/about";
 import Layout from "../components/Layout";
 import Hero from "../components/hero/Hero";
+import Content from "../components/content/Content";
+import Palestrantes from "../components/palestrantes/palestrantes";
+import Collaborators from "../components/collaborators/Collaborators";
+import { Instagram } from "lucide-react";
 
 import standImg1 from "../assets/saida-1.svg";
 import standImg2 from "../assets/saida-2.svg";
@@ -43,21 +47,68 @@ export default function AgroAmazonasSite() {
         <section id="event">
           <Feature className="flex-item" />
         </section>
+
+
         <section id="benefits">
           <Benefits className="flex-item" />
+        </section>
+
+        <section>
+          <Content className="flex-item" />
         </section>
         
         <section id="location">
           <Location className="flex-item" />
         </section>
 
-        <section>
-          <Carousel className="flex-item" images={stands} title="STANDS" />
+        <section id="palestrantes">
+          <Palestrantes className="flex-item" />
         </section>
+
+        <div className="site-buttons">
+          <a
+            href="https://www.sympla.com.br/evento/agro-amazonas-defesa-agropecuaria/3060161"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button-link"
+          >
+            Inscreva-se (Sympla)
+          </a>
+          <a
+            href="https://www.instagram.com/agro_defesa_evento/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button-link instagram"
+          >
+            <Instagram className="icon" /> Instagram
+          </a>
+
+        </div>
+
+        
+
+        <section id="collaborators">
+          <Collaborators className="flex-item" />
+        </section>
+
+        {/* <section>
+          <Carousel className="flex-item" images={stands} title="STANDS" />
+        </section> */}
 
         <section>
           <Carousel className="flex-item" images={standsPlanta} title="POSIÇÃO DOS STANDS" />
         </section>
+
+        <a
+            href="https://forms.gle/fp6bfcybtcYaoTKo8"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button-link"
+            id="button-stand"
+          >
+            Garanta seu Stand
+        </a>
+
         <section id="about">
           <About className="flex-item" />
         </section>

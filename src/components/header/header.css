@@ -7,7 +7,7 @@
   -webkit-backdrop-filter: blur(10px);
   padding: 1rem 2rem;
   color: white;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .site-nav {
@@ -18,12 +18,22 @@
   margin: 0 auto;
 }
 
-.nav-brand h2 {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #ffffff;
+
+.nav-brand{
+  width: 300px;
 }
+
+.nav-brand img {
+  margin: 0;
+  width: 80%; 
+  height: auto;
+}
+
+
+.hide-brand img{
+  display: none !important;
+}
+
 
 .nav-links {
   display: flex;
@@ -92,17 +102,26 @@
   .site-header {
     padding: 1rem;
   }
+
+  .site-header a {
+    font-size: 12px;
+  }
   
   .nav-links {
     gap: 40px;
   }
   
-  .site-header a {
-    font-size: 14px;
-  }
-  
-  .nav-brand h2 {
+  .nav-brand a {
     font-size: 1.25rem;
+  }
+
+  .nav-brand {
+    width: 200px;
+  }
+
+  .nav-brand img {
+    width: 80%;
+    height: auto;
   }
 }
 
