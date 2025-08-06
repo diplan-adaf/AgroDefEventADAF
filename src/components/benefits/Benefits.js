@@ -16,7 +16,7 @@ export default function Benefits() {
             <li>Acesso a informações sobre inspeção sanitária, exportação, uso de agrotóxicos, prevenção de doenças como  febre aftosa e muito mais!</li>
         </ul>
       </div>
-              {/* <div className="site-buttons">
+      <div className="site-buttons">
           <a
             href="https://www.sympla.com.br/evento/agro-amazonas-defesa-agropecuaria/3060161"
             target="_blank"
@@ -42,7 +42,7 @@ export default function Benefits() {
             Garanta seu Stand
           </a>
 
-        </div> */}
+        </div>
     </div>
   );
 }
