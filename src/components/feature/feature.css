@@ -61,6 +61,7 @@
 @media (max-width: 768px) {
   .feature-container {
     padding: 4rem 1.5rem;
+    width: 95%;
   }
   
   .feature-container h1 {
@@ -79,6 +80,7 @@
 @media (max-width: 480px) {
   .feature-container {
     padding: 3rem 1rem;
+    width: 95%;
   }
   
   .feature-container h1 {

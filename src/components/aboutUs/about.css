@@ -63,6 +63,7 @@
   .about-container {
     margin: 2rem auto;
     padding: 2.5rem 1rem 4rem 1rem;
+    width: 90%;
   }
   
   .about-container h1 {
@@ -82,6 +83,7 @@
   .about-container {
     margin: 1.5rem auto;
     padding: 2rem 0.5rem 3rem 0.5rem;
+    width: 95%;
   }
   
   .about-container h1 {

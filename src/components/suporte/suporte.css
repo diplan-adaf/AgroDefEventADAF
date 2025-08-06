@@ -61,6 +61,7 @@
   .suporte-container {
     margin: 0 auto 4rem auto;
     padding: 2.5rem 1rem 4rem 1rem;
+    width: 90%;
   }
   
   .suporte-container h1 {
@@ -79,6 +80,7 @@
   .suporte-container {
     margin: 0 auto 4rem auto;
     padding: 2rem 0.5rem 3rem 0.5rem;
+    width: 90%;
   }
   
   .suporte-container h1 {
@@ -90,13 +92,6 @@
     font-size: 0.9rem;
     line-height: 1.6;
     margin-bottom: 0.5rem;
-  }
-}
-
-/* Responsividade específica para telefones muito pequenos */
-@media (max-width: 360px) {
-  .suporte-container p, span {
-    font-size: 0.85rem;
   }
 }
 

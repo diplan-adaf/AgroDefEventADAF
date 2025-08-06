@@ -11,8 +11,8 @@ export default function Footer(){
       <div className="footer-info">
         <h2>Fale conosco</h2>
         <div className="footer-contact">
-          <span>Tel <Phone />: (92) 99999-9999 | (92) 99999-9999 | (92) 99999-9999 </span>
-          <span>Email <Mail />: contato@gmail.com.br</span>
+          <span>Tel: (92) 99999-9999 | (92) 99999-9999 | (92) 99999-9999</span>
+          <span>Email: contato@gmail.com.br</span>
         </div>
       </div>
       <div className="footer-triade">

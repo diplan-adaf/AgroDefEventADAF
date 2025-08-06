@@ -194,6 +194,7 @@
 @media (max-width: 768px) {
   .palestrantes-container {
     padding: 2rem 1.5rem;
+    width: 95%;
   }
   
   .palestrantes-container h2 {
@@ -242,6 +243,7 @@
 @media (max-width: 480px) {
   .palestrantes-container {
     padding: 1.5rem 1rem;
+    width: 95%;
   }
   
   .palestrantes-container h2 {
