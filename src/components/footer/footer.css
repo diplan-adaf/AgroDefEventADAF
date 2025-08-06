@@ -1,5 +1,18 @@
 .site-footer {
-  background-color: #064e3b;
+  /* background-color: #064e3b; */
+  background: linear-gradient(
+    to right,
+    #8da05f,
+    #4f6539 20%,
+    #193218 45%,
+    #0a1d0f 69%,
+    /* Ponto mais escuro exatamente no meio */ #193218 45%,
+    /* Volta para o primeiro tom escuro */ #064e3b 670%
+      /* Termina no verde escuro original */
+  );
+
+  /* ... resto do seu CSS ... */
+
   color: #f3f4f6;
   text-align: center;
   padding: 1rem 1rem;
@@ -16,7 +29,7 @@
   align-items: center;
 }
 
-.site-logo img{
+.site-logo img {
   width: 100%;
   height: auto;
 }
@@ -25,24 +38,22 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  width: 50%
+  width: 50%;
 }
 
-.footer-contact{
+.footer-contact {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
 }
 
-.footer-contact span{
+.footer-contact span {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px
+  gap: 10px;
 }
-
-
 
 .footer-info h2 {
   font-size: 1.5rem;
@@ -53,7 +64,7 @@
   margin-bottom: 0.5rem;
 }
 
-.footer-triade{
+.footer-triade {
   width: 30%;
   height: auto;
   margin-top: 1rem;
@@ -62,7 +73,7 @@
   align-items: center;
 }
 
-.footer-triade img{
+.footer-triade img {
   width: 80%;
 }
 
@@ -88,11 +99,11 @@
     padding: 2rem 1rem;
     margin-top: 3rem;
   }
-  
+
   .footer-info h2 {
     font-size: 1.25rem;
   }
-  
+
   .footer-info span {
     font-size: 1rem;
   }
@@ -106,34 +117,34 @@
     flex-direction: column;
     gap: 1.5rem;
   }
-  
+
   .site-logo {
     width: 20%;
     order: 1;
   }
-  
+
   .footer-info {
     width: 100%;
     order: 2;
     align-items: center;
     text-align: center;
   }
-  
+
   .footer-info h2 {
     font-size: 1.125rem;
     margin-bottom: 1rem;
   }
-  
+
   .footer-info span {
     font-size: 0.95rem;
     margin-bottom: 0.75rem;
     justify-content: center;
   }
-  
+
   .footer-contact {
     align-items: center;
   }
-  
+
   .footer-triade {
     width: 20%;
     order: 3;
@@ -150,7 +161,7 @@
     flex-direction: column;
     align-items: center;
   }
-  
+
   .site-logo {
     width: 80%;
     border-bottom: 1px solid #5a5a5a;
@@ -164,23 +175,22 @@
   .footer-info {
     padding: 0.5rem 0;
   }
-  
+
   .footer-info h2 {
     font-size: 1rem;
     margin-bottom: 0.75rem;
   }
-  
+
   .footer-info span {
     font-size: 0.875rem;
     margin-bottom: 1rem;
     flex-direction: column;
     gap: 0.25rem;
   }
-  
+
   .footer-contact {
     border-bottom: 1px solid #5a5a5a;
   }
-
 
   .footer-contact span {
     text-align: center;
@@ -200,19 +210,19 @@
     padding: 0.75rem 0.5rem;
     gap: 0.75rem;
   }
-  
+
   .site-logo {
     width: 30%;
   }
-  
+
   .footer-info h2 {
     font-size: 0.95rem;
   }
-  
+
   .footer-info span {
     font-size: 0.8rem;
   }
-  
+
   .footer-triade {
     width: 30%;
   }
