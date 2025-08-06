@@ -14,7 +14,7 @@
 }
 
 .palestrantes-container h2 {
-  font-size: 3.5rem;
+  font-size: 2rem;
   font-weight: 800;
   color: #1e293b;
   text-align: center;
@@ -29,7 +29,7 @@
 }
 
 .palestrantes-descricao {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   line-height: 1.8;
   color: #374151;
   text-align: center;

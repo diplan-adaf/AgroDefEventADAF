@@ -3,10 +3,10 @@ import { MapPin } from "lucide-react";
 export default function Location() {
   return (
     <div className="location-container">
-      <h1>2 e 3 de Setembro</h1>
+      <h2>2 e 3 de Setembro</h2>
       <p>No centro de convenções Vasco Vasques | Etapa 1</p>
       <a
-          href="https://www.instagram.com/agro_defesa_evento/"
+          href="https://maps.app.goo.gl/9ZKNZ9aeYfZzSkwi7"
           target="_blank"
           rel="noopener noreferrer"
           className=""

@@ -12,8 +12,8 @@
   border-radius: 1rem;
 }
 
-.suporte-container h1 {
-  font-size: 3.5rem;
+.suporte-container h2 {
+  font-size: 2em;
   font-weight: 800;
   color: #1e293b;
   text-align: center;
@@ -28,7 +28,7 @@
 }
 
 .suporte-container p, span {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   line-height: 1.8;
   color: #475569;
   text-align: center;

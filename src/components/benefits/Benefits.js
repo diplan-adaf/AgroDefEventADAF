@@ -5,7 +5,7 @@ import { Instagram } from "lucide-react";
 export default function Benefits() {
   return (
     <div className="benefits-container">
-      <h1>O QUE OFERECEMOS?</h1>
+      <h2>O QUE OFERECEMOS?</h2>
       <div className="benefits-card">
         <ul>
             <li>Mais de 140 estandes com expositores de toda a cadeia produtiva.</li>

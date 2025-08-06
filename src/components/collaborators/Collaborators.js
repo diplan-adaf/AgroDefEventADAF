@@ -46,11 +46,14 @@ export default function Collaborators() {
   const currentStand = stands.find(s => s.key === activeTab);
 
   return (
-    <section className="collaborators-container">
+    <>
+      <div className="collaborators-hero">
+        <h2>Seja um colaborador</h2>
+      </div>
+      <section className="collaborators-container">
       <h2>Colaboradores</h2>
       <p>
-        O evento conta com o apoio de diversas instituições e empresas que contribuem para o desenvolvimento do setor agropecuário. Conheça nossos colaboradores e os stands disponíveis para exposição.
-      </p>
+        Participe do AGROAMAZONAS & DEFESA AGROPECUÁRIA como expositor e conecte sua marca ao maior evento agropecuário do Amazonas. Apresente seus produtos e serviços a um público qualificado, fortaleça seu nome no setor, amplie oportunidades de negócio e associe sua empresa à inovação, sustentabilidade e segurança alimentar. Em um ambiente estratégico e com alta visibilidade, sua marca fará parte da celebração dos 13 anos da ADAF e do futuro do agro no estado. Seja protagonista desse movimento!      </p>
       <h2>Stands</h2>
       <div className="stand-tabs">
         {stands.map(stand => (
@@ -72,5 +75,7 @@ export default function Collaborators() {
         </div>
       </div>
     </section>
+    </>
+    
   );
 }
