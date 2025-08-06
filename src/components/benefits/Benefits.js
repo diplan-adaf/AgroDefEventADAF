@@ -8,7 +8,7 @@ export default function Benefits() {
       <h2>O QUE OFERECEMOS?</h2>
       <div className="benefits-card">
         <ul>
-            <li>Mais de 140 estandes com expositores de toda a cadeia produtiva.</li>
+            {/* <li>Mais de 140 estandes com expositores de toda a cadeia produtiva.</li> */}
             <li>Palestras, workshops e talk shows com mais de 40 especialistas</li>
             <li>Área gastronômica com produtos regionais.</li>
             <li>Espaço para negócios, oportunidades e parcerias.</li>

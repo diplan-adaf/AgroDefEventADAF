@@ -86,9 +86,11 @@
     width: 95%;
   }
   
-  .about-container h1 {
+  .about-container h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    margin-right: auto;
+    margin-left: auto;
   }
   
   .about-container p, span {
