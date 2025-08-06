@@ -6,7 +6,7 @@ export default function Benefits() {
   return (
     <div className="benefits-container">
       <h1>O QUE OFERECEMOS?</h1>
-      <div className="feature-card">
+      <div className="benefits-card">
         <ul>
             <li>Mais de 140 estandes com expositores de toda a cadeia produtiva.</li>
             <li>Palestras, workshops e talk shows com mais de 40 especialistas</li>
@@ -16,7 +16,7 @@ export default function Benefits() {
             <li>Acesso a informações sobre inspeção sanitária, exportação, uso de agrotóxicos, prevenção de doenças como  febre aftosa e muito mais!</li>
         </ul>
       </div>
-              <div className="site-buttons">
+              {/* <div className="site-buttons">
           <a
             href="https://www.sympla.com.br/evento/agro-amazonas-defesa-agropecuaria/3060161"
             target="_blank"
@@ -42,7 +42,7 @@ export default function Benefits() {
             Garanta seu Stand
           </a>
 
-        </div>
+        </div> */}
     </div>
   );
 }
