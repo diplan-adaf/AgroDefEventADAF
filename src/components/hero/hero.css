@@ -14,13 +14,49 @@
 
 .hero-img img{
   position: absolute;
-  top: 2rem;
-  margin-left: 30px;
+  top: 0rem;
+  right: 55px;;
   z-index: 50;
-  width: 700px;
+  width: 450px;
   height: auto;
   background: none;
 }
+
+.hero-img span {
+  position: absolute;
+  bottom: 8rem;
+  left: 65%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  padding: 0.5rem 0.7rem;
+  border-radius: 2rem;
+}
+
+.hero-img a {
+  position: absolute;
+  bottom: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  left: 65%;
+  padding: 0.5rem 1rem;
+  background-color: #AEC316;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  border-radius: 2rem;
+}
+
+.hero-img a:hover  {
+  scale: 1.05;
+  transition: all 0.3s ease-in-out;
+}
+
 
 
 /* Para tablets */
@@ -30,23 +66,51 @@
     padding: 2rem 1rem;
   }
 
-  .hero-img img{
-    top: 6rem;
-    margin-left: 0px;
-    width: 300px;
+  .hero-img img {
+    top: 1rem;
+    right: 2rem;
+    width: 270px;
+    left: auto;
+  }
+
+  .hero-img span {
+    display: none;
+  }
+
+  .hero-img a {
+    bottom: 10rem;
+    right: 2rem;
+    left: auto;
+    transform: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
   }
 }
 
 /* Para smartphones */
 @media (max-width: 600px) {
   .hero-img {
-    height: 50vh;
+    height: 40vh;
     padding: 1rem 0.5rem;
   }
 
-  .hero-img img{
-    top: 6rem;
-    margin-left: 0px;
-    width: 210px;
+  .hero-img img {
+    top: 1rem;
+    right: 1rem;
+    width: 180px;
+    left: auto;
+  }
+
+  .hero-img span {
+    display: none;
+  }
+
+  .hero-img a {
+    bottom: 6rem;
+    right: 1rem;
+    left: auto;
+    transform: none;
+    font-size: 0.95rem;
+    padding: 0.4rem 0.8rem;
   }
 }
