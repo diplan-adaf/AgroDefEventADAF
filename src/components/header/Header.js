@@ -23,6 +23,7 @@ export default function Header() {
         {/* Menu desktop */}
         <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
           <a href="#event" onClick={closeMenu}>Evento</a>
+          <a href="#palestrantes" onClick={closeMenu}>Palestrantes</a>
           <a href="#about" onClick={closeMenu}>Sobre nós</a>
           <a href="#benefits" onClick={closeMenu}>Inscreva-se</a>
           <a href="#location" onClick={closeMenu}>Localização</a>
