@@ -13,7 +13,7 @@ export default function Footer(){
         <div className="footer-contact">
           <span>Tel: (92) 8113-6607 | (92) 9330-6826 | (92)
             9160-7182 | (92) 9195-2657</span>
-          <span>Email: contato@gmail.com.br</span>
+          <span>Email: agrodefesaevento@gmail.com.br</span>
         </div>
       </div>
       <div className="footer-triade">
