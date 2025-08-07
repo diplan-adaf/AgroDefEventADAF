@@ -41,18 +41,7 @@
 }
 
 .carousel-section h2 {
-  font-size: 2rem;
-  font-weight: 800;
-  color: #1e293b;
   text-align: center;
-  margin-bottom: 2rem;
-  position: relative;
-  z-index: 1;
-  background: linear-gradient(135deg, #1e293b 0%, #475569 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsividade para notebooks */
