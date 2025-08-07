@@ -14,7 +14,6 @@ import sivandro from "../assets/sivandro.png"
 import wilson from "../assets/wilson.png"
 import avatar from "../assets/avatarPlaceholder.jpg"
 
-
 import Layout from "../components/Layout";
 
 export default function PalestrantesPage() {
@@ -309,6 +308,11 @@ const palestrantes = {
                             <span className="sala-badge">{palestrante.sala}</span>
                           </p>
                         </div>
+
+                        <a className="button-subscribe">
+                          Inscreva-se
+                        </a>
+
                       </div>
                     ))}
                   </div>

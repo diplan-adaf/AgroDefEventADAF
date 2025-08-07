@@ -76,7 +76,7 @@ export default function Palestrantes() {
               to="/palestrantes" 
               style={{
                 display: 'inline-block',
-                padding: '1rem 2rem',
+                padding: '2rem 2rem',
                 backgroundColor: '#059669',
                 color: 'white',
                 textDecoration: 'none',

@@ -146,7 +146,7 @@ export default function AgroAmazonasSite() {
         </section>
 
         <div className="site-buttons">
-          <Button text={"Inscreva-se (Simpla)"} ref={"https://www.sympla.com.br/evento/agro-amazonas-defesa-agropecuaria/3060161"}></Button>
+          <Button text={"Inscreva-se (Simpla)"} ref={"https://www.sympla.com.br/evento/agro-amazonas-defesa-agropecuaria/3060161"} cls={"simpla"}></Button>
           <Button text={"Instagram"} ref={"https://www.instagram.com/agro_defesa_evento/"} cls={"instagram"}>
             <Instagram className="icon" />
           </Button>
