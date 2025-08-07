@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/AgroDefEventADAF/static/css/main.46f4d3b6.css",
-    "main.js": "/AgroDefEventADAF/static/js/main.6bd18d54.js",
+    "main.css": "/AgroDefEventADAF/static/css/main.9eef0233.css",
+    "main.js": "/AgroDefEventADAF/static/js/main.dbdcae18.js",
     "static/js/453.c8b3b5c0.chunk.js": "/AgroDefEventADAF/static/js/453.c8b3b5c0.chunk.js",
     "static/media/velho.png": "/AgroDefEventADAF/static/media/velho.96df94b2d268a6484001.png",
     "static/media/planta-1.svg": "/AgroDefEventADAF/static/media/planta-1.3e2293f26fc119b5cffef450e10c2c4e.svg",
@@ -14,18 +14,22 @@
     "static/media/saida-4.svg": "/AgroDefEventADAF/static/media/saida-4.8cb0a0a1228678f7ca5491c93cbbcf89.svg",
     "static/media/saida-7.svg": "/AgroDefEventADAF/static/media/saida-7.bd24c770768bc4f7398773e51b2cb184.svg",
     "static/media/descricaoBanner.png": "/AgroDefEventADAF/static/media/descricaoBanner.114a185ca2988e3eaa03.png",
+    "static/media/palestrante2.JPG": "/AgroDefEventADAF/static/media/palestrante2.889e49e130b8933606a4.JPG",
     "static/media/saida-1.svg": "/AgroDefEventADAF/static/media/saida-1.0df8712164ea8ed395fd4ffd2a3d8637.svg",
     "static/media/adaf.png": "/AgroDefEventADAF/static/media/adaf.9ab34db7ab9236686dac.png",
     "static/media/triade.png": "/AgroDefEventADAF/static/media/triade.34a7fae58bbbdf530596.png",
     "static/media/saida-8.svg": "/AgroDefEventADAF/static/media/saida-8.48de97f0e3dd571fec5b7005c2b5bca3.svg",
+    "static/media/palestrante3.jpeg": "/AgroDefEventADAF/static/media/palestrante3.34540ea4e3bc14354928.jpeg",
+    "static/media/palestrante1.jpeg": "/AgroDefEventADAF/static/media/palestrante1.9161bf1a4b7f997692c2.jpeg",
     "static/media/vascoVasques.jpg": "/AgroDefEventADAF/static/media/vascoVasques.ee2f9fdcccf4c70ff633.jpg",
+    "static/media/palestrante4.jpeg": "/AgroDefEventADAF/static/media/palestrante4.568f4e0687141dc3d6b9.jpeg",
     "index.html": "/AgroDefEventADAF/index.html",
-    "main.46f4d3b6.css.map": "/AgroDefEventADAF/static/css/main.46f4d3b6.css.map",
-    "main.6bd18d54.js.map": "/AgroDefEventADAF/static/js/main.6bd18d54.js.map",
+    "main.9eef0233.css.map": "/AgroDefEventADAF/static/css/main.9eef0233.css.map",
+    "main.dbdcae18.js.map": "/AgroDefEventADAF/static/js/main.dbdcae18.js.map",
     "453.c8b3b5c0.chunk.js.map": "/AgroDefEventADAF/static/js/453.c8b3b5c0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.46f4d3b6.css",
-    "static/js/main.6bd18d54.js"
+    "static/css/main.9eef0233.css",
+    "static/js/main.dbdcae18.js"
   ]
 }

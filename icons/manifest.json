@@ -1,0 +1,25 @@
+{
+  "short_name": "Agro Amazonas",
+  "name": "Agro Amazonas - Defesa Agropecuária",
+  "icons": [
+    {
+      "src": "descricaoBanner.png",
+      "sizes": "any",
+      "type": "image/png"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#065f46",
+  "background_color": "#065f46"
+}
