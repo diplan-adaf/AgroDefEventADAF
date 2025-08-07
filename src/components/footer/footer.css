@@ -1,18 +1,26 @@
 .site-footer {
-  /* background-color: #064e3b; */
+  /* background-color: #064e3b;
   background: linear-gradient(
     to right,
     #8da05f,
     #4f6539 20%,
     #193218 45%,
     #0a1d0f 69%,
-    /* Ponto mais escuro exatamente no meio */ #193218 45%,
-    /* Volta para o primeiro tom escuro */ #064e3b 670%
-      /* Termina no verde escuro original */
+    /* Ponto mais escuro exatamente no meio */ 
+    /* Volta para o primeiro tom escuro */ 
+      /* Termina no verde escuro original 
   );
 
-  /* ... resto do seu CSS ... */
 
+  color: #f3f4f6;
+  text-align: center;
+  padding: 1rem 1rem;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
+
+  background-color: #064e3b;
   color: #f3f4f6;
   text-align: center;
   padding: 1rem 1rem;
@@ -53,10 +61,13 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+  color: white;
 }
+
 
 .footer-info h2 {
   font-size: 1.5rem;
+  color: white
 }
 
 .footer-info span {
@@ -102,6 +113,8 @@
 
   .footer-info h2 {
     font-size: 1.25rem;
+    color: white
+
   }
 
   .footer-info span {
@@ -133,12 +146,16 @@
   .footer-info h2 {
     font-size: 1.125rem;
     margin-bottom: 1rem;
+      color: white
+
   }
 
   .footer-info span {
     font-size: 0.95rem;
     margin-bottom: 0.75rem;
     justify-content: center;
+      color: white
+
   }
 
   .footer-contact {
@@ -179,6 +196,8 @@
   .footer-info h2 {
     font-size: 1rem;
     margin-bottom: 0.75rem;
+      color: white
+
   }
 
   .footer-info span {
@@ -186,6 +205,8 @@
     margin-bottom: 1rem;
     flex-direction: column;
     gap: 0.25rem;
+      color: white
+
   }
 
   .footer-contact {

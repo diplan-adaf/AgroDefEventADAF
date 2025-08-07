@@ -61,9 +61,9 @@ export default function AgroAmazonasSite() {
           <Location className="flex-item"  />
         </section>
 
-        {/* <section id="palestrantes">
+        <section id="palestrantes">
           <Palestrantes className="flex-item" />
-        </section> */}
+        </section>
 
         <div className="site-buttons">
           <a

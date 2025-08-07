@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import "./palestrantes.css";
+import palestrantes1 from "../../assets/palestrante1.jpeg";
+import palestrantes2 from "../../assets/palestrante2.JPG";
+import palestrantes3 from "../../assets/palestrante3.jpeg";
+import palestrantes4 from "../../assets/palestrante4.jpeg";
 
 export default function Palestrantes() {
   const [activeTab, setActiveTab] = useState("02-09");
@@ -10,111 +14,111 @@ export default function Palestrantes() {
         horario: "08:00 - 09:00",
         palestrantes: [
           {
-            nome: "Dr. João Silva",
-            foto: "https://via.placeholder.com/150x150/4F46E5/FFFFFF?text=Dr.+João",
-            formacao: "Doutor em Agronomia - UFAM",
+            nome: "Paulo Roberto de Faria Pinto",
+            foto: palestrantes1,
+            formacao: "Diretor do Departamento de Mudança Climática e Áreas Protegidas na Semmasclima e Conselheiro do Conselho Municipal de Desenvolvimento Urbano - CMDU",
             tema: "Inovações em Defesa Agropecuária"
           },
           {
-            nome: "Dra. Maria Santos",
-            foto: "https://via.placeholder.com/150x150/10B981/FFFFFF?text=Dra.+Maria",
-            formacao: "Pós-doutora em Fitopatologia - EMBRAPA",
-            tema: "Controle Biológico de Pragas"
+            nome: "Dr. Bruno Henrique dos Santos",
+            foto: palestrantes2,
+            formacao: "Possui Doutorado em Ciência Animal pela Universidade Federal do Pará (UFPA), Mestrado em Ciência e Tecnologia de Alimentos pela Universidade Federal do Pará (UFPA), MBA Executivo em Alta Gestão de IES pela Universidade da Amazônia (UNAMA)",
+            tema: "Segurança dos Alimentos na Era da Sustentabilidade: Desafios e Oportunidades"
           }
         ]
       },
-      {
-        horario: "10:00 - 11:00",
-        palestrantes: [
-          {
-            nome: "Prof. Carlos Oliveira",
-            foto: "https://via.placeholder.com/150x150/F59E0B/FFFFFF?text=Prof.+Carlos",
-            formacao: "Professor Titular - INPA",
-            tema: "Sustentabilidade na Agricultura"
-          },
-          {
-            nome: "Eng. Ana Costa",
-            foto: "https://via.placeholder.com/150x150/EF4444/FFFFFF?text=Eng.+Ana",
-            formacao: "Engenheira Agrônoma - IFAM",
-            tema: "Tecnologias de Precisão"
-          }
-        ]
-      },
-      {
-        horario: "14:00 - 15:00",
-        palestrantes: [
-          {
-            nome: "Dr. Roberto Lima",
-            foto: "https://via.placeholder.com/150x150/8B5CF6/FFFFFF?text=Dr.+Roberto",
-            formacao: "Doutor em Zootecnia - UEA",
-            tema: "Sanidade Animal na Amazônia"
-          },
-          {
-            nome: "Dra. Fernanda Rocha",
-            foto: "https://via.placeholder.com/150x150/EC4899/FFFFFF?text=Dra.+Fernanda",
-            formacao: "Pós-doutora em Veterinária - UFAM",
-            tema: "Prevenção de Doenças"
-          }
-        ]
-      }
+      // {
+      //   horario: "10:00 - 11:00",
+      //   palestrantes: [
+      //     {
+      //       nome: "Prof. Carlos Oliveira",
+      //       foto: "https://via.placeholder.com/150x150/F59E0B/FFFFFF?text=Prof.+Carlos",
+      //       formacao: "Professor Titular - INPA",
+      //       tema: "Sustentabilidade na Agricultura"
+      //     },
+      //     {
+      //       nome: "Eng. Ana Costa",
+      //       foto: "https://via.placeholder.com/150x150/EF4444/FFFFFF?text=Eng.+Ana",
+      //       formacao: "Engenheira Agrônoma - IFAM",
+      //       tema: "Tecnologias de Precisão"
+      //     }
+      //   ]
+      // },
+      // {
+      //   horario: "14:00 - 15:00",
+      //   palestrantes: [
+      //     {
+      //       nome: "Dr. Roberto Lima",
+      //       foto: "https://via.placeholder.com/150x150/8B5CF6/FFFFFF?text=Dr.+Roberto",
+      //       formacao: "Doutor em Zootecnia - UEA",
+      //       tema: "Sanidade Animal na Amazônia"
+      //     },
+      //     {
+      //       nome: "Dra. Fernanda Rocha",
+      //       foto: "https://via.placeholder.com/150x150/EC4899/FFFFFF?text=Dra.+Fernanda",
+      //       formacao: "Pós-doutora em Veterinária - UFAM",
+      //       tema: "Prevenção de Doenças"
+      //     }
+      //   ]
+      // }
     ],
     "03-09": [
       {
         horario: "08:00 - 09:00",
         palestrantes: [
           {
-            nome: "Dr. Pedro Alves",
-            foto: "https://via.placeholder.com/150x150/06B6D4/FFFFFF?text=Dr.+Pedro",
-            formacao: "Doutor em Entomologia - EMBRAPA",
-            tema: "Manejo Integrado de Pragas"
+            nome: "Joselena Tavares",
+            foto: palestrantes3,
+            formacao: " Engenheira Agrônoma, Fiscal Estadual Agropecuário e Especialista em Agricultura Familiar. Atualmente é mestranda em Desenvolvimento Rural e Gestão de Empreendimentos Agroalimentares pelo Instituto Federal de Educação do Pará (IFPA).",
+            tema: "Empreendimentos agroalimentares de base familiar"
           },
           {
-            nome: "Dra. Juliana Mendes",
-            foto: "https://via.placeholder.com/150x150/84CC16/FFFFFF?text=Dra.+Juliana",
-            formacao: "Pós-doutora em Biologia - INPA",
-            tema: "Biodiversidade e Agricultura"
+            nome: "Raquel Silva e Sousa",
+            foto: palestrantes4,
+            formacao: "Raquel Silva e Sousa é Médica Veterinária formada pelo Centro Universitário do Norte – UNINORTE (2021) e pós-graduada em Clínica Médica de Pequenos Animais pela FAMESP (2024).Atua também na coordenação e organização de ligas acadêmicas e eventos científicos, como o I Simpósio Acadêmico de Medicina Veterinária – SAMVET/UNINORTE (2025).",
+            tema: "Biotecnologia da Reprodução Animal"
           }
         ]
       },
-      {
-        horario: "10:00 - 11:00",
-        palestrantes: [
-          {
-            nome: "Prof. Marcos Ferreira",
-            foto: "https://via.placeholder.com/150x150/F97316/FFFFFF?text=Prof.+Marcos",
-            formacao: "Professor Doutor - UFAM",
-            tema: "Agricultura Familiar"
-          },
-          {
-            nome: "Eng. Beatriz Nunes",
-            foto: "https://via.placeholder.com/150x150/A855F7/FFFFFF?text=Eng.+Beatriz",
-            formacao: "Engenheira Florestal - IFAM",
-            tema: "Sistemas Agroflorestais"
-          }
-        ]
-      },
-      {
-        horario: "14:00 - 15:00",
-        palestrantes: [
-          {
-            nome: "Dr. Ricardo Souza",
-            foto: "https://via.placeholder.com/150x150/14B8A6/FFFFFF?text=Dr.+Ricardo",
-            formacao: "Doutor em Economia Rural - UEA",
-            tema: "Mercado e Comercialização"
-          },
-          {
-            nome: "Dra. Camila Torres",
-            foto: "https://via.placeholder.com/150x150/F43F5E/FFFFFF?text=Dra.+Camila",
-            formacao: "Pós-doutora em Extensão Rural - UFAM",
-            tema: "Assistência Técnica"
-          }
-        ]
-      }
+      // {
+      //   horario: "10:00 - 11:00",
+      //   palestrantes: [
+      //     {
+      //       nome: "Prof. Marcos Ferreira",
+      //       foto: "https://via.placeholder.com/150x150/F97316/FFFFFF?text=Prof.+Marcos",
+      //       formacao: "Professor Doutor - UFAM",
+      //       tema: "Agricultura Familiar"
+      //     },
+      //     {
+      //       nome: "Eng. Beatriz Nunes",
+      //       foto: "https://via.placeholder.com/150x150/A855F7/FFFFFF?text=Eng.+Beatriz",
+      //       formacao: "Engenheira Florestal - IFAM",
+      //       tema: "Sistemas Agroflorestais"
+      //     }
+      //   ]
+      // },
+      // {
+      //   horario: "14:00 - 15:00",
+      //   palestrantes: [
+      //     {
+      //       nome: "Dr. Ricardo Souza",
+      //       foto: "https://via.placeholder.com/150x150/14B8A6/FFFFFF?text=Dr.+Ricardo",
+      //       formacao: "Doutor em Economia Rural - UEA",
+      //       tema: "Mercado e Comercialização"
+      //     },
+      //     {
+      //       nome: "Dra. Camila Torres",
+      //       foto: "https://via.placeholder.com/150x150/F43F5E/FFFFFF?text=Dra.+Camila",
+      //       formacao: "Pós-doutora em Extensão Rural - UFAM",
+      //       tema: "Assistência Técnica"
+      //     }
+      //   ]
+      // }
     ]
   };
 
   return (
-    <div className="palestrantes-container">
+    <div className="container">
       <h2>Palestrantes</h2>
       <p className="palestrantes-descricao">
         Conheça os renomados especialistas que irão compartilhar conhecimento e experiências 
