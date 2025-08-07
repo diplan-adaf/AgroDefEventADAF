@@ -61,9 +61,9 @@ export default function AgroAmazonasSite() {
           <Location className="flex-item" />
         </section>
 
-        <section id="palestrantes">
+        {/* <section id="palestrantes">
           <Palestrantes className="flex-item" />
-        </section>
+        </section> */}
 
         <div className="site-buttons">
           <a
@@ -87,13 +87,13 @@ export default function AgroAmazonasSite() {
 
         
 
-        <section id="collaborators">
+        {/* <section id="collaborators">
           <Collaborators className="flex-item" />
-        </section>
-
-        {/* <section>
-          <Carousel className="flex-item" images={stands} title="STANDS" />
         </section> */}
+
+        <section>
+          <Carousel className="flex-item" images={stands} title="STANDS" />
+        </section>
 
         <section>
           <Carousel className="flex-item" images={standsPlanta} title="POSIÇÃO DOS STANDS" />
