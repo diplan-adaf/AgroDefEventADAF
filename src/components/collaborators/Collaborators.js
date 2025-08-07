@@ -1,47 +1,129 @@
 import { useState } from "react";
 import "./collaborators.css";
 
-// Exemplo de dados dos stands
+import standImg1 from "../../assets/saida-1.svg";
+import standDiamante from "../../assets/saida-2.svg";
+import standOuro from "../../assets/saida-3.svg";
+import standPrata from "../../assets/saida-4.svg";
+import standBronze from "../../assets/saida-5.svg";
+import totem from "../../assets/saida-6.svg";
+import gastronomia from "../../assets/saida-7.svg";
+import pagamento from "../../assets/saida-8.svg";
+
+
 const stands = [
   {
     key: "diamante",
     title: "Stand Diamante",
-    img: require("../../assets/saida-2.svg"),
+    img: standDiamante,
     description:
-      "Espaço premium com localização privilegiada, estrutura completa e destaque na divulgação do evento.",
-    price: "R$ 10.000,00",
+      "Mobiliário Premium: (1 Mesa, 3 Cadeiras, 1 Balcão, 1 Sofá, 1 TV 50')",
+    benefits: [
+      "Entrevistas exclusivas ADAF",
+      "Podcast ao vivo",
+      "Postagens exclusivas nas redes sociais",
+      "Workshop exclusivo na programação oficial",
+      "Vídeo de 30 segundos no telão do Evento",
+      "10 convites VIP para coquetel/recepção de abertura",
+      "Entrevistas exclusivas ADAF",
+      "Podcast ao vivo",
+      "Postagens exclusivas nas redes sociais",
+      "Workshop exclusivo na programação oficial",
+      "Vídeo de 30 segundos no telão do Evento",
+      "10 convites VIP para coquetel/recepção de abertura",
+      "Workshop exclusivo na programação oficial",
+      "Vídeo de 30 segundos no telão do Evento",
+      "10 convites VIP para coquetel/recepção de abertura",
+    ],
+    size: "4m x 3m",
+    footage: "12",
+    price: "50.000,00",
   },
   {
     key: "ouro",
     title: "Stand Ouro",
-    img: require("../../assets/saida-3.svg"),
+    img: standOuro,
     description:
-      "Stand amplo, ótima visibilidade e benefícios exclusivos para expositores.",
-    price: "R$ 7.000,00",
+      "Inclusão de mobiliário básico: (1 Mesa, 2 Cadeiras, 1 Balcão e 1 Banqueta)",
+    benefits: [
+      "Localização estratégica, com bom fluxo",
+      "Logo em destaque médio em material promocional (site e telão do evento)",
+      "Divulgação em Redes Sociais e Marketing",
+      "Wi-fi",
+      "3 Credenciais",
+    ],
+    size: "4m x 3m",
+    footage: "12",
+    price: "20.000,00",
   },
   {
     key: "prata",
     title: "Stand Prata",
-    img: require("../../assets/saida-4.svg"),
+    img: standPrata,
     description:
-      "Espaço funcional, boa localização e excelente custo-benefício.",
-    price: "R$ 4.000,00",
+      "Inclusão de mobiliário padrão: (1 Mesa, 1 Cadeira, Balcão e 1 Banqueta)",
+    benefits: [
+      "Metragem Padrão. Localização em área secundária, porém bem localizada",
+      "Logo pequena em material promocional (site e rede sociais)",
+      "Divulgação em Redes Sociais e Marketing",
+      "Citação em Redes Sociais",
+      "Wi-fi",
+      "2 Credenciais"
+    ],
+    size: "3m x 3m",
+    footage: "9",
+    price: "10.000,00",
   },
   {
     key: "bronze",
     title: "Stand Bronze",
-    img: require("../../assets/saida-5.svg"),
-    description: "Stand compacto, ideal para pequenas empresas e startups.",
-    price: "R$ 2.000,00",
+    img: standBronze,
+    description:
+      "Inclusão de mobiliário padrão: (1 Mesa e 1 Cadeira)",
+    benefits: [
+      "Metragem Reduzida",
+      "Nome em lista de expositores no site",
+      "Citação em Redes Sociais",
+      "Wi-fi",
+      "2 Credenciais"
+    ],
+    size: "3m x 3m",
+    footage: "9",
+    price: "2.500,00",
   },
   {
     key: "totem",
     title: "Totem",
-    img: require("../../assets/saida-6.svg"),
+    img: totem,
     description:
-      "Totem personalizado para divulgação de marca em pontos estratégicos do evento.",
-    price: "R$ 800,00",
+      "Inclusão de mobiliário padrão: (1 Monitor 43' e 1 Cadeira)",
+    benefits: [
+      "Nome em lista de expositores no site.",
+      "Nome em lista de expositores no site",
+      "Citação em Redes Sociais",
+      "Wi-fi",
+      "2 Credenciais"
+    ],
+    size: "2m x 1m",
+    footage: "2",
+    price: "2.000,00",
   },
+  {
+    key: "gastronomia",
+    title: "Gastronomia",
+    img: gastronomia,
+    description:
+      "Inclusão de mobiliário na área externa: (Mesas e Cadeiras) e 1 Balcão na área interna",
+    benefits: [
+      "Nome em lista de expositores no site",
+      "Citação em Redes Sociais",
+      "Wi-fi",
+      "6 Credenciais"
+    ],
+    size: "3m x 3m",
+    footage: "9",
+    price: "10.000,00",
+  }
 ];
 
 export default function Collaborators() {
@@ -87,7 +169,21 @@ export default function Collaborators() {
           <div className="stand-info">
             <h3>{currentStand.title}</h3>
             <p>{currentStand.description}</p>
-            <span className="stand-price">{currentStand.price}</span>
+            <ul>
+              {currentStand.benefits ? (
+                currentStand.benefits.map((benefit, index) => (
+                  <li key={index}>{benefit}</li>
+                ))
+              ) : (
+                <li>Inclui: {currentStand.description}</li>
+              )}
+            </ul>
+            <div className="stand-description">
+              <span>Tamanho: {currentStand.size}</span>
+              <span>Metragem: {currentStand.footage} m²</span>
+              <span className="stand-price">Preço: R${currentStand.price}</span>
+            </div>
+            
           </div>
         </div>
       </section>
