@@ -24,8 +24,8 @@ export default function Header() {
         <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
           <a href="#event" onClick={closeMenu}>Evento</a>  
           <a href="#palestrantes" onClick={closeMenu}>Palestrantes</a>
-          <a href="#benefits" onClick={closeMenu}>Inscreva-se</a>
-          <a href="#collaborators" onClick={closeMenu}>Stands</a>
+          <a href="https://www.sympla.com.br/evento/agro-amazonas-defesa-agropecuaria/3060161" onClick={closeMenu} target="_blank">Inscreva-se</a>
+          <a href="#palestrantes" onClick={closeMenu}>Stands</a>
           <a href="#about" onClick={closeMenu}>Sobre nós</a>
         </div>
 

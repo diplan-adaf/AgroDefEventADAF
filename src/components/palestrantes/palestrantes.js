@@ -24,6 +24,18 @@ export default function Palestrantes() {
             foto: palestrantes2,
             formacao: "Possui Doutorado em Ciência Animal pela Universidade Federal do Pará (UFPA), Mestrado em Ciência e Tecnologia de Alimentos pela Universidade Federal do Pará (UFPA), MBA Executivo em Alta Gestão de IES pela Universidade da Amazônia (UNAMA)",
             tema: "Segurança dos Alimentos na Era da Sustentabilidade: Desafios e Oportunidades"
+          },
+          {
+            nome: "Joselena Tavares",
+            foto: palestrantes3,
+            formacao: " Engenheira Agrônoma, Fiscal Estadual Agropecuário e Especialista em Agricultura Familiar. Atualmente é mestranda em Desenvolvimento Rural e Gestão de Empreendimentos Agroalimentares pelo Instituto Federal de Educação do Pará (IFPA).",
+            tema: "Empreendimentos agroalimentares de base familiar"
+          },
+          {
+            nome: "Raquel Silva e Sousa",
+            foto: palestrantes4,
+            formacao: "Raquel Silva e Sousa é Médica Veterinária formada pelo Centro Universitário do Norte – UNINORTE (2021) e pós-graduada em Clínica Médica de Pequenos Animais pela FAMESP (2024).Atua também na coordenação e organização de ligas acadêmicas e eventos científicos, como o I Simpósio Acadêmico de Medicina Veterinária – SAMVET/UNINORTE (2025).",
+            tema: "Biotecnologia da Reprodução Animal"
           }
         ]
       },
@@ -127,10 +139,10 @@ export default function Palestrantes() {
         para o desenvolvimento do setor agropecuário na região.
       </p>
 
-      <h2>Cronograma</h2>
+      {/* <h2>Cronograma</h2> */}
       <div className="tabs-container">
         <div className="tabs">
-          <button 
+          {/* <button 
             className={`tab ${activeTab === "02-09" ? "active" : ""}`}
             onClick={() => setActiveTab("02-09")}
           >
@@ -141,14 +153,14 @@ export default function Palestrantes() {
             onClick={() => setActiveTab("03-09")}
           >
             03/09 - Segundo Dia
-          </button>
+          </button> */}
         </div>
 
         <div className="cronograma-content">
           {palestrantes[activeTab].map((sessao, index) => (
             <div key={index} className="sessao-palestra">
               <div className="horario">
-                <span className="horario-texto">{sessao.horario}</span>
+                {/* <span className="horario-texto">{sessao.horario}</span> */}
               </div>
               <div className="palestrantes-grid">
                 {sessao.palestrantes.map((palestrante, palestranteIndex) => (
@@ -162,7 +174,7 @@ export default function Palestrantes() {
                     <div className="palestrante-info">
                       <h3 className="palestrante-nome">{palestrante.nome}</h3>
                       <p className="palestrante-formacao">{palestrante.formacao}</p>
-                      <p className="palestrante-tema">{palestrante.tema}</p>
+                      {/* <p className="palestrante-tema">{palestrante.tema}</p> */}
                     </div>
                   </div>
                 ))}
