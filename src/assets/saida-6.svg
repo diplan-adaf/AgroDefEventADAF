@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="595.5pt" height="842.249979pt" viewBox="0 0 595.5 842.249979" version="1.1">
+=======
+<svg width="631" height="1042" viewBox="0 0 631 1042" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="631" height="1042" rx="75" fill="url(#pattern0_1158_798)"/>
+>>>>>>> lucas-dev-styling
 <defs>
 <g>
 <symbol overflow="visible" id="glyph0-0">
