@@ -60,6 +60,67 @@ html {
   padding: 0 1rem;
 }
 
+/* Tema escuro global */
+ body.dark-mode {
+  background: linear-gradient(to bottom, #181c1f, #23272b);
+  color: #e0e6ed;
+}
+/*
+body.dark-mode a {
+  color: #e0e6ed;
+}
+
+body.dark-mode .button-link,
+body.dark-mode .button-link-header {
+  background-color: #222e3a;
+  color: #e0e6ed;
+  border: 1px solid #8ecae6;
+}
+*/
+
+body.dark-mode h2 {
+  color: #fff !important;
+}
+
+body.dark-mode .container {
+  background-color: #053E2F ;
+}
+
+/*
+
+body.dark-mode .container,
+body.dark-mode .site-container {
+  background: transparent !important;
+}
+
+body.dark-mode .flex-item {
+  background: rgba(30, 34, 40, 0.7);
+  color: #e0e6ed;
+  border-radius: 12px;
+}
+
+body.dark-mode .site-header {
+  color: #e0e6ed !important;
+}
+
+body.dark-mode .site-header a {
+  color: #e0e6ed !important;
+}
+
+body.dark-mode .site-header a:hover {
+  color: #facc15 !important;
+}
+
+body.dark-mode .site-header .button-link-header {
+  background-color: #23272b;
+  color: #facc15;
+  border: 1px solid #facc15;
+}
+
+body.dark-mode .carousel-section {
+  background: transparent;
+} */
+
 /* Media queries globais */
 @media (max-width: 1200px) {
   .container {

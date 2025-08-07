@@ -105,7 +105,9 @@ select {
 
 /* Melhorias para modo escuro (se implementado no futuro) */
 @media (prefers-color-scheme: dark) {
-  /* Estilos para modo escuro podem ser adicionados aqui */
+  body{
+    color: white !important
+  }
 }
 
 /* Melhorias para impressão */
