@@ -58,7 +58,7 @@ export default function AgroAmazonasSite() {
         </section>
         
         <section id="location">
-          <Location className="flex-item" />
+          <Location className="flex-item"  />
         </section>
 
         {/* <section id="palestrantes">
