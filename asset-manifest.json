@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/AgroDefEventADAF/static/css/main.2fbb5734.css",
-    "main.js": "/AgroDefEventADAF/static/js/main.6908c51b.js",
+    "main.css": "/AgroDefEventADAF/static/css/main.46f4d3b6.css",
+    "main.js": "/AgroDefEventADAF/static/js/main.289de930.js",
     "static/js/453.c8b3b5c0.chunk.js": "/AgroDefEventADAF/static/js/453.c8b3b5c0.chunk.js",
     "static/media/velho.png": "/AgroDefEventADAF/static/media/velho.96df94b2d268a6484001.png",
     "static/media/planta-1.svg": "/AgroDefEventADAF/static/media/planta-1.3e2293f26fc119b5cffef450e10c2c4e.svg",
@@ -20,12 +20,12 @@
     "static/media/saida-8.svg": "/AgroDefEventADAF/static/media/saida-8.48de97f0e3dd571fec5b7005c2b5bca3.svg",
     "static/media/vascoVasques.jpg": "/AgroDefEventADAF/static/media/vascoVasques.ee2f9fdcccf4c70ff633.jpg",
     "index.html": "/AgroDefEventADAF/index.html",
-    "main.2fbb5734.css.map": "/AgroDefEventADAF/static/css/main.2fbb5734.css.map",
-    "main.6908c51b.js.map": "/AgroDefEventADAF/static/js/main.6908c51b.js.map",
+    "main.46f4d3b6.css.map": "/AgroDefEventADAF/static/css/main.46f4d3b6.css.map",
+    "main.289de930.js.map": "/AgroDefEventADAF/static/js/main.289de930.js.map",
     "453.c8b3b5c0.chunk.js.map": "/AgroDefEventADAF/static/js/453.c8b3b5c0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2fbb5734.css",
-    "static/js/main.6908c51b.js"
+    "static/css/main.46f4d3b6.css",
+    "static/js/main.289de930.js"
   ]
 }
