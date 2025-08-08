@@ -34,27 +34,27 @@
   border-radius: 2rem;
 }
 
-.hero-img a {
-  position: absolute;
-  bottom: 6rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  left: 65%;
-  padding: 0.5rem 1rem;
-  background-color: #AEC316;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 0.5rem;
-  font-weight: bold;
-  font-size: 1.3rem;
-  border-radius: 2rem;
+.instagram-hero {
+  position: absolute !important;
+  bottom: 6rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 1rem !important;
+  left: 65% !important;
+  padding: 0.5rem 1rem !important;
+  background-color: #AEC316 !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  border-radius: 0.5rem !important;
+  font-weight: bold !important;
+  font-size: 1.3rem !important;
+  border-radius: 2rem !important;
 }
 
-.hero-img a:hover  {
-  scale: 1.05;
-  transition: all 0.3s ease-in-out;
+.instagram-hero:hover  {
+  scale: 1.05 !important;
+  transition: all 0.3s ease-in-out !important;
 }
 
 

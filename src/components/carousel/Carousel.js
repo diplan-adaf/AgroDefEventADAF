@@ -66,7 +66,7 @@ export default function Carousel({ images, title }) {
     //   </div>
     // </div>
 
-    <Card className="carousel-section" title={title}>
+    <Card className="carousel-section" title={title} align={"center"}>
       <div className="carousel-container">
         <button className="carousel-arrow carousel-arrow-left" onClick={goToPrevious}>
           <span>‹</span>

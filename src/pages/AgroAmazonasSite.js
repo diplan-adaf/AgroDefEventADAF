@@ -1,14 +1,11 @@
 import Carousel from "../components/carousel/Carousel";
 import "./AgroAmazonasSite.css";
-import Feature from "../components/feature/Feature";
-import Benefits from "../components/benefits/Benefits";
 import Location from "../components/location/Location";
-import About from "../components/aboutUs/about";
 import Layout from "../components/Layout";
 import Hero from "../components/hero/Hero";
-import Content from "../components/content/Content";
 import Palestrantes from "../components/palestrantes/palestrantes";
 import Collaborators from "../components/collaborators/Collaborators";
+import Button from "../components/button/Button";
 import Card from "../components/card/Card";
 import { Instagram } from "lucide-react";
 
@@ -85,22 +82,10 @@ export default function AgroAmazonasSite() {
         </section>
 
         <div className="site-buttons">
-          <a
-            href="https://www.sympla.com.br/evento/agro-amazonas-defesa-agropecuaria/3060161"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="button-link"
-          >
-            Inscreva-se (Sympla)
-          </a>
-          <a
-            href="https://www.instagram.com/agro_defesa_evento/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="button-link instagram"
-          >
-            <Instagram className="icon" /> Instagram
-          </a>
+          <Button text={"Inscreva-se (Simpla)"} ref={"https://www.sympla.com.br/evento/agro-amazonas-defesa-agropecuaria/3060161"}></Button>
+          <Button text={"Instagram"} ref={"https://www.instagram.com/agro_defesa_evento/"} cls={"instagram"}>
+            <Instagram className="icon" />
+          </Button>
 
         </div>
 
@@ -118,15 +103,7 @@ export default function AgroAmazonasSite() {
           <Carousel className="flex-item" images={standsPlanta} title="POSIÇÃO DOS STANDS" />
         </section>
 
-        <a
-            href="https://forms.gle/fp6bfcybtcYaoTKo8"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="button-link"
-            id="button-stand"
-          >
-            Garanta seu Stand
-        </a>
+        <Button text={"Garanta seu Stand"} ref={"https://forms.gle/fp6bfcybtcYaoTKo8"} cls={"button-stand"}></Button>
 
         <section id="about">
           <Card title="SOBRE NÓS">
