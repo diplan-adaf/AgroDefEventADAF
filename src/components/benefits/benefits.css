@@ -68,68 +68,6 @@
   box-shadow: 0 4px 16px rgba(250, 204, 21, 0.3);
 }
 
-.site-buttons {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  position: relative;
-  z-index: 1;
-}
-
-.button-link {
-  background: linear-gradient(135deg, #facc15 0%, #fde047 100%);
-  color: #1f2937;
-  font-weight: 700;
-  font-size: 1.125rem;
-  padding: 1rem 2rem;
-  border-radius: 50px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  box-shadow: 0 8px 20px rgba(250, 204, 21, 0.3);
-  border: 2px solid transparent;
-  position: relative;
-  overflow: hidden;
-}
-
-.button-link::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-  transition: left 0.5s ease;
-}
-
-.button-link:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 30px rgba(250, 204, 21, 0.4);
-  border-color: #f59e0b;
-}
-
-.button-link:hover::before {
-  left: 100%;
-}
-
-.instagram {
-  background: linear-gradient(135deg, #e91e63 0%, #f06292 100%);
-  box-shadow: 0 8px 20px rgba(233, 30, 99, 0.3);
-}
-
-.instagram:hover {
-  box-shadow: 0 12px 30px rgba(233, 30, 99, 0.4);
-  border-color: #c2185b;
-}
-
-.instagram .icon {
-  color: #ffffff;
-}
 
 /* Responsividade para tablets */
 @media (max-width: 768px) {

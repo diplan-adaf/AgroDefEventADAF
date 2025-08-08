@@ -9,6 +9,7 @@ import Hero from "../components/hero/Hero";
 import Content from "../components/content/Content";
 import Palestrantes from "../components/palestrantes/palestrantes";
 import Collaborators from "../components/collaborators/Collaborators";
+import Card from "../components/card/Card";
 import { Instagram } from "lucide-react";
 
 import standImg1 from "../assets/saida-1.svg";
@@ -45,16 +46,34 @@ export default function AgroAmazonasSite() {
       <Layout>
         <Hero className="flex-item" />
         <section id="event">
-          <Feature className="flex-item" />
+          <Card title="AGRO AMAZONAS">
+            <p>Uma grande celebração da agricultura e da segurança alimentar no nosso estado. Organizado pela ADAF – Agência de Defesa Agropecuária e Florestal do Amazonas, o evento mostra como a produção rural pode crescer com qualidade, saúde e respeito ao meio ambiente.</p>
+            <p>Vamos falar sobre como garantir que o alimento que chega à sua mesa seja seguro, valorizando a produção local e abrindo novas oportunidades para quem trabalha no campo.</p>
+          </Card>
         </section>
 
 
         <section id="benefits">
-          <Benefits className="flex-item" />
+          <Card title="O QUE OFERECEMOS?" align={"center"}>
+            <div className="benefits-card">
+              <ul>
+                <li>Palestras, workshops e talk shows com mais de 40 especialistas</li>
+                <li>Área gastronômica com produtos regionais.</li>
+                <li>Espaço para negócios, oportunidades e parcerias.</li>
+                <li>Estandes de instituições de pesquisa como EMBRAPA, INPA, UFAM, IFAM e UEA.</li>
+                <li>Acesso a informações sobre inspeção sanitária, exportação, uso de agrotóxicos, prevenção de doenças como  febre aftosa e muito mais!</li>
+              </ul>
+            </div>
+          </Card>
         </section>
 
+
+
+
         <section>
-          <Content className="flex-item" />
+          <Card title="TEMAS ABORDADOS">
+            <p>O AGROAMAZONAS & DEFESA AGROPECUÁRIA para promover temas essenciais como segurança alimentar, sanidade animal e vegetal, educação sanitária, controle de agrotóxicos, prevenção de zoonoses e pragas quarentenárias, além da regularização de abatedouros e o uso de novas tecnologias aplicadas ao setor agropecuário. O evento também valoriza experiências de instituições como EMBRAPA, UFAM e IFAM, fortalecendo a integração entre ciência, produção e saúde pública. Além disso, incentiva o financiamento e o empreendedorismo por meio de parceiros como SEBRAE e APEX Brasil. A programação integra múltiplas frentes estratégicas e marca, de forma especial, a celebração dos 13 anos da Agência de Defesa Agropecuária do Amazonas.</p>
+          </Card>
         </section>
         
         <section id="location">
@@ -110,7 +129,9 @@ export default function AgroAmazonasSite() {
         </a>
 
         <section id="about">
-          <About className="flex-item" />
+          <Card title="SOBRE NÓS">
+            <p>A ADAF (Agência de Defesa Agropecuária e Florestal do Estado do Amazonas) é o órgão responsável por proteger a saúde animal, vegetal e a qualidade dos alimentos produzidos no estado. Atua na fiscalização, inspeção e controle sanitário da produção agropecuária, garantindo alimentos seguros, promovendo o desenvolvimento rural sustentável e contribuindo para a saúde pública e a economia do Amazonas.</p>
+          </Card>
         </section>
       </Layout>
     </div>

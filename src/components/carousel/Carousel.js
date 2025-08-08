@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import "./carousel.css";
+import Card from "../card/Card";
 
-export default function Carousel({ images, title = "STANDS" }) {
+export default function Carousel({ images, title }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlay, setIsAutoPlay] = useState(true);
 
@@ -37,15 +38,44 @@ export default function Carousel({ images, title = "STANDS" }) {
   };
 
   return (
-    <div className="carousel-section">
-      <h2>{title}</h2>
+    // <div className="carousel-section">
+    //   <h2>{title}</h2>
+    //   <div className="carousel-container">
+    //     <button className="carousel-arrow carousel-arrow-left" onClick={goToPrevious}>
+    //       <span>‹</span>
+    //     </button>
+    //     <button className="carousel-arrow carousel-arrow-right" onClick={goToNext}>
+    //       <span>›</span>
+    //     </button>
+    //     <div className="carousel-slide">
+    //       <img
+    //         src={images[currentIndex].src}
+    //         alt={images[currentIndex].alt}
+    //         className="carousel-img"
+    //       />
+    //     </div>
+    //     <div className="carousel-indicators">
+    //       {images.map((_, index) => (
+    //         <button
+    //           key={index}
+    //           className={`carousel-indicator ${index === currentIndex ? 'active' : ''}`}
+    //           onClick={() => handleIndicatorClick(index)}
+    //         />
+    //       ))}
+    //     </div>
+    //   </div>
+    // </div>
+
+    <Card className="carousel-section" title={title}>
       <div className="carousel-container">
         <button className="carousel-arrow carousel-arrow-left" onClick={goToPrevious}>
           <span>‹</span>
         </button>
+
         <button className="carousel-arrow carousel-arrow-right" onClick={goToNext}>
           <span>›</span>
         </button>
+
         <div className="carousel-slide">
           <img
             src={images[currentIndex].src}
@@ -53,6 +83,7 @@ export default function Carousel({ images, title = "STANDS" }) {
             className="carousel-img"
           />
         </div>
+
         <div className="carousel-indicators">
           {images.map((_, index) => (
             <button
@@ -63,6 +94,7 @@ export default function Carousel({ images, title = "STANDS" }) {
           ))}
         </div>
       </div>
-    </div>
+    </Card>
+
   );
 }

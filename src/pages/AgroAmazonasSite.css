@@ -2,71 +2,18 @@
   width: 100%;
   overflow-x: hidden;
   background: #f4f4f4 !important;
-  color: #4d4d4d;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-h2 {
-  font-size: 2rem;
-  font-weight: 800;
-  color: #1e293b;
-  text-align: center;
-  margin-bottom: 3rem;
-  position: relative;
-  z-index: 1;
-  background: linear-gradient(135deg, #1e293b 0%, #475569 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-p, span {
-    font-size: 1.2rem;
-  line-height: 1.8;
-  color: #475569;
-  text-align: justify;
-  width: 100%;
-  margin-bottom: 1rem;
-  position: relative;
-  z-index: 1;
-  font-weight: 400;
-  letter-spacing: 0.025em;
-}
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 6rem auto;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  padding: 2rem 2rem 6rem 2rem;
-  background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
-  position: relative;
-  overflow: hidden;
-  border-radius: 1rem;
-  border-radius: 1rem;
-  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
-}
 
 .flex-item {
   width: 100%;
   padding: 1rem;
 }
 
-.carousel-section {
-  margin-top: 2rem;
-  padding: 0 1rem;
-}
-
-
-.site-buttons{
-  margin-bottom: 4rem;
-}
 
 #button-stand {
   width: 40% !important;
@@ -75,7 +22,157 @@ p, span {
   margin: 0 auto 6rem auto;
 }
 
-/* Responsividade para notebooks */
+
+.site-buttons {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.button-link {
+  background: linear-gradient(135deg, #facc15 0%, #fde047 100%);
+  color: #1f2937;
+  font-weight: 700;
+  font-size: 1.125rem;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: 0 8px 20px rgba(250, 204, 21, 0.3);
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.button-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.button-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(250, 204, 21, 0.4);
+  border-color: #f59e0b;
+}
+
+.button-link:hover::before {
+  left: 100%;
+}
+
+.instagram {
+  background: linear-gradient(135deg, #e91e63 0%, #f06292 100%);
+  box-shadow: 0 8px 20px rgba(233, 30, 99, 0.3);
+}
+
+.instagram:hover {
+  box-shadow: 0 12px 30px rgba(233, 30, 99, 0.4);
+  border-color: #c2185b;
+}
+
+.instagram .icon {
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+.benefits-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 3rem 1rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.benefits-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.benefits-card li {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #374151;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-radius: 12px;
+  border-left: 4px solid #facc15;
+  position: relative;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.benefits-card li::before {
+  content: '✓';
+  position: absolute;
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #facc15;
+  color: #1f2937;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.benefits-card li:hover {
+  transform: translateX(8px);
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  box-shadow: 0 4px 16px rgba(250, 204, 21, 0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1200px) {
   .flex-item {
     padding: 0.75rem;
@@ -95,6 +192,10 @@ p, span {
   .carousel-section {
     padding: 0 0.5rem;
     margin-top: 1.5rem;
+  }
+
+  .container{
+    width: 95%
   }
 }
 
@@ -119,4 +220,9 @@ p, span {
     text-align: center ;
     margin: 0 auto 2rem auto;
   }
+}
+
+
+@media (max-width: 360px) {
+
 }
