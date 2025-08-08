@@ -17,7 +17,6 @@ code {
 body {
   font-family: 'Inter', sans-serif;
   background: linear-gradient(to bottom, #065f46, #34d399);
-  color: white;
   min-height: 100vh;
   margin: 0;
   padding: 0;
@@ -62,7 +61,7 @@ html {
 
 /* Tema escuro global */
  body.dark-mode {
-  background: linear-gradient(to bottom, #181c1f, #23272b);
+  
   color: #e0e6ed;
 }
 /*
@@ -78,9 +77,9 @@ body.dark-mode .button-link-header {
 }
 */
 
-body.dark-mode h2 {
+/* body.dark-mode h2 {
   color: #fff !important;
-}
+} */
 
 body.dark-mode .container {
   background-color: #053E2F ;
