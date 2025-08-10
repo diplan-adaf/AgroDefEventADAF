@@ -3,8 +3,18 @@ import "../components/palestrantes/palestrantes.css";
 import "./PalestrantesPage.css";
 import brunoHenrique from "../assets/brunoHenrique.JPG";
 import joselenaTavares from "../assets/JoselenaTavares.jpeg";
-import pauloRoberto from "../assets/pauloRoberto.jpeg";
 import raquelSilva from "../assets/raquelSilva.jpeg";
+import anaMariaNobrega from "../assets/anaMariaNobrega.png"
+import franciscoLoureco from "../assets/franciscoLourenco.png"
+import geraldo from "../assets/geraldo.png"
+import glauco from "../assets/glauco.png"
+import guilhermeSouza from "../assets/guilhermeSouza.png"
+import michelSilva from "../assets/michelSilva.png"
+import sivandro from "../assets/sivandro.png"
+import wilson from "../assets/wilson.png"
+import avatar from "../assets/avatarPlaceholder.jpg"
+
+
 import Layout from "../components/Layout";
 
 export default function PalestrantesPage() {
@@ -17,13 +27,13 @@ const palestrantes = {
       palestrantes: [
         {
           nome: "Ludimila Saboya",
-          foto: pauloRoberto,
+          foto: avatar,
           tema: "A definir",
           sala: "Sala 4"
         },
         {
           nome: "Sivandro Campos",
-          foto: pauloRoberto,
+          foto: sivandro,
           tema: "Panorama da Monilíase no Estado do Amazonas",
           sala: "Sala 2"
         }
@@ -40,7 +50,7 @@ const palestrantes = {
         },
         {
           nome: "André Dupadro",
-          foto: pauloRoberto,
+          foto: avatar,
           tema: "Da granja à mesa: fatores para se obter um ovo",
           sala: "Sala 4"
         }
@@ -51,7 +61,7 @@ const palestrantes = {
       palestrantes: [
         {
           nome: "Guilherme Silva Rodrigues",
-          foto: pauloRoberto,
+          foto: guilhermeSouza,
           tema: "Ações de Controle a Mosca da Carambola em Roraima (impactos na fruticultura)",
           sala: "Sala 2"
         }
@@ -62,7 +72,7 @@ const palestrantes = {
       palestrantes: [
         {
           nome: "François Vieira da Silva Matos",
-          foto: pauloRoberto,
+          foto: avatar,
           tema: "Sistema gerenciamento em áreas Protegidas",
           sala: "Palco Principal"
         }
@@ -73,19 +83,19 @@ const palestrantes = {
       palestrantes: [
         {
           nome: "Adriana Aguiar Oliveira",
-          foto: pauloRoberto,
+          foto: avatar,
           tema: "Panorama do SISBI no Brasil",
           sala: "Sala 4"
         },
         {
           nome: "Ana Maria Nóbrega",
-          foto: pauloRoberto,
+          foto: anaMariaNobrega,
           tema: "Projeto Sanitarista Mirim - Roraima",
           sala: "Sala 2"
         },
         {
           nome: "Cláudio Silva",
-          foto: pauloRoberto,
+          foto: avatar,
           tema: "Boas práticas na Aplicação de Agrotóxicos",
           sala: "Sala 1"
         }
@@ -102,7 +112,7 @@ const palestrantes = {
         },
         {
           nome: "Wilson da Silva Moraes",
-          foto: pauloRoberto,
+          foto: wilson,
           tema: "Ações do Plano Nacional de Prevenção e Vigilância da Fusariose da Bananeira - Raça 4 Tropical ( FOC R4T)",
           sala: "Sala 2"
         }
@@ -113,7 +123,7 @@ const palestrantes = {
       palestrantes: [
         {
           nome: "Fernando Rodrigues da Silva",
-          foto: pauloRoberto,
+          foto: avatar,
           tema: "Avaliação nas Linhas de Inspeção de Abatedouro",
           sala: "A definir"
         }
@@ -124,7 +134,7 @@ const palestrantes = {
       palestrantes: [
         {
           nome: "Airton Reis de Jesus",
-          foto: pauloRoberto,
+          foto: avatar,
           tema: "Cadeia Produtiva da Carne no Amazonas",
           sala: "A definir"
         }
@@ -137,13 +147,13 @@ const palestrantes = {
       palestrantes: [
         {
           nome: "Fredson",
-          foto: pauloRoberto,
+          foto: avatar,
           tema: "Recolhimento de embalagens",
           sala: "Sala 1"
         },
         {
           nome: "Paulo Barreto",
-          foto: pauloRoberto,
+          foto: avatar,
           tema: "Sala de Classificação de ovos: cuidados, higienização, manutenção e calibração das maquinas de classificação",
           sala: "Sala 4"
         }
@@ -154,19 +164,19 @@ const palestrantes = {
       palestrantes: [
         {
           nome: "Raiane Áila",
-          foto: pauloRoberto,
+          foto: avatar,
           tema: "Populações expostas aos agrotóxicos",
           sala: "Sala 1"
         },
         {
           nome: "Ana Flávia Amâncio",
-          foto: pauloRoberto,
+          foto: avatar,
           tema: "Boas práticas de manipulação de alimentos",
           sala: "Sala 4"
         },
         {
           nome: "Glauco Antonio Teixeira",
-          foto: pauloRoberto,
+          foto: glauco,
           tema: "Programa Nacional de Prevenção da Vassoura-de-Bruxa da Mandioca",
           sala: "Sala 2"
         }
@@ -176,20 +186,20 @@ const palestrantes = {
       horario: "14:00",
       palestrantes: [
         {
-          nome: "Michaell",
-          foto: pauloRoberto,
+          nome: "Michaell Silva",
+          foto: michelSilva,
           tema: "Receituário agronômico, Cadastro de produtos, e Registro de estabelecimentos",
           sala: "Sala 1"
         },
         {
           nome: "Aloisio de Souza Sabença",
-          foto: pauloRoberto,
+          foto: avatar,
           tema: "A definir",
           sala: "Sala 4"
         },
         {
           nome: "Geraldo Souza Costa",
-          foto: pauloRoberto,
+          foto: geraldo,
           tema: "Beneficiamento primário do cacau",
           sala: "Sala 2"
         }
@@ -200,19 +210,19 @@ const palestrantes = {
       palestrantes: [
         {
           nome: "Silvana",
-          foto: pauloRoberto,
+          foto: avatar,
           tema: "Licenciamento de Estabelecimento de comercio de agrotóxicos",
           sala: "Sala 1"
         },
         {
           nome: "Ana Elisa Almeida",
-          foto: pauloRoberto,
+          foto: avatar,
           tema: "A definir",
           sala: "Sala 4"
         },
         {
           nome: "Paulo Sérgio",
-          foto: pauloRoberto,
+          foto: avatar,
           tema: "A Atuação Prática do Acadêmico de Medicina Veterinária no Amazonas",
           sala: "Sala 3"
         },
@@ -229,7 +239,7 @@ const palestrantes = {
       palestrantes: [
         {
           nome: "Josélio Andrade Moura",
-          foto: pauloRoberto,
+          foto: avatar,
           tema: "A definir",
           sala: "Sala 4"
         }
@@ -240,7 +250,7 @@ const palestrantes = {
       palestrantes: [
         {
           nome: "Diogo Lima",
-          foto: pauloRoberto,
+          foto: avatar,
           tema: "Experiencia de abate de Jacaré no Mamirawá",
           sala: "Sala 4"
         }
@@ -294,7 +304,7 @@ const palestrantes = {
                         </div>
                         <div className="palestrante-info">
                           <h3 className="palestrante-nome">{palestrante.nome}</h3>
-                          <p className="palestrante-tema"><strong>Tema:</strong>{palestrante.tema}</p>
+                          <p className="palestrante-tema"><strong>Tema:</strong> {palestrante.tema}</p>
                           <p className="palestrante-sala">
                             <span className="sala-badge">{palestrante.sala}</span>
                           </p>

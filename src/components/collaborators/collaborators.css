@@ -1,5 +1,5 @@
 .collaborators-container {
-  width: 100%;
+  width: 95%;
   max-width: 1400px;
   margin: 4rem auto;
   padding: 4rem 2rem;
@@ -24,7 +24,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 2rem;
   margin-bottom: 4rem;
 }
 
@@ -47,6 +46,7 @@
   font-size: 1.5rem;
   font-weight: 500;
   opacity: 0.9;
+  color: #fff
 }
 
 .collaborators-header {
@@ -69,7 +69,7 @@
   font-size: 1.2rem;
   color: #64748b;
   line-height: 1.7;
-  max-width: 900px;
+  max-width: 900px !important;
   margin: 0 auto;
 }
 
@@ -201,13 +201,6 @@
   margin: 0;
 }
 
-.stand-description{
-  display: flex;
-  flex-direction: column;
-  
-}
-
-
 .stand-price {
   font-size: 1.5rem;
   font-weight: 700;
@@ -285,6 +278,7 @@
   font-weight: bold;
   font-size: 1.1rem;
   margin-top: 0.1rem;
+  width: auto;
 }
 
 .contact-button {
@@ -300,6 +294,19 @@
   box-shadow: 0 4px 12px rgba(250, 204, 21, 0.3);
   margin-top: 1rem;
 }
+
+.contact-button a {
+    color: inherit;
+  text-decoration: none;
+  font: inherit;
+  background: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-shadow: none;
+} 
+
 
 .contact-button:hover {
   transform: translateY(-2px);
@@ -365,7 +372,7 @@
   }
   
   .stand-tab {
-    padding: 0.75rem 1.25rem;
+    padding: 1rem 1.5rem;
     font-size: 0.95rem;
   }
   
@@ -429,7 +436,7 @@
   }
   
   .stand-tab {
-    padding: 0.6rem 1rem;
+    padding: 1rem 1.5rem;
     font-size: 0.9rem;
     border-radius: 1.5rem;
   }
@@ -438,17 +445,33 @@
     padding: 1.5rem;
   }
   
+  .stand-specs {
+    flex-direction: column;
+    gap: 0.125rem;
+  }
+
+
   .stand-header h3 {
     font-size: 1.5rem;
   }
   
+  .stand-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
   .stand-price {
     font-size: 1.25rem;
     padding: 0.5rem 1rem;
   }
   
   .contact-button {
-    padding: 0.875rem 1.5rem;
+    padding: 1rem 2rem;
     font-size: 1rem;
+  }
+
+  .stand-benefits {
+    margin-top: 0;
   }
 }

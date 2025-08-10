@@ -218,7 +218,7 @@ export default function Collaborators() {
               </div>
               
               <button className="contact-button">
-                Garantir meu Stand
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5T-Ro6g8HNd3Oy123ftLnpVxbETyXdDa3V8vAMf3EhWth8A/viewform" target="_blank">Garantir meu Stand</a>
               </button>
             </div>
           </div>

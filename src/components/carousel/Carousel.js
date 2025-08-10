@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import "./carousel.css";
-import Card from "../card/Card";
 
-export default function Carousel({ images, title }) {
+export default function Carousel({ images, title = "STANDS" }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlay, setIsAutoPlay] = useState(true);
 
@@ -13,7 +12,7 @@ export default function Carousel({ images, title }) {
       setCurrentIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 6000);
+    }, 4500);
 
     return () => clearInterval(interval);
   }, [images.length, isAutoPlay]);
@@ -38,40 +37,12 @@ export default function Carousel({ images, title }) {
   };
 
   return (
-    // <div className="carousel-section">
-    //   <h2>{title}</h2>
-    //   <div className="carousel-container">
-    //     <button className="carousel-arrow carousel-arrow-left" onClick={goToPrevious}>
-    //       <span>‹</span>
-    //     </button>
-    //     <button className="carousel-arrow carousel-arrow-right" onClick={goToNext}>
-    //       <span>›</span>
-    //     </button>
-    //     <div className="carousel-slide">
-    //       <img
-    //         src={images[currentIndex].src}
-    //         alt={images[currentIndex].alt}
-    //         className="carousel-img"
-    //       />
-    //     </div>
-    //     <div className="carousel-indicators">
-    //       {images.map((_, index) => (
-    //         <button
-    //           key={index}
-    //           className={`carousel-indicator ${index === currentIndex ? 'active' : ''}`}
-    //           onClick={() => handleIndicatorClick(index)}
-    //         />
-    //       ))}
-    //     </div>
-    //   </div>
-    // </div>
-
-    <Card className="carousel-section" title={title} align={"center"}>
+    <div className="carousel-section">
+      <h2>{title}</h2>
       <div className="carousel-container">
         <button className="carousel-arrow carousel-arrow-left" onClick={goToPrevious}>
           <span>‹</span>
         </button>
-
         <button className="carousel-arrow carousel-arrow-right" onClick={goToNext}>
           <span>›</span>
         </button>
@@ -115,7 +86,6 @@ export default function Carousel({ images, title }) {
           ))}
         </div>
       </div>
-    </Card>
-
+    </div>
   );
 }

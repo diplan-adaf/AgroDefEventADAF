@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./palestrantes.css";
-import palestrantes1 from "../../assets/pauloRoberto.jpeg";
 import palestrantes2 from "../../assets/brunoHenrique.JPG";
-import palestrantes3 from "../../assets/JoselenaTavares.jpeg";
-import palestrantes4 from "../../assets/raquelSilva.jpeg";
+import avatarPlaceHolder from "../../assets/avatarPlaceholder.jpg"
+
+
 import { Link } from "react-router-dom";
 
 export default function Palestrantes() {
@@ -16,7 +16,7 @@ export default function Palestrantes() {
         palestrantes: [
           {
             nome: "François Vieira da Silva Matos",
-            foto: palestrantes4,
+            foto: avatarPlaceHolder,
             tema: "Sistema gerenciamento em áreas Protegidas",
             sala: "Palco Principal"
           },
@@ -76,11 +76,11 @@ export default function Palestrantes() {
               to="/palestrantes" 
               style={{
                 display: 'inline-block',
-                padding: '12px 24px',
+                padding: '1rem 2rem',
                 backgroundColor: '#059669',
                 color: 'white',
                 textDecoration: 'none',
-                borderRadius: '8px',
+                borderRadius: '50px',
                 fontWeight: '600',
                 transition: 'background-color 0.3s'
               }}

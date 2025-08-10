@@ -156,9 +156,9 @@ export default function AgroAmazonasSite() {
           <Collaborators className="flex-item" />
         </section>
 
-        <section>
+        {/* <section>
           <Carousel className="flex-item" images={stands} title="NÍVEIS" />
-        </section>
+        </section> */}
 
         <section>
           <Carousel className="flex-item" images={stands} title="STANDS" />
@@ -166,6 +166,12 @@ export default function AgroAmazonasSite() {
 
         <section>
           <Carousel className="flex-item" images={standsPlanta} title="POSIÇÃO DOS STANDS" />
+        </section>
+
+        <section id="about">
+          <Card title={"SOBRE NÓS"}>
+            <p> <strong>A ADAF - Agência de Defesa Agropecuária e Florestal do Estado do Amazonas</strong> é o órgão responsável por proteger a saúde animal, vegetal e a qualidade dos alimentos produzidos no estado. Atua na fiscalização, inspeção e controle sanitário da produção agropecuária, garantindo alimentos seguros, promovendo o desenvolvimento rural sustentável e contribuindo para a saúde pública e a economia do Amazonas.</p>
+          </Card>
         </section>
 
       </Layout>

@@ -2,7 +2,7 @@ import { Instagram, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
-import adaf from "../../assets/adaf.png";
+import adaf from "../../assets/triade.png";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -26,7 +26,7 @@ export default function Header() {
           <Link to={"/"} onClick={closeMenu}>Evento</Link>  
           <Link to="/palestrantes" onClick={closeMenu}>Palestrantes</Link>
           <a href="https://www.sympla.com.br/evento/agro-amazonas-defesa-agropecuaria/3060161" onClick={closeMenu} target="_blank">Inscreva-se</a>
-          <a href="#stands" onClick={closeMenu}>Stands</a>
+          <a href="#collaborators" onClick={closeMenu}>Stands</a>
           <a href="#about" onClick={closeMenu}>Sobre nós</a>
         </div>
 
