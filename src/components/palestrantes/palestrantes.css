@@ -12,9 +12,11 @@
 }
 
 /* Tabs */
-.tabs-container {
+.cronograma-container {
   width: 100%;
   max-width: 1000px;
+  display: flex;
+  justify-content: center;
 }
 
 .tabs {
@@ -104,6 +106,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  position: relative;
 }
 
 .palestrante-card:hover {
@@ -159,6 +162,32 @@
   background: rgba(250, 204, 21, 0.2);
   border-radius: 8px;
   line-height: 1.4;
+}
+
+.sala-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #059669, #10b981);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.sala-badge:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.palestrante-sala {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  margin: 0;
 }
 
 /* Responsividade para tablets */

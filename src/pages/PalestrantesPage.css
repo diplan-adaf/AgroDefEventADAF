@@ -1,0 +1,70 @@
+.page-title {
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.horario-sessao {
+  background: linear-gradient(135deg, #059669, #10b981);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.horario-titulo {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.palestrante-sala {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  margin: 0;
+  width: auto;
+}
+
+.sala-badge {
+  display: inline-block;
+  background-color:  #10b981;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+
+.palestrante-card {
+  position: relative;
+}
+
+.palestrante-tema {
+  color: #374151;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .horario-sessao {
+    padding: 0.75rem 1rem;
+  }
+  
+  .horario-titulo {
+    font-size: 1.25rem;
+  }
+} 

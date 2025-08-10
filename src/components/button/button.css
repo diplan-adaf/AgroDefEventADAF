@@ -2,8 +2,9 @@
   background: linear-gradient(135deg, #facc15 0%, #fde047 100%);
   color: #1f2937;
   font-weight: 700;
+  width: 60%;
   font-size: 1.125rem;
-  padding: 1rem 2rem;
+  padding: 2rem;
   border-radius: 50px;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -15,6 +16,8 @@
   position: relative;
   overflow: hidden;
 }
+
+
 
 .button-link::before {
   content: '';
@@ -36,6 +39,5 @@
 .button-link:hover::before {
   left: 100%;
 }
-
 
 

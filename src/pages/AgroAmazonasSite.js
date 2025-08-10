@@ -8,6 +8,7 @@ import Collaborators from "../components/collaborators/Collaborators";
 import Button from "../components/button/Button";
 import Card from "../components/card/Card";
 import { Instagram } from "lucide-react";
+import { Link } from "react-router-dom";
 
 import standImg1 from "../assets/saida-1.svg";
 import standImg2 from "../assets/saida-2.svg";

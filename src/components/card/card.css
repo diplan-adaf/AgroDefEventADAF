@@ -1,5 +1,5 @@
 .container {
-  width: 100%;
+  width: 95%;
   max-width: 1200px;
   margin: 6rem auto;
   display: flex;
@@ -15,5 +15,21 @@
 }
 
 .content {
-  width: 100%
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+@media(min-width: 576px){}
+
+
+@media(min-width: 768px){}
+
+
+@media(min-width: 992px){}
+
+@media(min-width: 1200px){
+
 }

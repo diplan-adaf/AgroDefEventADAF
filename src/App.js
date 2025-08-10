@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AgroAmazonasSite from "./pages/AgroAmazonasSite.js";
+import PalestrantesPage from "./pages/PalestrantesPage.js";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -30,7 +32,14 @@ function App() {
     }
   }, [isDarkMode]);
 
-  return <AgroAmazonasSite />;
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<AgroAmazonasSite />} />
+        <Route path="/palestrantes" element={<PalestrantesPage />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
