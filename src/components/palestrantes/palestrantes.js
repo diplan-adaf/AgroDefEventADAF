@@ -5,6 +5,7 @@ import avatarPlaceHolder from "../../assets/avatarPlaceholder.jpg"
 
 
 import { Link } from "react-router-dom";
+import Card from "../card/Card";
 
 export default function Palestrantes() {
   const [activeTab, setActiveTab] = useState("02-09");
@@ -32,9 +33,8 @@ export default function Palestrantes() {
   };
 
   return (
-    <div className="container">
-      <h2>Palestrantes</h2>
-      <p className="palestrantes-descricao">
+    <Card title={"Palestrantes"}>
+      <p>
         Conheça os renomados especialistas que irão compartilhar conhecimento e experiências 
         sobre defesa agropecuária, inovação tecnológica e sustentabilidade na agricultura amazônica. 
         Nossos palestrantes são referências em suas áreas de atuação, trazendo insights valiosos 
@@ -91,6 +91,8 @@ export default function Palestrantes() {
           </Link>
         </div>
       </div>
-    </div>
+
+
+    </Card>
   );
 } 

@@ -201,4 +201,27 @@
 
 @media(min-width: 1200px){
 
+
+  .hero-img span{
+    bottom: 25%;
+    left: 65%;
+  }
+
+  .instagram-hero{
+    left: 65% !important;
+    bottom: 15% !important;
+  }
+}
+
+
+@media(min-width: 1440px){
+
+  .hero-img img {
+    width: 650px;
+  }
+
+  .hero-img span{
+    font-size: 1.5rem;
+  }
+
 }

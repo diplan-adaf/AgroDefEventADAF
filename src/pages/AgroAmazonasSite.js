@@ -105,8 +105,10 @@ export default function AgroAmazonasSite() {
         <Hero className="flex-item" />
         <section id="event">
           <Card title="AGRO AMAZONAS">
-            <p>Uma grande celebração da agricultura e da segurança alimentar no nosso estado. Organizado pela ADAF – Agência de Defesa Agropecuária e Florestal do Amazonas, o evento mostra como a produção rural pode crescer com qualidade, saúde e respeito ao meio ambiente.</p>
+            <p>Uma grande celebração da agricultura e da segurança alimentar no nosso estado. Organizado pela ADAF – Agência de Defesa Agropecuária e Florestal do Amazonas, o evento mostra como a produção rural pode crescer com qualidade, saúde e respeito ao meio ambiente.</p>
+            <br/>
             <p>Vamos falar sobre como garantir que o alimento que chega à sua mesa seja seguro, valorizando a produção local e abrindo novas oportunidades para quem trabalha no campo.</p>
+  
           </Card>
         </section>
 
@@ -130,7 +132,8 @@ export default function AgroAmazonasSite() {
 
         <section>
           <Card title="TEMAS ABORDADOS">
-            <p>O AGROAMAZONAS & DEFESA AGROPECUÁRIA para promover temas essenciais como segurança alimentar, sanidade animal e vegetal, educação sanitária, controle de agrotóxicos, prevenção de zoonoses e pragas quarentenárias, além da regularização de abatedouros e o uso de novas tecnologias aplicadas ao setor agropecuário. O evento também valoriza experiências de instituições como EMBRAPA, UFAM e IFAM, fortalecendo a integração entre ciência, produção e saúde pública. Além disso, incentiva o financiamento e o empreendedorismo por meio de parceiros como SEBRAE e APEX Brasil. A programação integra múltiplas frentes estratégicas e marca, de forma especial, a celebração dos 13 anos da Agência de Defesa Agropecuária do Amazonas.</p>
+            <p>O AGROAMAZONAS & DEFESA AGROPECUÁRIA para promover temas essenciais como segurança alimentar, sanidade animal e vegetal, educação sanitária, controle de agrotóxicos, prevenção de zoonoses e pragas quarentenárias, além da regularização de abatedouros e o uso de novas tecnologias aplicadas ao setor agropecuário.</p>
+            <p>O evento também valoriza experiências de instituições como EMBRAPA, UFAM e IFAM, fortalecendo a integração entre ciência, produção e saúde pública. Além disso, incentiva o financiamento e o empreendedorismo por meio de parceiros como SEBRAE e APEX Brasil. A programação integra múltiplas frentes estratégicas e marca, de forma especial, a celebração dos 13 anos da Agência de Defesa Agropecuária do Amazonas.</p>
           </Card>
         </section>
         

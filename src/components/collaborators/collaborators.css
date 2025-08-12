@@ -2,7 +2,7 @@
   width: 95%;
   max-width: 1400px;
   margin: 4rem auto;
-  padding: 4rem 2rem;
+  padding: 2rem 2rem 6rem 2rem;
   background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
   border-radius: 2rem;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
@@ -54,24 +54,7 @@
   margin-bottom: 4rem;
 }
 
-.collaborators-header h2 {
-  font-size: 3rem;
-  font-weight: 800;
-  margin-bottom: 1.5rem;
-  color: #1e293b;
-  background: linear-gradient(135deg, #1e293b 0%, #475569 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
 
-.collaborators-header p {
-  font-size: 1.2rem;
-  color: #64748b;
-  line-height: 1.7;
-  max-width: 900px !important;
-  margin: 0 auto;
-}
 
 .stands-section {
   margin-top: 4rem;
@@ -87,7 +70,7 @@
 
 .stand-tabs {
   display: flex;
-  gap: 1rem;
+  gap: 1.2rem;
   margin-bottom: 3rem;
   flex-wrap: wrap;
   justify-content: center;
@@ -400,30 +383,10 @@
 
 /* Responsividade para smartphones */
 @media (max-width: 480px) {
-  .collaborators-container {
-    padding: 1.5rem 0.5rem;
-    margin: 1.5rem auto;
-  }
-  
+
   .collaborators-hero {
     height: 50vh;
     padding: 1.5rem 0.5rem;
-  }
-  
-  .collaborators-hero h2 {
-    font-size: 2.5rem;
-  }
-  
-  .collaborators-hero p {
-    font-size: 1.1rem;
-  }
-  
-  .collaborators-header h2 {
-    font-size: 1.75rem;
-  }
-  
-  .collaborators-header p {
-    font-size: 1rem;
   }
   
   .stands-section h3 {
@@ -436,7 +399,7 @@
   }
   
   .stand-tab {
-    padding: 1rem 1.5rem;
+    padding: 1.5rem 1.7rem;
     font-size: 0.9rem;
     border-radius: 1.5rem;
   }

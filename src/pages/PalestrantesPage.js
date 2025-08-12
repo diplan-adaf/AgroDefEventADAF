@@ -46,7 +46,7 @@ const palestrantes = {
           nome: "Dr. Bruno Henrique dos Santos",
           foto: brunoHenrique,
           tema: "Segurança dos Alimentos na Era da Sustentabilidade: Desafios e Oportunidades",
-          sala: "Palco Principal"
+          sala: "Principal"
         },
         {
           nome: "André Dupadro",
@@ -74,7 +74,7 @@ const palestrantes = {
           nome: "François Vieira da Silva Matos",
           foto: avatar,
           tema: "Sistema gerenciamento em áreas Protegidas",
-          sala: "Palco Principal"
+          sala: "Principal"
         }
       ]
     },

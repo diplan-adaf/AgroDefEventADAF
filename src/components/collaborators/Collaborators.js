@@ -154,7 +154,7 @@ export default function Collaborators() {
         </div>
 
         <div className="stands-section">
-          <h3>níveis</h3>
+          <h3>Níveis</h3>
           
           <div className="stand-tabs">
             {stands.map((stand) => (
