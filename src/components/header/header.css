@@ -18,7 +18,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -169,8 +168,6 @@
   font-family: 'Inter', sans-serif;
   transition: all 0.3s ease;
   position: relative;
-
-
   padding: 1rem 2rem;
   width: 100%;
   text-align: center;
@@ -200,7 +197,47 @@
   border-bottom: none;
 }
 
+/* Media query para tablets (768px - 991px) */
+@media(min-width: 768px) and (max-width: 991px) {
+  .site-nav {
+    gap: 1rem;
+  }
+  
+  .nav-brand {
+    width: 250px;
+  }
+  
+  .nav-links {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 0;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    background: none;
+    box-shadow: none;
+    width: auto;
+    flex-wrap: nowrap;
+  }
+  
+  .nav-links a,
+  .nav-section-btn {
+    padding: 0.5rem 0.75rem;
+    text-align: center;
+    border-bottom: none;
+    font-size: 14px;
+    white-space: nowrap;
+    min-width: fit-content;
+  }
+  
+  .mobile-menu-btn {
+    display: none;
+  }
+}
 
+/* Media query para desktop (992px+) */
 @media(min-width: 992px){
   .site-header {
     position: sticky;
@@ -214,6 +251,11 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   }
 
+  .site-nav{
+    margin: 0;
+    width: 100% !important;
+  }
+
   .mobile-menu-btn{
     display: none; 
   }
@@ -222,21 +264,24 @@
     display: flex !important;
     position: static;
     flex-direction: row;
-    gap: 60px;
+    gap: 2rem;
     padding: 0;
     transform: none;
     opacity: 1;
     visibility: visible;
     background: none;
     box-shadow: none;
+    width: auto;
+    flex-wrap: nowrap;
   }
 
   .nav-links a {
     padding: 0.5rem 1rem;
-    width: auto;
     text-align: center;
     border-bottom: none;
     font-size: 16px;
+    white-space: nowrap;
+    min-width: fit-content;
   }
 
   .nav-links a:hover {
@@ -256,6 +301,14 @@
 
   .nav-links a:hover::after {
     width: 100%;
+  }
+
+  .nav-section-btn{
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border-bottom: none;
+    white-space: nowrap;
+    min-width: fit-content;
   }
 }
 

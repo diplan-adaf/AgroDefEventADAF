@@ -11,6 +11,10 @@ import { Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
 
 
+import uninorte from "../assets/patrocinadores/UNINORTE VERTICAL - COLORIDO(1).png"
+import adaf from "../assets/adaf.png"
+import idam from "../assets/logo-idam.png"
+
 
 
 import standDiamante from "../assets/saida-2.svg";
@@ -22,10 +26,9 @@ import gastronomia from "../assets/saida-7.svg";
 import pagamento from "../assets/saida-8.svg";
 import standPlanta1 from "../assets/planta-1.svg"
 import standPlanta2 from "../assets/planta-2.svg"
-import Patrocinadores from "../components/patrocinadores/Patrocinadores";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import Apoio from "../components/apoio/Apoio";
+import Brands from "../components/brands/Brands";
 
 
 
@@ -128,6 +131,25 @@ export default function AgroAmazonasSite() {
     }
   ];
 
+
+  const patrocinadores = [
+    {
+      name: "Uninorte",
+      src: uninorte
+    }
+  ];
+
+  const realizadores = [
+    {
+      name: "ADAF",
+      src: adaf
+    },
+    {
+      name:"IDAM",
+      src: idam
+    }
+  ];
+
   return (
     <div className="site-container">
       <Layout>
@@ -206,14 +228,17 @@ export default function AgroAmazonasSite() {
           </Card>
         </section>
 
-        <section id="sponsors">
+        {/* <section id="sponsors">
           <Patrocinadores/>
         </section>
         
         <section>
           <Apoio />
-        </section>
+        </section> */}
 
+        <Brands title={"PATROCINADORES"} images={patrocinadores}/>
+
+        <Brands title={"REALIZADORES"} images={realizadores}/>
       </Layout>
     </div>
   );
