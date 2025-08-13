@@ -309,7 +309,7 @@ const palestrantes = {
                           </p>
                         </div>
 
-                        <a className="button-subscribe">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdqJDjN4tujp3fRNAFnXfyL9jpGuyuvJGPvxIFlf0yPdD-hWQ/viewform" className="button-subscribe">
                           Inscreva-se
                         </a>
 
