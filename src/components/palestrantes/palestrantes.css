@@ -1,49 +1,10 @@
-.palestrantes-container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 4rem auto;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  padding: 3rem 3rem;
-  background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
-  position: relative;
-  overflow: hidden;
-  border-radius: 1rem;
-  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
-}
-
-.palestrantes-container h2 {
-  font-size: 2rem;
-  font-weight: 800;
-  color: #1e293b;
-  text-align: center;
-  margin-bottom: 2rem;
-  position: relative;
-  z-index: 1;
-  background: linear-gradient(135deg, #1e293b 0%, #475569 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.palestrantes-descricao {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  color: #374151;
-  text-align: center;
-  max-width: 900px;
-  margin-bottom: 3rem;
-  font-weight: 500;
-  text-align:justify;
-  letter-spacing: 0.025em;
-}
 
 /* Tabs */
-.tabs-container {
+.cronograma-container {
   width: 100%;
   max-width: 1000px;
+  display: flex;
+  justify-content: center;
 }
 
 .tabs {
@@ -81,6 +42,12 @@
 }
 
 /* Cronograma */
+
+.cronograma-container{
+  margin: 0 auto;
+}
+
+
 .cronograma-content {
   display: flex;
   flex-direction: column;
@@ -133,6 +100,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  position: relative;
 }
 
 .palestrante-card:hover {
@@ -190,6 +158,32 @@
   line-height: 1.4;
 }
 
+.sala-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #059669, #10b981);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.sala-badge:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.palestrante-sala {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  margin: 0;
+}
+
 /* Responsividade para tablets */
 @media (max-width: 768px) {
   .palestrantes-container {
@@ -202,11 +196,7 @@
     margin-bottom: 1.5rem;
   }
   
-  .palestrantes-descricao {
-    font-size: 1.125rem;
-    margin-bottom: 2rem;
-  }
-  
+
   .tabs {
     flex-direction: column;
     align-items: center;
@@ -249,11 +239,6 @@
   .palestrantes-container h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-  }
-  
-  .palestrantes-descricao {
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
   }
   
   .tabs {

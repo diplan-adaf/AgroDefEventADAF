@@ -3,9 +3,9 @@
   "name": "Agro Amazonas - Defesa Agropecuária",
   "icons": [
     {
-      "src": "icons/logoAgroDefesa.svg",
+      "src": "descricaoBanner.png",
       "sizes": "any",
-      "type": "image/svg+xml"
+      "type": "image/png"
     },
     {
       "src": "logo192.png",

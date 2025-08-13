@@ -1,8 +1,27 @@
-import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AgroAmazonasSite from "./pages/AgroAmazonasSite.js";
+// import PalestrantesPage from "./pages/PalestrantesPage.js";
+import { Suspense, lazy } from "react";
+const PalestrantesPage = lazy(() => import("./pages/PalestrantesPage"));
+
+
+
+
+
 
 function App() {
-  return <AgroAmazonasSite />;
+
+
+  return (
+    <Router>
+      <Suspense fallback={<div>Carregando...</div>}>
+        <Routes>
+          <Route path="/" element={<AgroAmazonasSite />} />
+          <Route path="/palestrantes" element={<PalestrantesPage />} />
+      </Routes>
+      </Suspense>
+    </Router>
+  );
 }
 
 export default App;
