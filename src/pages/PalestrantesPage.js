@@ -6,6 +6,7 @@ import joselenaTavares from "../assets/JoselenaTavares.jpeg";
 import raquelSilva from "../assets/raquelSilva.jpeg";
 import anaMariaNobrega from "../assets/anaMariaNobrega.png"
 import franciscoLoureco from "../assets/franciscoLourenco.png"
+import pauloRoberto from "../assets/pauloRoberto.jpeg"
 import geraldo from "../assets/geraldo.png"
 import glauco from "../assets/glauco.png"
 import guilhermeSouza from "../assets/guilhermeSouza.png"
@@ -22,30 +23,42 @@ export default function PalestrantesPage() {
 const palestrantes = {
   "02-09": [
     {
-      horario: "10:00",
+      horario: "10:00 - 11:00",
       palestrantes: [
-        {
-          nome: "Ludimila Saboya",
-          foto: avatar,
-          tema: "A definir",
-          sala: "Sala 4"
-        },
         {
           nome: "Sivandro Campos",
           foto: sivandro,
           tema: "Panorama da Monilíase no Estado do Amazonas",
           sala: "Sala 2"
-        }
+        },
+        {
+          nome: "Francisco Lourenço Junior",
+          foto: avatar,
+          tema: "Conectando o Campo à Saúde: Inovações Digitais para um Amazonas mais Sustentável e Seguro",
+          sala: "Sala 3"
+        },
+        
       ]
     },
     {
-      horario: "11:00",
+      horario: "11:00 - 12:00",
       palestrantes: [
         {
           nome: "Dr. Bruno Henrique dos Santos",
           foto: brunoHenrique,
           tema: "Segurança dos Alimentos na Era da Sustentabilidade: Desafios e Oportunidades",
-          sala: "Principal"
+          sala: "Palco Principal"
+        }
+      ]
+    },
+    {
+      horario: "11:30 - 12:30",
+      palestrantes: [
+        {
+          nome: "Guilherme Silva Rodrigues",
+          foto: guilhermeSouza,
+          tema: "Ações de Controle a Mosca da Carambola em Roraima (impactos na fruticultura)",
+          sala: "Sala 2"
         },
         {
           nome: "André Dupadro",
@@ -56,29 +69,18 @@ const palestrantes = {
       ]
     },
     {
-      horario: "11:30",
-      palestrantes: [
-        {
-          nome: "Guilherme Silva Rodrigues",
-          foto: guilhermeSouza,
-          tema: "Ações de Controle a Mosca da Carambola em Roraima (impactos na fruticultura)",
-          sala: "Sala 2"
-        }
-      ]
-    },
-    {
-      horario: "12:00",
+      horario: "12:00 - 13:00",
       palestrantes: [
         {
           nome: "François Vieira da Silva Matos",
           foto: avatar,
           tema: "Sistema gerenciamento em áreas Protegidas",
-          sala: "Principal"
+          sala: "Palco Principal"
         }
       ]
     },
     {
-      horario: "14:00",
+      horario: "14:00 - 15:00",
       palestrantes: [
         {
           nome: "Adriana Aguiar Oliveira",
@@ -101,7 +103,7 @@ const palestrantes = {
       ]
     },
     {
-      horario: "15:30",
+      horario: "15:30 - 16:30",
       palestrantes: [
         {
           nome: "Raquel Silva e Sousa",
@@ -118,8 +120,14 @@ const palestrantes = {
       ]
     },
     {
-      horario: "17:00",
+      horario: "17:00 - 18:00",
       palestrantes: [
+        {
+          nome: "Paulo Roberto de Faria Pinto",
+          foto: pauloRoberto,
+          tema: "Sistema gerenciamento em áreas Protegidas",
+          sala: "Sala 2"
+        },
         {
           nome: "Fernando Rodrigues da Silva",
           foto: avatar,
@@ -129,7 +137,7 @@ const palestrantes = {
       ]
     },
     {
-      horario: "18:00",
+      horario: "18:30 - 19:30",
       palestrantes: [
         {
           nome: "Airton Reis de Jesus",
@@ -142,7 +150,7 @@ const palestrantes = {
   ],
   "03-09": [
     {
-      horario: "10:00",
+      horario: "10:00 - 11:00",
       palestrantes: [
         {
           nome: "Fredson",
@@ -159,7 +167,7 @@ const palestrantes = {
       ]
     },
     {
-      horario: "11:30",
+      horario: "11:30 - 12:30",
       palestrantes: [
         {
           nome: "Raiane Áila",
@@ -182,19 +190,13 @@ const palestrantes = {
       ]
     },
     {
-      horario: "14:00",
+      horario: "14:00 - 15:00",
       palestrantes: [
         {
           nome: "Michaell Silva",
           foto: michelSilva,
           tema: "Receituário agronômico, Cadastro de produtos, e Registro de estabelecimentos",
           sala: "Sala 1"
-        },
-        {
-          nome: "Aloisio de Souza Sabença",
-          foto: avatar,
-          tema: "A definir",
-          sala: "Sala 4"
         },
         {
           nome: "Geraldo Souza Costa",
@@ -205,7 +207,7 @@ const palestrantes = {
       ]
     },
     {
-      horario: "15:30",
+      horario: "15:30 - 16:30",
       palestrantes: [
         {
           nome: "Silvana",
@@ -214,19 +216,13 @@ const palestrantes = {
           sala: "Sala 1"
         },
         {
-          nome: "Ana Elisa Almeida",
-          foto: avatar,
-          tema: "A definir",
-          sala: "Sala 4"
-        },
-        {
           nome: "Paulo Sérgio",
           foto: avatar,
           tema: "A Atuação Prática do Acadêmico de Medicina Veterinária no Amazonas",
           sala: "Sala 3"
         },
         {
-          nome: "Joselena C. Tavares",
+          nome: "Maria Joselena C. Tavares",
           foto: joselenaTavares,
           tema: "Selo de Produção Artesanal da Adepará e Requisitos para Regularização Higiênico-Sanitária de Estabelecimentos de Produtos de Origem Vegetal do Estado do Pará",
           sala: "Sala 2"
@@ -234,21 +230,16 @@ const palestrantes = {
       ]
     },
     {
-      horario: "17:00",
+      horario: "17:00 - 18:00",
       palestrantes: [
-        {
-          nome: "Josélio Andrade Moura",
-          foto: avatar,
-          tema: "A definir",
-          sala: "Sala 4"
-        }
+        
       ]
     },
     {
-      horario: "18:30",
+      horario: "18:30 - 19:30",
       palestrantes: [
         {
-          nome: "Diogo Lima",
+          nome: "Diogo de Lima Franco",
           foto: avatar,
           tema: "Experiencia de abate de Jacaré no Mamirawá",
           sala: "Sala 4"

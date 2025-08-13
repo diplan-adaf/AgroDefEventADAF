@@ -10,71 +10,99 @@ import Card from "../components/card/Card";
 import { Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
 
-import standImg1 from "../assets/saida-1.svg";
-import standImg2 from "../assets/saida-2.svg";
-import standImg3 from "../assets/saida-3.svg";
-import standImg4 from "../assets/saida-4.svg";
-import standImg5 from "../assets/saida-5.svg";
-import standImg6 from "../assets/saida-6.svg";
-import standImg7 from "../assets/saida-7.svg";
-import standImg8 from "../assets/saida-8.svg";
+
+
+
+import standDiamante from "../assets/saida-2.svg";
+import standOuro from "../assets/saida-3.svg";
+import standPrata from "../assets/saida-4.svg";
+import standBronze from "../assets/saida-5.svg";
+import totem from "../assets/saida-6.svg";
+import gastronomia from "../assets/saida-7.svg";
+import pagamento from "../assets/saida-8.svg";
 import standPlanta1 from "../assets/planta-1.svg"
 import standPlanta2 from "../assets/planta-2.svg"
+import Patrocinadores from "../components/patrocinadores/Patrocinadores";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+
 
 export default function AgroAmazonasSite() {
 
+    const location = useLocation();
+
+    // Função para scroll suave para seções
+    const scrollToSection = (sectionId) => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const headerHeight = 80; // Altura aproximada do header
+        const elementPosition = element.offsetTop - headerHeight;
+        window.scrollTo({
+          top: elementPosition,
+          behavior: "smooth"
+        });
+      }
+    };
+
+    useEffect(() => {
+      // Scroll para seção específica se houver hash na URL
+      if (location.hash && location.hash !== "#" && location.hash !== "#/") {
+        const sectionId = location.hash.substring(1);
+        setTimeout(() => {
+          scrollToSection(sectionId);
+        }, 100);
+      } else if (location.hash === "#" || location.hash === "#/") {
+        // Scroll para o topo se for apenas # ou #/
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    }, [location]);
+
     const stands = [
     { 
-      src: standImg1, 
+      src: standDiamante, 
       alt: "Stand Diamante", 
       title: "Stand Diamante",
       description: "O stand mais exclusivo do evento, com mobiliário premium e localização estratégica para máxima visibilidade.",
       features: ["Mobiliário Premium", "Localização VIP", "Exposição Exclusiva"]
     },
     { 
-      src: standImg2, 
+      src: standOuro, 
       alt: "Stand Ouro", 
       title: "Stand Ouro",
       description: "Stand de alto padrão com excelente posicionamento e benefícios exclusivos para sua marca.",
       features: ["Posicionamento Estratégico", "Benefícios Exclusivos", "Alta Visibilidade"]
     },
     { 
-      src: standImg3, 
+      src: standPrata, 
       alt: "Stand Prata", 
       title: "Stand Prata",
       description: "Stand de qualidade com boa localização e todos os benefícios necessários para sua exposição.",
       features: ["Qualidade Garantida", "Boa Localização", "Benefícios Completos"]
     },
     { 
-      src: standImg4, 
+      src: standBronze, 
       alt: "Stand Bronze", 
       title: "Stand Bronze",
       description: "Stand econômico com excelente custo-benefício para empresas que querem participar do evento.",
       features: ["Custo-Benefício", "Participação Garantida", "Benefícios Básicos"]
     },
     { 
-      src: standImg5, 
-      alt: "Stand Especial", 
-      title: "Stand Especial",
-      description: "Stand personalizado para necessidades específicas da sua empresa no evento.",
-      features: ["Personalização", "Flexibilidade", "Soluções Específicas"]
-    },
-    { 
-      src: standImg6, 
+      src: totem, 
       alt: "Totem Digital", 
       title: "Totem Digital",
       description: "Solução digital interativa para exposição de conteúdo e interação com visitantes.",
       features: ["Interatividade", "Conteúdo Digital", "Alta Tecnologia"]
     },
     { 
-      src: standImg7, 
+      src: gastronomia, 
       alt: "Área Gastronômica", 
       title: "Área Gastronômica",
       description: "Espaço dedicado para exposição de produtos gastronômicos e culinários regionais.",
       features: ["Foco Gastronômico", "Produtos Regionais", "Experiência Sensorial"]
     },
     { 
-      src: standImg8, 
+      src: pagamento, 
       alt: "Área de Pagamento", 
       title: "Área de Pagamento",
       description: "Espaço estratégico para serviços financeiros e processamento de pagamentos.",
@@ -147,7 +175,7 @@ export default function AgroAmazonasSite() {
 
         <div className="site-buttons">
           <Button text={"Inscreva-se (Simpla)"} ref={"https://www.sympla.com.br/evento/agro-amazonas-defesa-agropecuaria/3060161"} cls={"simpla"}></Button>
-          <Button text={"Instagram"} ref={"https://www.instagram.com/agro_defesa_evento/"} cls={"instagram"}>
+          <Button text={"Instagram"} ref={"https://www.instagram.com/agroamazonas_evento/?utm_source=qr&igsh=MWNodGI1NW5seWNnZA%3D%3D"} cls={"instagram"}>
             <Instagram className="icon" />
           </Button>
 
@@ -176,6 +204,11 @@ export default function AgroAmazonasSite() {
             <p> <strong>A ADAF - Agência de Defesa Agropecuária e Florestal do Estado do Amazonas</strong> é o órgão responsável por proteger a saúde animal, vegetal e a qualidade dos alimentos produzidos no estado. Atua na fiscalização, inspeção e controle sanitário da produção agropecuária, garantindo alimentos seguros, promovendo o desenvolvimento rural sustentável e contribuindo para a saúde pública e a economia do Amazonas.</p>
           </Card>
         </section>
+
+        {/* <section id="sponsors">
+          <Patrocinadores/>
+        </section> */}
+
 
       </Layout>
     </div>
