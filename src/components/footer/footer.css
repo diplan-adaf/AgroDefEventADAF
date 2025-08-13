@@ -2,13 +2,12 @@
   /* background-color: #064e3b; */
   background: linear-gradient(
     to right,
-    #8da05f,
-    #4f6539 20%,
-    #193218 45%,
-    #0a1d0f 69%,
-    /* Ponto mais escuro exatamente no meio */ #193218 45%,
-    /* Volta para o primeiro tom escuro */ #064e3b 670%
-      /* Termina no verde escuro original */
+    #8da05f 0%,
+    /* Começa claro à esquerda */ #193218 25%,
+    /* Transição rápida para o escuro */ #0a1d0f 35%,
+    /* Atinge o tom mais escuro */ #0a1d0f 75%,
+    /* Mantém o tom mais escuro até 75% */ #4f6539 95%
+      /* Clareia suavemente no final */
   );
 
   /* ... resto do seu CSS ... */
