@@ -169,6 +169,12 @@
   font-family: 'Inter', sans-serif;
   transition: all 0.3s ease;
   position: relative;
+
+
+  padding: 1rem 2rem;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .nav-section-btn:hover {
@@ -188,6 +194,10 @@
 
 .nav-section-btn:hover::after {
   width: 100%;
+}
+
+.nav-section-btn:last-child{
+  border-bottom: none;
 }
 
 
