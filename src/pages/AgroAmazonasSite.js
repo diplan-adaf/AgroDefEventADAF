@@ -25,6 +25,7 @@ import standPlanta2 from "../assets/planta-2.svg"
 import Patrocinadores from "../components/patrocinadores/Patrocinadores";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import Apoio from "../components/apoio/Apoio";
 
 
 
@@ -205,10 +206,13 @@ export default function AgroAmazonasSite() {
           </Card>
         </section>
 
-        {/* <section id="sponsors">
+        <section id="sponsors">
           <Patrocinadores/>
-        </section> */}
-
+        </section>
+        
+        <section>
+          <Apoio />
+        </section>
 
       </Layout>
     </div>

@@ -13,7 +13,10 @@ import guilhermeSouza from "../assets/guilhermeSouza.png"
 import michelSilva from "../assets/michelSilva.png"
 import sivandro from "../assets/sivandro.png"
 import wilson from "../assets/wilson.png"
+import diogoLima from "../assets/diogoLima.jpeg"
 import avatar from "../assets/avatarPlaceholder.jpg"
+
+
 
 import Layout from "../components/Layout";
 
@@ -240,7 +243,7 @@ const palestrantes = {
       palestrantes: [
         {
           nome: "Diogo de Lima Franco",
-          foto: avatar,
+          foto: diogoLima,
           tema: "Experiencia de abate de Jacaré no Mamirawá",
           sala: "Sala 4"
         }
