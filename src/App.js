@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import AgroAmazonasSite from "./pages/AgroAmazonasSite.js";
 // import PalestrantesPage from "./pages/PalestrantesPage.js";
 import { Suspense, lazy } from "react";

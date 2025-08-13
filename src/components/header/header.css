@@ -158,6 +158,38 @@
   animation: slideDown 0.3s ease-out;
 }
 
+.nav-section-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-section-btn:hover {
+  color: #facc15;
+}
+
+.nav-section-btn::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #facc15;
+  transition: width 0.3s ease;
+}
+
+.nav-section-btn:hover::after {
+  width: 100%;
+}
+
 
 @media(min-width: 992px){
   .site-header {
