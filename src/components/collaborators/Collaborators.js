@@ -1,47 +1,130 @@
 import { useState } from "react";
 import "./collaborators.css";
 
-// Exemplo de dados dos stands
+import standImg1 from "../../assets/saida-1.svg";
+import standDiamante from "../../assets/saida-2.svg";
+import standOuro from "../../assets/saida-3.svg";
+import standPrata from "../../assets/saida-4.svg";
+import standBronze from "../../assets/saida-5.svg";
+import totem from "../../assets/saida-6.svg";
+import gastronomia from "../../assets/saida-7.svg";
+import pagamento from "../../assets/saida-8.svg";
+
 const stands = [
   {
     key: "diamante",
     title: "Stand Diamante",
-    img: require("../../assets/saida-2.svg"),
+    img: standDiamante,
     description:
-      "Espaço premium com localização privilegiada, estrutura completa e destaque na divulgação do evento.",
-    price: "R$ 10.000,00",
+      "Mobiliário Premium: (1 Mesa, 3 Cadeiras, 1 Balcão, 1 Sofá, 1 TV 50')",
+    benefits: [
+      "Entrevistas exclusivas ADAF",
+      "Podcast ao vivo",
+      "Postagens exclusivas nas redes sociais",
+      "Workshop exclusivo na programação oficial",
+      "Vídeo de 30 segundos no telão do Evento",
+      "10 convites VIP para coquetel/recepção de abertura",
+    ],
+    size: "4m x 3m",
+    footage: "12",
+    price: "50.000,00",
+    color: "#FFD700",
+    icon: "💎"
   },
   {
     key: "ouro",
     title: "Stand Ouro",
-    img: require("../../assets/saida-3.svg"),
+    img: standOuro,
     description:
-      "Stand amplo, ótima visibilidade e benefícios exclusivos para expositores.",
-    price: "R$ 7.000,00",
+      "Inclusão de mobiliário básico: (1 Mesa, 2 Cadeiras, 1 Balcão e 1 Banqueta)",
+    benefits: [
+      "Localização estratégica, com bom fluxo",
+      "Logo em destaque médio em material promocional",
+      "Divulgação em Redes Sociais e Marketing",
+      "Wi-fi",
+      "3 Credenciais",
+    ],
+    size: "4m x 3m",
+    footage: "12",
+    price: "20.000,00",
+    color: "#FFA500",
+    icon: "🥇"
   },
   {
     key: "prata",
     title: "Stand Prata",
-    img: require("../../assets/saida-4.svg"),
+    img: standPrata,
     description:
-      "Espaço funcional, boa localização e excelente custo-benefício.",
-    price: "R$ 4.000,00",
+      "Inclusão de mobiliário padrão: (1 Mesa, 1 Cadeira, Balcão e 1 Banqueta)",
+    benefits: [
+      "Metragem Padrão. Localização em área secundária",
+      "Logo pequena em material promocional",
+      "Divulgação em Redes Sociais e Marketing",
+      "Citação em Redes Sociais",
+      "Wi-fi",
+      "2 Credenciais"
+    ],
+    size: "3m x 3m",
+    footage: "9",
+    price: "10.000,00",
+    color: "#C0C0C0",
+    icon: "🥈"
   },
   {
     key: "bronze",
     title: "Stand Bronze",
-    img: require("../../assets/saida-5.svg"),
-    description: "Stand compacto, ideal para pequenas empresas e startups.",
-    price: "R$ 2.000,00",
+    img: standBronze,
+    description:
+      "Inclusão de mobiliário padrão: (1 Mesa e 1 Cadeira)",
+    benefits: [
+      "Metragem Reduzida",
+      "Nome em lista de expositores no site",
+      "Citação em Redes Sociais",
+      "Wi-fi",
+      "2 Credenciais"
+    ],
+    size: "3m x 3m",
+    footage: "9",
+    price: "2.500,00",
+    color: "#CD7F32",
+    icon: "🥉"
   },
   {
     key: "totem",
     title: "Totem",
-    img: require("../../assets/saida-6.svg"),
+    img: totem,
     description:
-      "Totem personalizado para divulgação de marca em pontos estratégicos do evento.",
-    price: "R$ 800,00",
+      "Inclusão de mobiliário padrão: (1 Monitor 43' e 1 Cadeira)",
+    benefits: [
+      "Nome em lista de expositores no site",
+      "Citação em Redes Sociais",
+      "Wi-fi",
+      "2 Credenciais"
+    ],
+    size: "2m x 1m",
+    footage: "2",
+    price: "2.000,00",
+    color: "#4A90E2",
+    icon: "📺"
   },
+  {
+    key: "gastronomia",
+    title: "Gastronomia",
+    img: gastronomia,
+    description:
+      "Inclusão de mobiliário na área externa: (Mesas e Cadeiras) e 1 Balcão na área interna",
+    benefits: [
+      "Nome em lista de expositores no site",
+      "Citação em Redes Sociais",
+      "Wi-fi",
+      "6 Credenciais"
+    ],
+    size: "3m x 3m",
+    footage: "9",
+    price: "10.000,00",
+    color: "#FF6B6B",
+    icon: "🍽️"
+  }
 ];
 
 export default function Collaborators() {
@@ -52,42 +135,92 @@ export default function Collaborators() {
   return (
     <>
       <div className="collaborators-hero">
-        <h2>Seja um colaborador</h2>
-      </div>
-      <section className="collaborators-container">
-        <h2>Colaboradores</h2>
-        <p>
-          Participe do AGROAMAZONAS & DEFESA AGROPECUÁRIA como expositor e
-          conecte sua marca ao maior evento agropecuário do Amazonas. Apresente
-          seus produtos e serviços a um público qualificado, fortaleça seu nome
-          no setor, amplie oportunidades de negócio e associe sua empresa à
-          inovação, sustentabilidade e segurança alimentar. Em um ambiente
-          estratégico e com alta visibilidade, sua marca fará parte da
-          celebração dos 13 anos da ADAF e do futuro do agro no estado. Seja
-          protagonista desse movimento!{" "}
-        </p>
-        <h2>Stands</h2>
-        <div className="stand-tabs">
-          {stands.map((stand) => (
-            <button
-              key={stand.key}
-              className={`stand-tab${activeTab === stand.key ? " active" : ""}`}
-              onClick={() => setActiveTab(stand.key)}
-            >
-              {stand.title}
-            </button>
-          ))}
+        <div className="hero-content">
+          <h2>Seja um colaborador</h2>
+          <p>Conecte sua marca ao maior evento agropecuário do Amazonas</p>
         </div>
-        <div className="stand-content">
-          <img
-            src={currentStand.img}
-            alt={currentStand.title}
-            className="stand-img"
-          />
-          <div className="stand-info">
-            <h3>{currentStand.title}</h3>
-            <p>{currentStand.description}</p>
-            <span className="stand-price">{currentStand.price}</span>
+      </div>
+      
+      <section className="collaborators-container">
+        <div className="collaborators-header">
+          <h2>Colaboradores</h2>
+          <p>
+            Participe do AGROAMAZONAS & DEFESA AGROPECUÁRIA como expositor e
+            conecte sua marca ao maior evento agropecuário do Amazonas. Apresente
+            seus produtos e serviços a um público qualificado, fortaleça seu nome
+            no setor, amplie oportunidades de negócio e associe sua empresa à
+            inovação, sustentabilidade e segurança alimentar.
+          </p>
+        </div>
+
+        <div className="stands-section">
+          <h3>Níveis</h3>
+          
+          <div className="stand-tabs">
+            {stands.map((stand) => (
+              <button
+                key={stand.key}
+                className={`stand-tab${activeTab === stand.key ? " active" : ""}`}
+                onClick={() => setActiveTab(stand.key)}
+                style={{ 
+                  '--stand-color': stand.color,
+                }}
+              >
+                {stand.title}
+              </button>
+            ))}
+          </div>
+
+          <div className="stand-content">
+            <div className="stand-visual">
+              <div className="stand-image-container">
+                <img
+                  src={currentStand.img}
+                  className="stand-img"
+                />
+                <div className="stand-badge" style={{ backgroundColor: currentStand.color }}>
+                  {currentStand.icon}
+                </div>
+              </div>
+            </div>
+            
+            <div className="stand-info">
+              <div className="stand-header">
+                <h3>{currentStand.title}</h3>
+                <div className="stand-price">
+                  R$ {currentStand.price}
+                </div>
+              </div>
+              
+              <p className="stand-description">{currentStand.description}</p>
+              
+              <div className="stand-specs">
+                <div className="spec-item">
+                  <span className="spec-label">Tamanho:</span>
+                  <span className="spec-value">{currentStand.size}</span>
+                </div>
+                <div className="spec-item">
+                  <span className="spec-label">Metragem:</span>
+                  <span className="spec-value">{currentStand.footage} m²</span>
+                </div>
+              </div>
+              
+              <div className="stand-benefits">
+                <h4>Benefícios Inclusos:</h4>
+                <ul>
+                  {currentStand.benefits.map((benefit, index) => (
+                    <li key={index}>
+                      <span className="benefit-icon">✓</span>
+                      {benefit}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              
+              <button className="contact-button">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5T-Ro6g8HNd3Oy123ftLnpVxbETyXdDa3V8vAMf3EhWth8A/viewform" target="_blank">Garantir meu Stand</a>
+              </button>
+            </div>
           </div>
         </div>
       </section>

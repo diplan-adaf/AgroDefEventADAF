@@ -12,7 +12,7 @@ export default function Carousel({ images, title = "STANDS" }) {
       setCurrentIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 6000);
+    }, 4500);
 
     return () => clearInterval(interval);
   }, [images.length, isAutoPlay]);
@@ -46,13 +46,36 @@ export default function Carousel({ images, title = "STANDS" }) {
         <button className="carousel-arrow carousel-arrow-right" onClick={goToNext}>
           <span>›</span>
         </button>
-        <div className="carousel-slide">
-          <img
-            src={images[currentIndex].src}
-            alt={images[currentIndex].alt}
-            className="carousel-img"
-          />
+        
+        <div className="carousel-content">
+          <div className="carousel-image-container">
+            <img
+              src={images[currentIndex].src}
+              alt={images[currentIndex].alt}
+              className="carousel-img"
+            />
+            <div className="carousel-overlay">
+              <div className="carousel-counter">
+                {currentIndex + 1} / {images.length}
+              </div>
+            </div>
+          </div>
+          
+          <div className="carousel-info">
+            <h3>{images[currentIndex].title || images[currentIndex].alt}</h3>
+            <p>{images[currentIndex].description || "Visualize os detalhes do stand"}</p>
+            {images[currentIndex].features && (
+              <div className="carousel-features">
+                {images[currentIndex].features.map((feature, index) => (
+                  <span key={index} className="feature-tag">
+                    {feature}
+                  </span>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
+        
         <div className="carousel-indicators">
           {images.map((_, index) => (
             <button

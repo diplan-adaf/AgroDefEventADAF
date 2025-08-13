@@ -1,0 +1,129 @@
+.page-title {
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.horario-sessao {
+  background: linear-gradient(135deg, #059669, #10b981);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.horario-titulo {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.palestrante-sala {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  margin: 0;
+  width: auto;
+}
+
+.sala-badge {
+  display: inline-block;
+  background-color:  #10b981;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+
+.palestrante-card {
+  position: relative;
+}
+
+.palestrante-tema {
+  color: #374151;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+
+.tabs{
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.tab{
+  padding: 1.5rem 3rem;
+}
+
+
+.button-subscribe {
+  margin-top: 1rem;
+  background: linear-gradient(135deg, #facc15 0%, #fde047 100%);
+  color: #1f2937;
+  font-weight: 700;
+  width: 60%;
+  font-size: 1.125rem;
+  padding: 1rem !important;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: 0 8px 20px rgba(250, 204, 21, 0.3);
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+  justify-content: center !important;
+}
+
+
+
+.button-subscribe::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.button-subscribe:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(250, 204, 21, 0.4);
+  border-color: #f59e0b;
+}
+
+.button-subscribe:hover::before {
+  left: 100%;
+}
+
+
+
+
+
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .horario-sessao {
+    padding: 0.75rem 1rem;
+  }
+  
+  .horario-titulo {
+    font-size: 1.25rem;
+  }
+} 

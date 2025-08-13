@@ -1,24 +1,14 @@
 .site-footer {
-  /* background-color: #064e3b;
+  /* background-color: #064e3b; */
   background: linear-gradient(
     to right,
-    #8da05f,
-    #4f6539 20%,
-    #193218 45%,
-    #0a1d0f 69%,
-    /* Ponto mais escuro exatamente no meio */ 
-    /* Volta para o primeiro tom escuro */ 
-      /* Termina no verde escuro original 
+    #8da05f 0%,
+    /* Começa claro à esquerda */ #193218 25%,
+    /* Transição rápida para o escuro */ #0a1d0f 35%,
+    /* Atinge o tom mais escuro */ #0a1d0f 75%,
+    /* Mantém o tom mais escuro até 75% */ #4f6539 95%
+      /* Clareia suavemente no final */
   );
-
-
-  color: #f3f4f6;
-  text-align: center;
-  padding: 1rem 1rem;
-  margin-top: 4rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; */
 
   background-color: #064e3b;
   color: #f3f4f6;
@@ -47,27 +37,23 @@
   flex-direction: column;
   align-items: start;
   width: 50%;
+  margin-left: 1.5rem;
 }
 
 .footer-contact {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
 }
 
 .footer-contact span {
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
   color: white;
 }
 
-
-.footer-info h2 {
+.footer-info h3 {
   font-size: 1.5rem;
-  color: white
+  color: white;
 }
 
 .footer-info span {
@@ -113,8 +99,7 @@
 
   .footer-info h2 {
     font-size: 1.25rem;
-    color: white
-
+    color: white;
   }
 
   .footer-info span {
@@ -129,11 +114,12 @@
     margin-top: 2rem;
     flex-direction: column;
     gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
   }
 
   .site-logo {
-    width: 20%;
-    order: 1;
+    display: none;
   }
 
   .footer-info {
@@ -146,16 +132,15 @@
   .footer-info h2 {
     font-size: 1.125rem;
     margin-bottom: 1rem;
-      color: white
-
+    color: white;
+    margin-left: 0;
   }
 
   .footer-info span {
     font-size: 0.95rem;
     margin-bottom: 0.75rem;
     justify-content: center;
-      color: white
-
+    color: white;
   }
 
   .footer-contact {
@@ -163,9 +148,13 @@
   }
 
   .footer-triade {
-    width: 20%;
+    width: 100%;
     order: 3;
     margin-top: 0;
+  }
+
+  .footer-triade img {
+    width: 50%;
   }
 }
 
@@ -180,8 +169,7 @@
   }
 
   .site-logo {
-    width: 80%;
-    border-bottom: 1px solid #5a5a5a;
+    display: none;
   }
 
   .site-logo img {
@@ -191,13 +179,13 @@
 
   .footer-info {
     padding: 0.5rem 0;
+    margin-left: 0;
   }
 
   .footer-info h2 {
     font-size: 1rem;
     margin-bottom: 0.75rem;
-      color: white
-
+    color: white;
   }
 
   .footer-info span {
@@ -205,12 +193,7 @@
     margin-bottom: 1rem;
     flex-direction: column;
     gap: 0.25rem;
-      color: white
-
-  }
-
-  .footer-contact {
-    border-bottom: 1px solid #5a5a5a;
+    color: white;
   }
 
   .footer-contact span {
@@ -221,7 +204,7 @@
   }
 
   .footer-triade {
-    width: 25%;
+    width: 100%;
   }
 }
 
@@ -233,7 +216,7 @@
   }
 
   .site-logo {
-    width: 30%;
+    display: none;
   }
 
   .footer-info h2 {
@@ -245,6 +228,18 @@
   }
 
   .footer-triade {
-    width: 30%;
+    width: 100%;
   }
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
 }
