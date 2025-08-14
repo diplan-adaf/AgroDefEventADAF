@@ -15,7 +15,8 @@ import sivandro from "../assets/sivandro.png"
 import wilson from "../assets/wilson.png"
 import diogoLima from "../assets/diogoLima.jpeg"
 import avatar from "../assets/avatarPlaceholder.jpg"
-
+import abrahimSena from "../assets/abrahimSena.jpeg";
+import marciaSeixas from "../assets/marciaSeixas.jpeg";
 
 
 import Layout from "../components/Layout";
@@ -36,7 +37,7 @@ const palestrantes = {
         },
         {
           nome: "Francisco Lourenço Junior",
-          foto: avatar,
+          foto: franciscoLoureco,
           tema: "Conectando o Campo à Saúde: Inovações Digitais para um Amazonas mais Sustentável e Seguro",
           sala: "Sala 3"
         },
@@ -74,6 +75,12 @@ const palestrantes = {
     {
       horario: "14:00 - 15:00",
       palestrantes: [
+        // {
+        //   nome: "Márcia Seixas de Castro Bader",
+        //   foto: marciaSeixas,
+        //   tema: "A Saúde Única como Estratégia para a Defesa Agropecuária.",
+        //   sala: "Palco Principal"
+        // },
         {
           nome: "Adriana Aguiar Oliveira",
           foto: avatar,
@@ -136,7 +143,7 @@ const palestrantes = {
           foto: avatar,
           tema: "Cadeia Produtiva da Carne no Amazonas",
           sala: "A definir"
-        }
+        },
       ]
     }
   ],
@@ -144,6 +151,12 @@ const palestrantes = {
     {
       horario: "10:00 - 11:00",
       palestrantes: [
+        {
+         nome: "Abrahim Sena Baze Junior",
+         foto: abrahimSena,
+         tema: "Valorização da Gastronomia Amazônica na Cadeia do Agro",
+         sala: "Palco Principal"
+        },
         {
           nome: "Fredson",
           foto: avatar,
@@ -240,12 +253,16 @@ const palestrantes = {
       <Layout>
         <div className="container">
           <h1 className="page-title">Programação de Palestrantes</h1>
-          <p className="palestrantes-descricao">
+          {/* <p className="palestrantes-descricao">
             Conheça os renomados especialistas que irão compartilhar conhecimento e experiências 
             sobre defesa agropecuária, inovação tecnológica e sustentabilidade na agricultura amazônica. 
             Nossos palestrantes são referências em suas áreas de atuação, trazendo insights valiosos 
             para o desenvolvimento do setor agropecuário na região.
-          </p>
+          </p> */}
+
+          <p>O evento é aberto ao público e voltado para <strong>agricultores</strong>, <strong>estudantes</strong> e <strong>entusiastas</strong> do setor. 
+          Cada palestra contará com a emissão de <strong>certificado de participação</strong>, 
+          que poderá ser utilizado por estudantes como <strong>horas complementares</strong> em sua formação acadêmica.</p>
 
           <div className="tabs-container">
             <div className="tabs">

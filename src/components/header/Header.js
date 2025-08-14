@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./header.css";
 import adaf from "../../assets/triade.png";
-
+import regua from "../../assets/REGUA BRANCA.png";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
@@ -60,7 +60,7 @@ export default function Header() {
     <header className="site-header">
       <nav className="site-nav">
         <div className={`nav-brand ${isMenuOpen ? "hide-brand" : ""}`}>
-          <img src={adaf} alt="Agro Amazonas" />
+          <img src={regua} alt="Agro Amazonas" />
         </div>
         
         {/* Menu desktop */}
