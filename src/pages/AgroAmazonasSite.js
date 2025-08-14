@@ -270,7 +270,7 @@ export default function AgroAmazonasSite() {
           <Button
             text={"Instagram"}
             ref={
-              "https://www.instagram.com/agroamazonas_evento/?utm_source=qr&igsh=MWNodGI1NW5seWNnZA%3D%3D"
+              "https://www.instagram.com/agro_defesa_evento/?igsh=MXRoeTRkaDJuNHRtZw%3D%3D"
             }
             cls={"instagram"}
           >

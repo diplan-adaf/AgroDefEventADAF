@@ -63,7 +63,7 @@ export default function Palestrantes() {
                       <p className="palestrante-formacao">{palestrante.formacao}</p>
                       <p className="palestrante-tema">{palestrante.tema}</p>
                       <p className="palestrante-sala">
-                        <span className="sala-badge">{palestrante.sala}</span>
+                        <span className="sala-badge-palestrantes">{palestrante.sala}</span>
                       </p>
                     </div>
                   </div>

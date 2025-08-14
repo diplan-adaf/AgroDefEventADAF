@@ -103,7 +103,7 @@
 .feature-tag {
   background: linear-gradient(135deg, #facc15 0%, #fbbf24 100%);
   color: #1e293b;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   border-radius: 2rem;
   font-size: 0.9rem;
   font-weight: 600;
@@ -177,9 +177,6 @@
   right: 20px;
 }
 
-.carousel-arrow span {
-  line-height: 1;
-}
 
 /* Indicadores do carrossel */
 .carousel-indicators {

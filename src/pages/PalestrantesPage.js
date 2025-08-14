@@ -64,21 +64,10 @@ const palestrantes = {
           sala: "Sala 2"
         },
         {
-          nome: "André Dupadro",
+          nome: "André do Prado Oliveira",
           foto: avatar,
-          tema: "Da granja à mesa: fatores para se obter um ovo",
+          tema: "Da granja à mesa: Fatores para se obter um ovo de qualidade",
           sala: "Sala 4"
-        }
-      ]
-    },
-    {
-      horario: "12:00 - 13:00",
-      palestrantes: [
-        {
-          nome: "François Vieira da Silva Matos",
-          foto: avatar,
-          tema: "Sistema gerenciamento em áreas Protegidas",
-          sala: "Palco Principal"
         }
       ]
     },
@@ -233,12 +222,6 @@ const palestrantes = {
       ]
     },
     {
-      horario: "17:00 - 18:00",
-      palestrantes: [
-        
-      ]
-    },
-    {
       horario: "18:30 - 19:30",
       palestrantes: [
         {
@@ -299,7 +282,7 @@ const palestrantes = {
                           <h3 className="palestrante-nome">{palestrante.nome}</h3>
                           <p className="palestrante-tema"><strong>Tema:</strong> {palestrante.tema}</p>
                           <p className="palestrante-sala">
-                            <span className="sala-badge">{palestrante.sala}</span>
+                            <span className="sala-badge-page">{palestrante.sala}</span>
                           </p>
                         </div>
 
