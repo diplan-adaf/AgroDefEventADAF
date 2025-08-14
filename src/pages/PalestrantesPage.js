@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../components/palestrantes/palestrantes.css";
 import "./PalestrantesPage.css";
 import brunoHenrique from "../assets/brunoHenrique.JPG";
@@ -18,11 +18,20 @@ import avatar from "../assets/avatarPlaceholder.jpg"
 import abrahimSena from "../assets/abrahimSena.jpeg";
 import marciaSeixas from "../assets/marciaSeixas.jpeg";
 
-
 import Layout from "../components/Layout";
 
 export default function PalestrantesPage() {
   const [activeTab, setActiveTab] = useState("02-09");
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "auto",
+    });
+  }, [activeTab]);
+
+  
 
 const palestrantes = {
   "02-09": [
@@ -260,9 +269,11 @@ const palestrantes = {
             para o desenvolvimento do setor agropecuário na região.
           </p> */}
 
-          <p>O evento é aberto ao público e voltado para <strong>agricultores</strong>, <strong>estudantes</strong> e <strong>entusiastas</strong> do setor. 
+          <p>O evento é aberto ao público e voltado para <strong>produtores rurais</strong>, <strong>empresários do agronegócio</strong>, 
+           <strong>instituições governamentais</strong> e <strong>universitários</strong>. 
           Cada palestra contará com a emissão de <strong>certificado de participação</strong>, 
-          que poderá ser utilizado por estudantes como <strong>horas complementares</strong> em sua formação acadêmica.</p>
+          que poderá ser utilizado por universitários como <strong>horas complementares</strong> em sua formação acadêmica.</p>
+
 
           <div className="tabs-container">
             <div className="tabs">
@@ -303,7 +314,7 @@ const palestrantes = {
                           </p>
                         </div>
 
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdqJDjN4tujp3fRNAFnXfyL9jpGuyuvJGPvxIFlf0yPdD-hWQ/viewform" className="button-subscribe">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdqJDjN4tujp3fRNAFnXfyL9jpGuyuvJGPvxIFlf0yPdD-hWQ/viewform" className="button-subscribe" target="_blank">
                           Inscreva-se
                         </a>
 
@@ -313,6 +324,23 @@ const palestrantes = {
                 </div>
               ))}
             </div>
+
+
+            <div className="tabs">
+              <button 
+                className={`tab ${activeTab === "02-09" ? "active" : ""}`}
+                onClick={() => setActiveTab("02-09")}
+              >
+                02/09 - Primeiro Dia
+              </button>
+              <button 
+                className={`tab ${activeTab === "03-09" ? "active" : ""}`}
+                onClick={() => setActiveTab("03-09")}
+              >
+                03/09 - Segundo Dia
+              </button>
+            </div>
+
           </div>
         </div>
       </Layout>

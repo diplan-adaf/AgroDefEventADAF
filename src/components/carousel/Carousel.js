@@ -12,7 +12,7 @@ export default function Carousel({ images, title = "STANDS" }) {
       setCurrentIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 4500);
+    }, 6000);
 
     return () => clearInterval(interval);
   }, [images.length, isAutoPlay]);

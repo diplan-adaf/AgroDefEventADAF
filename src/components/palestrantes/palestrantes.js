@@ -41,6 +41,12 @@ export default function Palestrantes() {
         para o desenvolvimento do setor agropecuário na região.
       </p>
 
+      <p>O evento é aberto ao público e voltado para <strong>produtores rurais</strong>, <strong>empresários do agronegócio</strong>, 
+       <strong>instituições governamentais</strong> e <strong>universitários</strong>. 
+      Cada palestra contará com a emissão de <strong>certificado de participação</strong>, 
+      que poderá ser utilizado por universitários como <strong>horas complementares</strong> em sua formação acadêmica.</p>
+
+
       <div className="cronograma-container">
 
         <div className="cronograma-content">
