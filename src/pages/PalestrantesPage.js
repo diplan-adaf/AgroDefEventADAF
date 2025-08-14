@@ -17,6 +17,10 @@ import diogoLima from "../assets/diogoLima.jpeg"
 import avatar from "../assets/avatarPlaceholder.jpg"
 import abrahimSena from "../assets/abrahimSena.jpeg";
 import marciaSeixas from "../assets/marciaSeixas.jpeg";
+import pauloBarreto from "../assets/pauloBarreto.jpeg";
+import airton from "../assets/airton.jpeg"
+import claudioEmanuel from "../assets/claudioEmanuel.jpeg"
+
 
 import Layout from "../components/Layout";
 
@@ -75,6 +79,7 @@ const palestrantes = {
         },
         {
           nome: "André do Prado Oliveira",
+          titulacao: "Médico veterinário",
           foto: avatar,
           tema: "Da granja à mesa: Fatores para se obter um ovo de qualidade",
           sala: "Sala 4"
@@ -103,8 +108,8 @@ const palestrantes = {
           sala: "Sala 2"
         },
         {
-          nome: "Cláudio Silva",
-          foto: avatar,
+          nome: "Cláudio Emanuel Magalhães Gurgel",
+          foto: claudioEmanuel,
           tema: "Boas práticas na Aplicação de Agrotóxicos",
           sala: "Sala 1"
         }
@@ -140,7 +145,7 @@ const palestrantes = {
           nome: "Fernando Rodrigues da Silva",
           foto: avatar,
           tema: "Avaliação nas Linhas de Inspeção de Abatedouro",
-          sala: "A definir"
+          sala: "Sala 4"
         }
       ]
     },
@@ -149,9 +154,9 @@ const palestrantes = {
       palestrantes: [
         {
           nome: "Airton Reis de Jesus",
-          foto: avatar,
+          foto: airton,
           tema: "Cadeia Produtiva da Carne no Amazonas",
-          sala: "A definir"
+          sala: "Sala 4"
         },
       ]
     }
@@ -174,7 +179,7 @@ const palestrantes = {
         },
         {
           nome: "Paulo Barreto",
-          foto: avatar,
+          foto: pauloBarreto,
           tema: "Sala de Classificação de ovos: cuidados, higienização, manutenção e calibração das maquinas de classificação",
           sala: "Sala 4"
         }
