@@ -11,10 +11,15 @@ import { Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
 
 import uninorte from "../assets/patrocinadores/UNINORTE VERTICAL - COLORIDO(1).png";
+import maraFrios from "../assets/patrocinadores/maraFrios.jpeg";
+import hossokawa from "../assets/patrocinadores/hossokawa.jpeg";
+
+
 import hgservice from "../assets/organização/HGservice.png";
 
 import adaf from "../assets/adaf.png";
 import idam from "../assets/logo-idam.png";
+
 
 import standDiamante from "../assets/saida-2.svg";
 import standOuro from "../assets/saida-3.svg";
@@ -172,6 +177,14 @@ export default function AgroAmazonasSite() {
       name: "Uninorte",
       src: uninorte,
     },
+    {
+      name: "Marafrios",
+      src: maraFrios
+    },
+    {
+      name: "Hossokawa",
+      src: hossokawa
+    }
   ];
 
   const realizadores = [
@@ -193,8 +206,8 @@ export default function AgroAmazonasSite() {
           <Card title="AGRO AMAZONAS">
             <p>
               Uma grande celebração da agricultura e da segurança alimentar no
-              nosso estado. Organizado pela ADAF – Agência de Defesa
-              Agropecuária e Florestal do Amazonas, o evento mostra como a
+              nosso estado. Organizado pela <strong>ADAF – Agência de Defesa
+              Agropecuária e Florestal do Amazonas</strong>, o evento mostra como a
               produção rural pode crescer com qualidade, saúde e respeito ao
               meio ambiente.
             </p>
@@ -270,7 +283,7 @@ export default function AgroAmazonasSite() {
           <Button
             text={"Instagram"}
             ref={
-              "https://www.instagram.com/agroamazonas_evento/?utm_source=qr&igsh=MWNodGI1NW5seWNnZA%3D%3D"
+              "https://www.instagram.com/agro_defesa_evento/?igsh=MXRoeTRkaDJuNHRtZw%3D%3D"
             }
             cls={"instagram"}
           >
@@ -316,16 +329,8 @@ export default function AgroAmazonasSite() {
           </Card>
         </section>
 
-        {/* <section id="sponsors">
-          <Patrocinadores/>
-        </section>
-        
-        <section>
-          <Apoio />
-        </section> */}
-
         <Brands title={"PATROCINADORES"} images={patrocinadores} />
-        <Brands title={"REALIZADORES"} images={realizadores} />
+        {/* <Brands title={"REALIZADORES"} images={realizadores} /> */}
         <Brands title={"ORGANIZAÇÃO"} images={organização} />
       </Layout>
     </div>

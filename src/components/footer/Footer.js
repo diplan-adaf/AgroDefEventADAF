@@ -2,6 +2,7 @@ import { Mail, Phone } from "lucide-react";
 import "./footer.css"; // Assuming you have a CSS file for styling
 import logo from "../../assets/descricaoBanner.png"; // Adjust the path as necessary
 import triade from "../../assets/triade.png"; // Adjust the path as necessary
+import regua from "../../assets/REGUA BRANCA.png"
 export default function Footer(){
     return(
     <footer className="site-footer">
@@ -16,7 +17,7 @@ export default function Footer(){
         </div>
       </div>
       <div className="footer-triade">
-        <img src={triade} alt="Triade" className="footer-triade" />
+        <img src={regua} alt="Triade" className="footer-triade" />
       </div>
     </footer>
     )

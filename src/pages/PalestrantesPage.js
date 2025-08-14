@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../components/palestrantes/palestrantes.css";
 import "./PalestrantesPage.css";
 import brunoHenrique from "../assets/brunoHenrique.JPG";
@@ -15,13 +15,23 @@ import sivandro from "../assets/sivandro.png"
 import wilson from "../assets/wilson.png"
 import diogoLima from "../assets/diogoLima.jpeg"
 import avatar from "../assets/avatarPlaceholder.jpg"
-
-
+import abrahimSena from "../assets/abrahimSena.jpeg";
+import marciaSeixas from "../assets/marciaSeixas.jpeg";
 
 import Layout from "../components/Layout";
 
 export default function PalestrantesPage() {
   const [activeTab, setActiveTab] = useState("02-09");
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "auto",
+    });
+  }, [activeTab]);
+
+  
 
 const palestrantes = {
   "02-09": [
@@ -36,7 +46,7 @@ const palestrantes = {
         },
         {
           nome: "Francisco Lourenço Junior",
-          foto: avatar,
+          foto: franciscoLoureco,
           tema: "Conectando o Campo à Saúde: Inovações Digitais para um Amazonas mais Sustentável e Seguro",
           sala: "Sala 3"
         },
@@ -64,27 +74,22 @@ const palestrantes = {
           sala: "Sala 2"
         },
         {
-          nome: "André Dupadro",
+          nome: "André do Prado Oliveira",
           foto: avatar,
-          tema: "Da granja à mesa: fatores para se obter um ovo",
+          tema: "Da granja à mesa: Fatores para se obter um ovo de qualidade",
           sala: "Sala 4"
-        }
-      ]
-    },
-    {
-      horario: "12:00 - 13:00",
-      palestrantes: [
-        {
-          nome: "François Vieira da Silva Matos",
-          foto: avatar,
-          tema: "Sistema gerenciamento em áreas Protegidas",
-          sala: "Palco Principal"
         }
       ]
     },
     {
       horario: "14:00 - 15:00",
       palestrantes: [
+        // {
+        //   nome: "Márcia Seixas de Castro Bader",
+        //   foto: marciaSeixas,
+        //   tema: "A Saúde Única como Estratégia para a Defesa Agropecuária.",
+        //   sala: "Palco Principal"
+        // },
         {
           nome: "Adriana Aguiar Oliveira",
           foto: avatar,
@@ -147,7 +152,7 @@ const palestrantes = {
           foto: avatar,
           tema: "Cadeia Produtiva da Carne no Amazonas",
           sala: "A definir"
-        }
+        },
       ]
     }
   ],
@@ -155,6 +160,12 @@ const palestrantes = {
     {
       horario: "10:00 - 11:00",
       palestrantes: [
+        {
+         nome: "Abrahim Sena Baze Junior",
+         foto: abrahimSena,
+         tema: "Valorização da Gastronomia Amazônica na Cadeia do Agro",
+         sala: "Palco Principal"
+        },
         {
           nome: "Fredson",
           foto: avatar,
@@ -233,12 +244,6 @@ const palestrantes = {
       ]
     },
     {
-      horario: "17:00 - 18:00",
-      palestrantes: [
-        
-      ]
-    },
-    {
       horario: "18:30 - 19:30",
       palestrantes: [
         {
@@ -257,12 +262,18 @@ const palestrantes = {
       <Layout>
         <div className="container">
           <h1 className="page-title">Programação de Palestrantes</h1>
-          <p className="palestrantes-descricao">
+          {/* <p className="palestrantes-descricao">
             Conheça os renomados especialistas que irão compartilhar conhecimento e experiências 
             sobre defesa agropecuária, inovação tecnológica e sustentabilidade na agricultura amazônica. 
             Nossos palestrantes são referências em suas áreas de atuação, trazendo insights valiosos 
             para o desenvolvimento do setor agropecuário na região.
-          </p>
+          </p> */}
+
+          <p>O evento é aberto ao público e voltado para <strong>produtores rurais</strong>, <strong>empresários do agronegócio</strong>, 
+           <strong>instituições governamentais</strong> e <strong>universitários</strong>. 
+          Cada palestra contará com a emissão de <strong>certificado de participação</strong>, 
+          que poderá ser utilizado por universitários como <strong>horas complementares</strong> em sua formação acadêmica.</p>
+
 
           <div className="tabs-container">
             <div className="tabs">
@@ -299,11 +310,11 @@ const palestrantes = {
                           <h3 className="palestrante-nome">{palestrante.nome}</h3>
                           <p className="palestrante-tema"><strong>Tema:</strong> {palestrante.tema}</p>
                           <p className="palestrante-sala">
-                            <span className="sala-badge">{palestrante.sala}</span>
+                            <span className="sala-badge-page">{palestrante.sala}</span>
                           </p>
                         </div>
 
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdqJDjN4tujp3fRNAFnXfyL9jpGuyuvJGPvxIFlf0yPdD-hWQ/viewform" className="button-subscribe">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdqJDjN4tujp3fRNAFnXfyL9jpGuyuvJGPvxIFlf0yPdD-hWQ/viewform" className="button-subscribe" target="_blank">
                           Inscreva-se
                         </a>
 
@@ -313,6 +324,23 @@ const palestrantes = {
                 </div>
               ))}
             </div>
+
+
+            <div className="tabs">
+              <button 
+                className={`tab ${activeTab === "02-09" ? "active" : ""}`}
+                onClick={() => setActiveTab("02-09")}
+              >
+                02/09 - Primeiro Dia
+              </button>
+              <button 
+                className={`tab ${activeTab === "03-09" ? "active" : ""}`}
+                onClick={() => setActiveTab("03-09")}
+              >
+                03/09 - Segundo Dia
+              </button>
+            </div>
+
           </div>
         </div>
       </Layout>

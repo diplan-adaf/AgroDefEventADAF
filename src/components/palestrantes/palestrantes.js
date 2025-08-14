@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./palestrantes.css";
 import palestrantes2 from "../../assets/brunoHenrique.JPG";
 import avatarPlaceHolder from "../../assets/avatarPlaceholder.jpg"
-
+import abrahimSena from "../../assets/abrahimSena.jpeg";
 
 import { Link } from "react-router-dom";
 import Card from "../card/Card";
@@ -16,9 +16,9 @@ export default function Palestrantes() {
         horario: "08:00 - 09:00",
         palestrantes: [
           {
-            nome: "François Vieira da Silva Matos",
-            foto: avatarPlaceHolder,
-            tema: "Sistema gerenciamento em áreas Protegidas",
+            nome: "Me. Abrahim Sena Baze Junior",
+            foto: abrahimSena,
+            tema: "Valorização da Gastronomia Amazônica na Cadeia do Agro",
             sala: "Palco Principal"
           },
           {
@@ -41,6 +41,12 @@ export default function Palestrantes() {
         para o desenvolvimento do setor agropecuário na região.
       </p>
 
+      <p>O evento é aberto ao público e voltado para <strong>produtores rurais</strong>, <strong>empresários do agronegócio</strong>, 
+       <strong>instituições governamentais</strong> e <strong>universitários</strong>. 
+      Cada palestra contará com a emissão de <strong>certificado de participação</strong>, 
+      que poderá ser utilizado por universitários como <strong>horas complementares</strong> em sua formação acadêmica.</p>
+
+
       <div className="cronograma-container">
 
         <div className="cronograma-content">
@@ -61,9 +67,9 @@ export default function Palestrantes() {
                     <div className="palestrante-info">
                       <h3 className="palestrante-nome">{palestrante.nome}</h3>
                       <p className="palestrante-formacao">{palestrante.formacao}</p>
-                      <p className="palestrante-tema">{palestrante.tema}</p>
+                      <p className="palestrante-tema"><strong>Tema: </strong>{palestrante.tema}</p>
                       <p className="palestrante-sala">
-                        <span className="sala-badge">{palestrante.sala}</span>
+                        <span className="sala-badge-palestrantes">{palestrante.sala}</span>
                       </p>
                     </div>
                   </div>

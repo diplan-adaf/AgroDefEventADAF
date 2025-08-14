@@ -12,7 +12,7 @@ export default function Carousel({ images, title = "STANDS" }) {
       setCurrentIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 4500);
+    }, 6000);
 
     return () => clearInterval(interval);
   }, [images.length, isAutoPlay]);
@@ -41,10 +41,10 @@ export default function Carousel({ images, title = "STANDS" }) {
       <h2>{title}</h2>
       <div className="carousel-container">
         <button className="carousel-arrow carousel-arrow-left" onClick={goToPrevious}>
-          <span>‹</span>
+          ‹
         </button>
         <button className="carousel-arrow carousel-arrow-right" onClick={goToNext}>
-          <span>›</span>
+          ›
         </button>
         
         <div className="carousel-content">
