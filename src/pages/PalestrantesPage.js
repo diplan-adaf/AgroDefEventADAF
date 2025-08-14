@@ -20,7 +20,7 @@ import marciaSeixas from "../assets/marciaSeixas.jpeg";
 import pauloBarreto from "../assets/pauloBarreto.jpeg";
 import airton from "../assets/airton.jpeg"
 import claudioEmanuel from "../assets/claudioEmanuel.jpeg"
-
+import raineAila from "../assets/raianeAila.jpeg"
 
 import Layout from "../components/Layout";
 
@@ -190,7 +190,7 @@ const palestrantes = {
       palestrantes: [
         {
           nome: "Raiane Áila",
-          foto: avatar,
+          foto: raineAila,
           tema: "Populações expostas aos agrotóxicos",
           sala: "Sala 1"
         },
