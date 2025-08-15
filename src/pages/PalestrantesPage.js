@@ -20,7 +20,7 @@ import marciaSeixas from "../assets/marciaSeixas.jpeg";
 
 import airton from "../assets/airtonSena.jpeg";
 import silvanaPimentel from "../assets/silvanaPimentel.jpeg";
-import andrePrado from "../assets/andrePrado.png";
+import andrePrado from "../assets/andrePrado.png"
 import claudioEmanuel from "../assets/claudioEmanuel.jpeg";
 import raianeAila from "../assets/raianeAila.jpeg";
 import pauloBarreto from "../assets/pauloBarreto.png";
@@ -87,8 +87,6 @@ const palestrantes = {
         {
           nome: "André do Prado Oliveira",
           foto: andrePrado,
-          titulacao: "Médico veterinário",
-          foto: avatar,
           tema: "Da granja à mesa: Fatores para se obter um ovo de qualidade",
           sala: "Sala 4"
         }
@@ -198,7 +196,7 @@ const palestrantes = {
       palestrantes: [
         {
           nome: "Raiane Áila",
-          foto: raineAila,
+          foto: raianeAila,
           tema: "Populações expostas aos agrotóxicos",
           sala: "Sala 1"
         },
