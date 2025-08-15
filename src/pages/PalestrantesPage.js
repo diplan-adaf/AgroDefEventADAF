@@ -20,13 +20,12 @@ import marciaSeixas from "../assets/marciaSeixas.jpeg";
 
 import airton from "../assets/airtonSena.jpeg";
 import silvanaPimentel from "../assets/silvanaPimentel.jpeg";
-import andrePrado from "../assets/andrePrado.png";
+
 import claudioEmanuel from "../assets/claudioEmanuel.jpeg";
 import raianeAila from "../assets/raianeAila.jpeg";
 import pauloBarreto from "../assets/pauloBarreto.png";
 import pauloSergio from "../assets/paulosergio.png";
 import anaFlavia from "../assets/anaFlavia.jpeg";
-import adrianaOliveira from "../assets/adrianaOliveira.jpeg";
 
 import Layout from "../components/Layout";
 
@@ -80,23 +79,11 @@ export default function PalestrantesPage() {
             tema: "Ações de Controle a Mosca da Carambola em Roraima (impactos na fruticultura)",
             sala: "Sala 2",
           },
-          {
-            nome: "André do Prado Oliveira",
-            foto: andrePrado,
-            tema: "Da granja à mesa: Fatores para se obter um ovo de qualidade",
-            sala: "Sala 4",
-          },
         ],
       },
       {
         horario: "14:00 - 15:00",
         palestrantes: [
-          {
-            nome: "Adriana Aguiar Oliveira",
-            foto: adrianaOliveira,
-            tema: "Panorama do SISBI no Brasil",
-            sala: "Sala 4",
-          },
           {
             nome: "Ana Maria Nóbrega",
             foto: anaMariaNobrega,
