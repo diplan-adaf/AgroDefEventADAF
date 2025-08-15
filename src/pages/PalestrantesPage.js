@@ -17,10 +17,17 @@ import diogoLima from "../assets/diogoLima.jpeg"
 import avatar from "../assets/avatarPlaceholder.jpg"
 import abrahimSena from "../assets/abrahimSena.jpeg";
 import marciaSeixas from "../assets/marciaSeixas.jpeg";
-import pauloBarreto from "../assets/pauloBarreto.jpeg";
-import airton from "../assets/airton.jpeg"
-import claudioEmanuel from "../assets/claudioEmanuel.jpeg"
-import raineAila from "../assets/raianeAila.jpeg"
+
+import airton from "../assets/airtonSena.jpeg";
+import silvanaPimentel from "../assets/silvanaPimentel.jpeg";
+import andrePrado from "../assets/andrePrado.png";
+import claudioEmanuel from "../assets/claudioEmanuel.jpeg";
+import raianeAila from "../assets/raianeAila.jpeg";
+import pauloBarreto from "../assets/pauloBarreto.png";
+import pauloSergio from "../assets/pauloSergio.png";
+import anaFlavia from "../assets/anaFlavia.jpeg";
+import adrianaOliveira from "../assets/adrianaOliveira.jpeg";
+
 
 import Layout from "../components/Layout";
 
@@ -79,6 +86,7 @@ const palestrantes = {
         },
         {
           nome: "André do Prado Oliveira",
+          foto: andrePrado,
           titulacao: "Médico veterinário",
           foto: avatar,
           tema: "Da granja à mesa: Fatores para se obter um ovo de qualidade",
@@ -89,15 +97,9 @@ const palestrantes = {
     {
       horario: "14:00 - 15:00",
       palestrantes: [
-        // {
-        //   nome: "Márcia Seixas de Castro Bader",
-        //   foto: marciaSeixas,
-        //   tema: "A Saúde Única como Estratégia para a Defesa Agropecuária.",
-        //   sala: "Palco Principal"
-        // },
         {
           nome: "Adriana Aguiar Oliveira",
-          foto: avatar,
+          foto: adrianaOliveira,
           tema: "Panorama do SISBI no Brasil",
           sala: "Sala 4"
         },
@@ -112,7 +114,13 @@ const palestrantes = {
           foto: claudioEmanuel,
           tema: "Boas práticas na Aplicação de Agrotóxicos",
           sala: "Sala 1"
-        }
+        },
+        {
+          nome: "Márcia Seixas de Castro Bader",
+          foto: marciaSeixas,
+          tema: "A Saúde Única como Estratégia para a Defesa Agropecuária.",
+          sala: "Sala 3"
+        },
       ]
     },
     {
@@ -196,7 +204,7 @@ const palestrantes = {
         },
         {
           nome: "Ana Flávia Amâncio",
-          foto: avatar,
+          foto: anaFlavia,
           tema: "Boas práticas de manipulação de alimentos",
           sala: "Sala 4"
         },
@@ -229,14 +237,14 @@ const palestrantes = {
       horario: "15:30 - 16:30",
       palestrantes: [
         {
-          nome: "Silvana",
-          foto: avatar,
+          nome: "Silvana Pimentel",
+          foto: silvanaPimentel,
           tema: "Licenciamento de Estabelecimento de comercio de agrotóxicos",
           sala: "Sala 1"
         },
         {
           nome: "Paulo Sérgio",
-          foto: avatar,
+          foto: pauloSergio,
           tema: "A Atuação Prática do Acadêmico de Medicina Veterinária no Amazonas",
           sala: "Sala 3"
         },
