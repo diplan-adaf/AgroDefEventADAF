@@ -1,104 +1,166 @@
 import React, { useState } from "react";
 import "./palestrantes.css";
 import palestrantes2 from "../../assets/brunoHenrique.JPG";
-import avatarPlaceHolder from "../../assets/avatarPlaceholder.jpg"
+import avatarPlaceHolder from "../../assets/avatarPlaceholder.jpg";
 import abrahimSena from "../../assets/abrahimSena.jpeg";
-
 import { Link } from "react-router-dom";
 import Card from "../card/Card";
 
 export default function Palestrantes() {
-  const [activeTab, setActiveTab] = useState("02-09");
+  const [selectedSpeaker, setSelectedSpeaker] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const palestrantes = {
-    "02-09": [
-      {
-        horario: "08:00 - 09:00",
-        palestrantes: [
-          {
-            nome: "Me. Abrahim Sena Baze Junior",
-            foto: abrahimSena,
-            tema: "Valorização da Gastronomia Amazônica na Cadeia do Agro",
-            sala: "Palco Principal"
-          },
-          {
-            nome: "Dr. Bruno Henrique dos Santos",
-            foto: palestrantes2,
-            tema: "Segurança dos Alimentos na Era da Sustentabilidade: Desafios e Oportunidades",
-            sala: "Palco Principal"
-          },
-        ]
-      }
-    ]
+  const palestrantes = [
+    {
+      id: 1,
+      nome: "Me. Abrahim Sena Baze Junior",
+      foto: abrahimSena,
+      tema: "Valorização da Gastronomia Amazônica na Cadeia do Agro",
+      horario: "08:00 - 09:00",
+      sala: "Palco Principal",
+      descricao: "Especialista em gastronomia amazônica e cadeia produtiva do agronegócio regional."
+    },
+    {
+      id: 2,
+      nome: "Dr. Bruno Henrique dos Santos",
+      foto: palestrantes2,
+      tema: "Segurança dos Alimentos na Era da Sustentabilidade: Desafios e Oportunidades",
+      horario: "09:30 - 10:30",
+      sala: "Palco Principal",
+      descricao: "Doutor em segurança alimentar e sustentabilidade na produção agropecuária."
+    },
+    {
+      id: 3,
+      nome: "Dra. Ana Maria Nobrega",
+      foto: avatarPlaceHolder,
+      tema: "Inovação Tecnológica na Agricultura Amazônica",
+      horario: "11:00 - 12:00",
+      sala: "Auditório A",
+      descricao: "Pesquisadora especializada em tecnologias inovadoras para o desenvolvimento sustentável da agricultura."
+    },
+    {
+      id: 4,
+      nome: "Prof. Francisco Lourenço",
+      foto: avatarPlaceHolder,
+      tema: "Defesa Sanitária Animal e Vegetal",
+      horario: "14:00 - 15:00",
+      sala: "Auditório B",
+      descricao: "Professor e especialista em defesa sanitária e controle de pragas e doenças."
+    },
+    {
+      id: 5,
+      nome: "Dr. Geraldo Silva",
+      foto: avatarPlaceHolder,
+      tema: "Exportação e Mercado Internacional",
+      horario: "15:30 - 16:30",
+      sala: "Palco Principal",
+      descricao: "Consultor internacional especializado em comércio exterior e certificações."
+    },
+    {
+      id: 6,
+      nome: "Dra. Glauco Mendes",
+      foto: avatarPlaceHolder,
+      tema: "Sustentabilidade e Meio Ambiente",
+      horario: "17:00 - 18:00",
+      sala: "Auditório A",
+      descricao: "Especialista em práticas sustentáveis e conservação ambiental na agricultura."
+    }
+  ];
+
+  const openModal = (speaker) => {
+    setSelectedSpeaker(speaker);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedSpeaker(null);
   };
 
   return (
     <Card title={"Palestrantes"}>
-      <p>
-        Conheça os renomados especialistas que irão compartilhar conhecimento e experiências 
-        sobre defesa agropecuária, inovação tecnológica e sustentabilidade na agricultura amazônica. 
-        Nossos palestrantes são referências em suas áreas de atuação, trazendo insights valiosos 
-        para o desenvolvimento do setor agropecuário na região.
+      <p className="palestrantes-intro">
+        Conheça os renomados especialistas que irão compartilhar conhecimento e experiências
+        sobre defesa agropecuária, inovação tecnológica e sustentabilidade na agricultura amazônica.
       </p>
 
-      <p>O evento é aberto ao público e voltado para <strong>produtores rurais</strong>, <strong>empresários do agronegócio</strong>, 
-       <strong>instituições governamentais</strong> e <strong>universitários</strong>. 
-      Cada palestra contará com a emissão de <strong>certificado de participação</strong>, 
-      que poderá ser utilizado por universitários como <strong>horas complementares</strong> em sua formação acadêmica.</p>
-
-
-      <div className="cronograma-container">
-
-        <div className="cronograma-content">
-          {palestrantes[activeTab].map((sessao, index) => (
-            <div key={index} className="sessao-palestra">
-              <div className="horario">
-                {/* <span className="horario-texto">{sessao.horario}</span> */}
+      <div className="palestrantes-container">
+        <div className="palestrantes-grid">
+          {palestrantes.map((palestrante) => (
+            <div 
+              key={palestrante.id} 
+              className="palestrante-card" 
+              onClick={() => openModal(palestrante)}
+            >
+              <div className="palestrante-foto">
+                <img src={palestrante.foto} alt={palestrante.nome} />
               </div>
-              <div className="palestrantes-grid">
-                {sessao.palestrantes.map((palestrante, palestranteIndex) => (
-                  <div key={palestranteIndex} className="palestrante-card">
-                    <div className="palestrante-foto">
-                      <img 
-                        src={palestrante.foto} 
-                        alt={palestrante.nome}
-                      />
-                    </div>
-                    <div className="palestrante-info">
-                      <h3 className="palestrante-nome">{palestrante.nome}</h3>
-                      <p className="palestrante-formacao">{palestrante.formacao}</p>
-                      <p className="palestrante-tema"><strong>Tema: </strong>{palestrante.tema}</p>
-                      <p className="palestrante-sala">
-                        <span className="sala-badge-palestrantes">{palestrante.sala}</span>
-                      </p>
-                    </div>
-                  </div>
-                ))}
+              <div className="palestrante-info">
+                <h3 className="palestrante-nome">{palestrante.nome}</h3>
               </div>
             </div>
           ))}
+        </div>
 
-          <Link 
-              to="/palestrantes" 
-              style={{
-                display: 'inline-block',
-                padding: '2rem 2rem',
-                backgroundColor: '#059669',
-                color: 'white',
-                textDecoration: 'none',
-                borderRadius: '50px',
-                fontWeight: '600',
-                transition: 'background-color 0.3s'
-              }}
-              onMouseOver={(e) => e.target.style.backgroundColor = '#047857'}
-              onMouseOut={(e) => e.target.style.backgroundColor = '#059669'}
-            >
-              Ver Programação Completa dos Palestrantes
+        <div className="palestrantes-footer">
+          <Link to="/palestrantes" className="ver-programacao-btn">
+            Ver programação completa
           </Link>
         </div>
       </div>
 
-
+      {/* Modal Moderno */}
+      {isModalOpen && selectedSpeaker && (
+        <div className="modal-overlay" onClick={closeModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={closeModal}>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
+            
+            <div className="modal-header">
+              <div className="modal-foto-container">
+                <img src={selectedSpeaker.foto} alt={selectedSpeaker.nome} />
+              </div>
+              <div className="modal-info">
+                <h2 className="modal-nome">{selectedSpeaker.nome}</h2>
+                <p className="modal-descricao">{selectedSpeaker.descricao}</p>
+              </div>
+            </div>
+            
+            <div className="modal-body">
+              <div className="modal-details">
+                <div className="detail-item">
+                  <span className="detail-label">Tema</span>
+                  <p className="detail-value">{selectedSpeaker.tema}</p>
+                </div>
+                
+                <div className="detail-item">
+                  <span className="detail-label">Horário</span>
+                  <p className="detail-value">{selectedSpeaker.horario}</p>
+                </div>
+                
+                <div className="detail-item">
+                  <span className="detail-label">Local</span>
+                  <p className="detail-value">{selectedSpeaker.sala}</p>
+                </div>
+              </div>
+              
+              <div className="modal-actions">
+                <a
+                  href="https://www.sympla.com.br/evento/agro-amazonas-defesa-agropecuaria/3060161"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inscreva-se-btn"
+                >
+                  Inscreva-se
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </Card>
   );
 } 

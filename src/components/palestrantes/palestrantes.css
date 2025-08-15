@@ -1,112 +1,66 @@
+/* Componente Palestrantes - Design Moderno */
 
-/* Tabs */
-.cronograma-container {
-  width: 100%;
-  max-width: 1000px;
-  display: flex;
-  justify-content: center;
-}
-
-.tabs {
-  display: flex;
-  justify-content: start;
-  margin-bottom: 3rem;
-  gap: 1rem;
-}
-
-.tab {
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-  color: #64748b;
-  font-weight: 600;
+.palestrantes-intro {
+  text-align: center;
+  color: #374151;
   font-size: 1.125rem;
-  padding: 1rem 2rem;
-  border: 2px solid transparent;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  line-height: 1.7;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.tab:hover {
-  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-  color: #92400e;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(250, 204, 21, 0.3);
-}
-
-.tab.active {
-  background: linear-gradient(135deg, #facc15 0%, #fde047 100%);
-  color: #1f2937;
-  border-color: #f59e0b;
-  box-shadow: 0 8px 20px rgba(250, 204, 21, 0.4);
-}
-
-/* Cronograma */
-
-.cronograma-container{
+.palestrantes-container {
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
-}
-
-
-.cronograma-content {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.sessao-palestra {
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  padding: 2rem;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  position: relative;
-  z-index: 1;
-  margin: 0 auto;
-  width: 90%;
-}
-
-.horario {
-  text-align: start;
-  margin-bottom: 2rem;
-}
-
-.horario-texto {
-  background: linear-gradient(135deg, #facc15 0%, #fde047 100%);
-  color: #1f2937;
-  font-weight: 700;
-  font-size: 1.25rem;
-  padding: 0.75rem 2rem;
-  border-radius: 50px;
-  box-shadow: 0 4px 12px rgba(250, 204, 21, 0.3);
-  display: inline-block;
 }
 
 .palestrantes-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .palestrante-card {
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  background: linear-gradient(145deg, #1e293b 0%, #334155 100%);
   border-radius: 16px;
   padding: 1.5rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   position: relative;
+  overflow: hidden;
+  min-height: 280px;
+}
+
+.palestrante-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #10b981, #059669, #047857);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
 
 .palestrante-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
-  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(145deg, #334155 0%, #475569 100%);
+}
+
+.palestrante-card:hover::before {
+  transform: scaleX(1);
 }
 
 .palestrante-foto {
@@ -115,14 +69,26 @@
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 1rem;
-  border: 4px solid #facc15;
-  box-shadow: 0 8px 20px rgba(250, 204, 21, 0.3);
+  border: 3px solid #10b981;
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.palestrante-card:hover .palestrante-foto {
+  border-color: #059669;
+  transform: scale(1.05);
 }
 
 .palestrante-foto img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.palestrante-card:hover .palestrante-foto img {
+  transform: scale(1.1);
 }
 
 .palestrante-info {
@@ -133,204 +99,311 @@
 }
 
 .palestrante-nome {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #1e293b;
-  margin: 0;
-}
-
-.palestrante-formacao {
-  font-size: 0.95rem;
-  color: #64748b;
-  font-weight: 500;
-  margin: 0;
-  line-height: 1.4;
-}
-
-.palestrante-tema {
-  font-size: 1rem;
-  color: #475569;
+  font-size: 1.1rem;
   font-weight: 600;
+  color: #10b981;
   margin: 0;
-  padding: 0.5rem 1rem;
-  background: rgba(250, 204, 21, 0.2);
-  border-radius: 8px;
-  line-height: 1.4;
+  line-height: 1.3;
 }
 
-.sala-badge-palestrantes {
-  display: inline-block;
-  background: linear-gradient(135deg, #059669, #10b981);
+.palestrantes-footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.ver-programacao-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
   color: white;
-  padding: 0.25rem 0.75rem;
-  border-radius: 20px;
-  font-size: 0.875rem;
+  text-decoration: none;
+  border-radius: 50px;
   font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.3);
+  border: none;
+  cursor: pointer;
+}
+
+.ver-programacao-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 35px rgba(16, 185, 129, 0.4);
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+}
+
+/* Modal Moderno com mais espaço para descrição */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: slideUp 0.3s ease;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: #f3f4f6;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 10;
+  color: #6b7280;
+}
+
+.modal-close:hover {
+  background: #e5e7eb;
+  color: #374151;
+  transform: scale(1.1);
+}
+
+.modal-header {
+  padding: 2.5rem 2.5rem 2rem;
+  border-bottom: 1px solid #f3f4f6;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.modal-foto-container {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #e5e7eb;
+  flex-shrink: 0;
+}
+
+.modal-foto-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-info {
+  flex: 1;
+}
+
+.modal-nome {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.3;
+}
+
+.modal-descricao {
+  color: #6b7280;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.modal-body {
+  padding: 2rem 2.5rem 2.5rem;
+}
+
+.modal-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.detail-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #6b7280;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  text-align: center;
-  max-width: 160px;
-  left: 60%;
 }
 
-.sala-badge-palestrantes:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-.palestrante-sala {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
+.detail-value {
+  font-size: 1.1rem;
+  color: #1f2937;
+  font-weight: 500;
+  line-height: 1.6;
   margin: 0;
+  padding: 1rem 1.25rem;
+  background: #f9fafb;
+  border-radius: 12px;
+  border-left: 4px solid #10b981;
 }
 
-/* Responsividade para tablets */
-@media (max-width: 768px) {
-  .palestrantes-container {
-    padding: 2rem 1.5rem;
-    width: 95%;
-  }
-  
-  .palestrantes-container h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-  }
-  
+.modal-actions {
+  display: flex;
+  justify-content: center;
+}
 
-  .tabs {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
+.inscreva-se-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.25rem 2.5rem;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.3);
+  border: none;
+  cursor: pointer;
+}
+
+.inscreva-se-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 35px rgba(16, 185, 129, 0.4);
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  .tab {
-    width: 100%;
-    max-width: 300px;
-    font-size: 1rem;
-    padding: 0.875rem 1.5rem;
+  to {
+    opacity: 1;
   }
-  
-  .sessao-palestra {
-    padding: 1.5rem;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
   }
-  
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
   .palestrantes-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
   }
-  
+}
+
+@media (max-width: 768px) {
+  .palestrantes-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
   .palestrante-card {
     padding: 1.25rem;
+    min-height: 250px;
   }
-  
-  .palestrante-card:hover{
-    transform: none;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-  }
-  
+
   .palestrante-foto {
     width: 100px;
     height: 100px;
   }
+
+  .palestrante-nome {
+    font-size: 1rem;
+  }
+
+  .modal-content {
+    margin: 1rem;
+    max-height: 95vh;
+  }
+
+  .modal-header {
+    padding: 2rem 2rem 1.5rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .modal-foto-container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .modal-body {
+    padding: 1.5rem 2rem 2rem;
+  }
+
+  .modal-close {
+    top: 1rem;
+    right: 1rem;
+    width: 35px;
+    height: 35px;
+  }
 }
 
-/* Responsividade para smartphones */
 @media (max-width: 480px) {
-  .palestrantes-container {
-    padding: 1.5rem 1rem;
-    width: 95%;
-  }
-  
-  .palestrantes-container h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .tabs {
-    gap: 0.5rem;
-  }
-  
-  .tab {
-    max-width: 250px;
-    font-size: 0.95rem;
-    padding: 0.75rem 1.25rem;
-  }
-  
-  .sessao-palestra {
-    padding: 1rem;
-  }
-  
   .palestrantes-grid {
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
-  
+
   .palestrante-card {
     padding: 1rem;
+    min-height: 220px;
   }
-  
-  .palestrante-card:hover{
-    transform: none;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-  }
-  
+
   .palestrante-foto {
     width: 80px;
     height: 80px;
   }
-  
+
   .palestrante-nome {
-    font-size: 1.125rem;
+    font-size: 0.95rem;
   }
-  
-  .palestrante-formacao {
-    font-size: 0.875rem;
+
+  .modal-content {
+    margin: 0.5rem;
+    border-radius: 16px;
   }
-  
-  .palestrante-tema {
-    font-size: 0.9rem;
+
+  .modal-header {
+    padding: 1.5rem 1.5rem 1rem;
   }
-  
-  .sala-badge-palestrantes{
-    max-width: 120px;
-    left: 60%;
-    font-size: 0.8rem;
+
+  .modal-body {
+    padding: 1rem 1.5rem 1.5rem;
   }
-}
 
-/* Animação de entrada */
-@keyframes slideInUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
+  .detail-value {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.palestrantes-container {
-  animation: slideInUp 0.8s ease-out;
-}
-
-.sessao-palestra {
-  animation: slideInUp 0.8s ease-out;
-  animation-fill-mode: both;
-}
-
-.sessao-palestra:nth-child(1) { animation-delay: 0.1s; }
-.sessao-palestra:nth-child(2) { animation-delay: 0.2s; }
-.sessao-palestra:nth-child(3) { animation-delay: 0.3s; }
-
-.palestrante-card {
-  animation: slideInUp 0.6s ease-out;
-  animation-fill-mode: both;
-}
-
-.palestrante-card:nth-child(1) { animation-delay: 0.2s; }
-.palestrante-card:nth-child(2) { animation-delay: 0.3s; } 
+} 
