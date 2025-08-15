@@ -17,6 +17,12 @@ import diogoLima from "../assets/diogoLima.jpeg"
 import avatar from "../assets/avatarPlaceholder.jpg"
 import abrahimSena from "../assets/abrahimSena.jpeg";
 import marciaSeixas from "../assets/marciaSeixas.jpeg";
+import airton from "../assets/airtonSena.jpeg";
+import silvanaPimentel from "../assets/silvanaPimentel.jpeg";
+import andrePrado from "../assets/andrePrado.png";
+import claudioEmanuel from "../assets/claudioEmanuel.jpeg";
+import raianeAila from "../assets/raianeAila.jpeg";
+import pauloBarreto from "../assets/pauloBarreto.png";
 
 import Layout from "../components/Layout";
 
@@ -75,7 +81,7 @@ const palestrantes = {
         },
         {
           nome: "André do Prado Oliveira",
-          foto: avatar,
+          foto: andrePrado,
           tema: "Da granja à mesa: Fatores para se obter um ovo de qualidade",
           sala: "Sala 4"
         }
@@ -84,12 +90,6 @@ const palestrantes = {
     {
       horario: "14:00 - 15:00",
       palestrantes: [
-        // {
-        //   nome: "Márcia Seixas de Castro Bader",
-        //   foto: marciaSeixas,
-        //   tema: "A Saúde Única como Estratégia para a Defesa Agropecuária.",
-        //   sala: "Palco Principal"
-        // },
         {
           nome: "Adriana Aguiar Oliveira",
           foto: avatar,
@@ -103,11 +103,17 @@ const palestrantes = {
           sala: "Sala 2"
         },
         {
-          nome: "Cláudio Silva",
-          foto: avatar,
+          nome: "Claudio Emanuel Magalhães Gurgel ",
+          foto: claudioEmanuel,
           tema: "Boas práticas na Aplicação de Agrotóxicos",
           sala: "Sala 1"
-        }
+        },
+        {
+          nome: "Márcia Seixas de Castro Bader",
+          foto: marciaSeixas,
+          tema: "A Saúde Única como Estratégia para a Defesa Agropecuária.",
+          sala: "Sala 3"
+        },
       ]
     },
     {
@@ -140,7 +146,7 @@ const palestrantes = {
           nome: "Fernando Rodrigues da Silva",
           foto: avatar,
           tema: "Avaliação nas Linhas de Inspeção de Abatedouro",
-          sala: "A definir"
+          sala: "Sala 4"
         }
       ]
     },
@@ -149,9 +155,9 @@ const palestrantes = {
       palestrantes: [
         {
           nome: "Airton Reis de Jesus",
-          foto: avatar,
+          foto: airton,
           tema: "Cadeia Produtiva da Carne no Amazonas",
-          sala: "A definir"
+          sala: "Sala 4"
         },
       ]
     }
@@ -174,7 +180,7 @@ const palestrantes = {
         },
         {
           nome: "Paulo Barreto",
-          foto: avatar,
+          foto: pauloBarreto,
           tema: "Sala de Classificação de ovos: cuidados, higienização, manutenção e calibração das maquinas de classificação",
           sala: "Sala 4"
         }
@@ -185,7 +191,7 @@ const palestrantes = {
       palestrantes: [
         {
           nome: "Raiane Áila",
-          foto: avatar,
+          foto: raianeAila,
           tema: "Populações expostas aos agrotóxicos",
           sala: "Sala 1"
         },
@@ -224,8 +230,8 @@ const palestrantes = {
       horario: "15:30 - 16:30",
       palestrantes: [
         {
-          nome: "Silvana",
-          foto: avatar,
+          nome: "Silvana Pimentel",
+          foto: silvanaPimentel,
           tema: "Licenciamento de Estabelecimento de comercio de agrotóxicos",
           sala: "Sala 1"
         },
