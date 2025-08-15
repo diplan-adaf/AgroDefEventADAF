@@ -102,6 +102,7 @@
   display: none; /* Escondido por padrão em mobile */
   gap: 60px;
   align-items: center;
+  font-family: 'Amsipro', sans-serif;
 }
 
 .nav-links.active {
@@ -165,7 +166,6 @@
   font-weight: 500;
   cursor: pointer;
   padding: 0;
-  font-family: 'Inter', sans-serif;
   transition: all 0.3s ease;
   position: relative;
   padding: 1rem 2rem;

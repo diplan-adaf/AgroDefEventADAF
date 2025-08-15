@@ -137,7 +137,6 @@ export default function Collaborators() {
       <div className="collaborators-hero">
         <div className="hero-content">
           <h2>Seja um colaborador</h2>
-          <p>Conecte sua marca ao maior evento agropecuário do Amazonas</p>
         </div>
       </div>
       

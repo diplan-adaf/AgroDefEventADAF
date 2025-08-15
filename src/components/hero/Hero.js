@@ -7,10 +7,16 @@ export default function Hero() {
     <>
       <div className="hero-img">
         <img src={descricaoBanner} alt="Hero" />
-        <span>2 e 3 de Setembro - Vasco Vasques | Etapa 1</span>
-        <Button text={"Acompanhe-nos"} ref={"https://www.instagram.com/agro_defesa_evento/?igsh=MXRoeTRkaDJuNHRtZw%3D%3D"} cls={"instagram-hero"}>
-          <Instagram className="icon" />
-        </Button>
+
+        <div className="hero-description">
+          <span id="description-one">ALIMENTOS SEGUROS, MERCADOS ABERTOS </span>
+          <br />
+          <span id="description-two">E SAÚDE PROTEGIDA</span>
+        </div>
+
+        
+
+        <span className="hero-data">2 e 3 de Setembro - Vasco Vasques | Etapa 1</span>
       </div>
     </>
       

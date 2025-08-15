@@ -1,10 +1,20 @@
+@font-face {
+  font-family: "Amsipro";
+  src: url(../src/assets/fonts/textBody-amsipro/fonnts.com-AmsiPro-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Alverata";
+  src: url(../src/assets/fonts/textTitles-alverata/fonnts.com-Alverata-Sb-.otf);
+}
+
 * {
   box-sizing: border-box;
 }
 
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Amsipro', sans-serif;
   min-height: 100vh;
   margin: 0;
   padding: 0;
@@ -15,29 +25,27 @@ button {
   cursor: pointer;
   border: none;
   background: none;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Amsipro', sans-serif;
 }
 
 
 h2 {
   font-size: 2rem;
   font-weight: 800;
-  color: #1e293b;
+  color: rgba(77, 77, 77, 1);
   text-align: center;
   margin-bottom: 3rem;
   position: relative;
   z-index: 1;
-  background: linear-gradient(135deg, #1e293b 0%, #475569 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Alverata', sans-serif ;
 }
 
 p, span {
   font-size: 1.2rem;
   line-height: 1.8;
-  color: #475569;
+  color: rgba(77, 77, 77, 1);
   text-align: justify;
   width: 100%;
   margin-bottom: 1rem;
@@ -45,6 +53,7 @@ p, span {
   z-index: 1;
   font-weight: 400;
   letter-spacing: 0.025em;
+  font-family: 'Amsipro', sans-serif;
 }
 
 
@@ -52,6 +61,7 @@ p, span {
 a {
   transition: all 0.2s ease-in-out;
   text-decoration: none;
+  font-family: 'Amsipro', sans-serif;
 }
 
 .keen-slider__slide img {

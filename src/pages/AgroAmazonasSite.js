@@ -7,8 +7,9 @@ import Palestrantes from "../components/palestrantes/palestrantes";
 import Collaborators from "../components/collaborators/Collaborators";
 import Button from "../components/button/Button";
 import Card from "../components/card/Card";
-import { Instagram } from "lucide-react";
+import { Instagram, Chrome } from "lucide-react";
 import { Link } from "react-router-dom";
+
 
 import uninorte from "../assets/patrocinadores/UNINORTE VERTICAL - COLORIDO(1).png";
 import maraFrios from "../assets/patrocinadores/maraFrios.jpeg";
@@ -37,7 +38,6 @@ import Brands from "../components/brands/Brands";
 export default function AgroAmazonasSite() {
   const location = useLocation();
 
-  // Função para scroll suave para seções
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -164,48 +164,55 @@ export default function AgroAmazonasSite() {
       features: ["Distribuição Inteligente", "Organização", "Acessibilidade"],
     },
   ];
+  
 
-  const organização = [
+  const brands = [
     {
-      name: "hg service",
-      src: hgservice,
+      title: "PATROCINADORES",
+      imgs: [
+        {
+          name: "Uninorte",
+          src: uninorte,
+        },
+        {
+          name: "Marafrios",
+          src: maraFrios
+        },
+        {
+          name: "Hossokawa",
+          src: hossokawa
+        },
+        {
+          name: "Amazonia Jungle Hotel",
+          src: jungleHotel
+        }
+      ]
     },
-  ];
-
-  const patrocinadores = [
     {
-      name: "Uninorte",
-      src: uninorte,
-    },
-    {
-      name: "Marafrios",
-      src: maraFrios
-    },
-    {
-      name: "Hossokawa",
-      src: hossokawa
-    },
-    {
-      name: "Amazonia Jungle Hotel",
-      src: jungleHotel
+      title: "ORGANIZAÇÃO",
+      imgs: [
+        {
+          name: "hg service",
+          src: hgservice,
+        },
+      ]
     }
-  ];
-
-  const realizadores = [
-    {
-      name: "ADAF",
-      src: adaf,
-    },
-    {
-      name: "IDAM",
-      src: idam,
-    },
-  ];
+  ]
 
   return (
     <div className="site-container">
       <Layout>
         <Hero className="flex-item" />
+        <section id="medias">
+          <Card title={"FIQUE POR DENTRO ATRAVÉS DAS NOSSAS REDES SOCIAIS"} align={"center"}>
+            <div className="media-buttons">
+                <Button cls={"adaf"}><Chrome className="icon"/> Site ADAF</Button>
+                <Button cls={"instagram"}><Instagram className="icon"/> Perfil da ADAF</Button>
+                <Button cls={"instagram"}><Instagram className="icon"/> Perfil do Evento</Button>
+            </div>
+          </Card>
+        </section>
+
         <section id="event">
           <Card title="AGRO AMAZONAS">
             <p>
@@ -225,7 +232,7 @@ export default function AgroAmazonasSite() {
         </section>
 
         <section id="benefits">
-          <Card title="O QUE OFERECEMOS?" align={"center"}>
+          <Card title="O QUE OFERECEMOS?" align={"center"} className={"container-benefits"}>
             <div className="benefits-card">
               <ul>
                 <li>
@@ -245,10 +252,8 @@ export default function AgroAmazonasSite() {
               </ul>
             </div>
           </Card>
-        </section>
 
-        <section>
-          <Card title="TEMAS ABORDADOS">
+          <Card title="TEMAS ABORDADOS" className={"container-benefits"}>
             <p>
               O AGROAMAZONAS & DEFESA AGROPECUÁRIA para promover temas
               essenciais como segurança alimentar, sanidade animal e vegetal,
@@ -276,32 +281,27 @@ export default function AgroAmazonasSite() {
           <Palestrantes className="flex-item" />
         </section>
 
-        <div className="site-buttons">
-          <Button
+
+        <section>
+          <Card title={"VENHA PRESTIGIAR O NOSSO EVENTO"} align={"center"}>
+            <Button
             text={"Inscreva-se (Simpla)"}
             ref={
               "https://www.sympla.com.br/evento/agro-amazonas-defesa-agropecuaria/3060161"
             }
             cls={"simpla"}
-          ></Button>
-          <Button
-            text={"Instagram"}
-            ref={
-              "https://www.instagram.com/agro_defesa_evento/?igsh=MXRoeTRkaDJuNHRtZw%3D%3D"
-            }
-            cls={"instagram"}
-          >
-            <Instagram className="icon" />
-          </Button>
-        </div>
+            ></Button>
+          </Card>
+        </section>
+
+        <section id="brands">
+          <Brands brands={brands}/>
+        </section>
 
         <section id="collaborators">
           <Collaborators className="flex-item" />
         </section>
 
-        {/* <section>
-          <Carousel className="flex-item" images={stands} title="NÍVEIS" />
-        </section> */}
 
         <section>
           <Carousel className="flex-item" images={stands} title="STANDS" />
@@ -332,10 +332,6 @@ export default function AgroAmazonasSite() {
             </p>
           </Card>
         </section>
-
-        <Brands title={"PATROCINADORES"} images={patrocinadores} />
-        {/* <Brands title={"REALIZADORES"} images={realizadores} /> */}
-        <Brands title={"ORGANIZAÇÃO"} images={organização} />
       </Layout>
     </div>
   );

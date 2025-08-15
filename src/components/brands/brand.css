@@ -1,3 +1,53 @@
+.brand-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+
+
+.collaborators-hero {
+  height: 90vh;
+  width: 100%;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #ffffff;
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../../assets/colaborador.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.hero-content {
+  max-width: 800px;
+  z-index: 2;
+}
+
+.collaborators-hero h2 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: #fff
+}
+
+
+
+
+
+
+
 .brands {
     width: 100%;
     display: flex;
@@ -38,6 +88,9 @@
     object-fit: contain;
     border-radius: 0.5rem;
 }
+
+
+
 
 
 /* Responsividade */
