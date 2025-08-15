@@ -17,6 +17,7 @@ import diogoLima from "../assets/diogoLima.jpeg"
 import avatar from "../assets/avatarPlaceholder.jpg"
 import abrahimSena from "../assets/abrahimSena.jpeg";
 import marciaSeixas from "../assets/marciaSeixas.jpeg";
+
 import airton from "../assets/airtonSena.jpeg";
 import silvanaPimentel from "../assets/silvanaPimentel.jpeg";
 import andrePrado from "../assets/andrePrado.png";
@@ -86,6 +87,8 @@ const palestrantes = {
         {
           nome: "André do Prado Oliveira",
           foto: andrePrado,
+          titulacao: "Médico veterinário",
+          foto: avatar,
           tema: "Da granja à mesa: Fatores para se obter um ovo de qualidade",
           sala: "Sala 4"
         }
@@ -107,7 +110,7 @@ const palestrantes = {
           sala: "Sala 2"
         },
         {
-          nome: "Claudio Emanuel Magalhães Gurgel ",
+          nome: "Cláudio Emanuel Magalhães Gurgel",
           foto: claudioEmanuel,
           tema: "Boas práticas na Aplicação de Agrotóxicos",
           sala: "Sala 1"
@@ -195,7 +198,7 @@ const palestrantes = {
       palestrantes: [
         {
           nome: "Raiane Áila",
-          foto: raianeAila,
+          foto: raineAila,
           tema: "Populações expostas aos agrotóxicos",
           sala: "Sala 1"
         },

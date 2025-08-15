@@ -87,7 +87,7 @@
 
 .site-header {
   padding: 0.75rem 1rem;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1000;
   background-color: #064e3b;
@@ -95,6 +95,7 @@
   -webkit-backdrop-filter: blur(10px);
   color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 100%;
 }
 
 /* Mobile First - Estilos padrão para dispositivos móveis */
@@ -240,7 +241,6 @@
 /* Media query para desktop (992px+) */
 @media(min-width: 992px){
   .site-header {
-    position: sticky;
     top: 0;
     z-index: 1000;
     background-color: #064e3b;

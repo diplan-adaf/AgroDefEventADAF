@@ -32,7 +32,6 @@
 
 .sala-badge-page {
   display: inline-block;
-  background-color:  #10b981;
   color: white;
   padding: 0.25rem 0.75rem;
   border-radius: 20px;
@@ -40,6 +39,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  background-color: #10b981;
 }
 
 

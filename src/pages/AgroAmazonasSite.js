@@ -37,11 +37,10 @@ import Brands from "../components/brands/Brands";
 export default function AgroAmazonasSite() {
   const location = useLocation();
 
-  // Função para scroll suave para seções
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      const headerHeight = 80; // Altura aproximada do header
+      const headerHeight = 60; 
       const elementPosition = element.offsetTop - headerHeight;
       window.scrollTo({
         top: elementPosition,
@@ -51,14 +50,12 @@ export default function AgroAmazonasSite() {
   };
 
   useEffect(() => {
-    // Scroll para seção específica se houver hash na URL
     if (location.hash && location.hash !== "#" && location.hash !== "#/") {
       const sectionId = location.hash.substring(1);
       setTimeout(() => {
         scrollToSection(sectionId);
       }, 100);
     } else if (location.hash === "#" || location.hash === "#/") {
-      // Scroll para o topo se for apenas # ou #/
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   }, [location]);
