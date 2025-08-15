@@ -23,6 +23,10 @@ import andrePrado from "../assets/andrePrado.png";
 import claudioEmanuel from "../assets/claudioEmanuel.jpeg";
 import raianeAila from "../assets/raianeAila.jpeg";
 import pauloBarreto from "../assets/pauloBarreto.png";
+import pauloSergio from "../assets/pauloSergio.png";
+import anaFlavia from "../assets/anaFlavia.jpeg";
+import adrianaOliveira from "../assets/adrianaOliveira.jpeg";
+
 
 import Layout from "../components/Layout";
 
@@ -92,7 +96,7 @@ const palestrantes = {
       palestrantes: [
         {
           nome: "Adriana Aguiar Oliveira",
-          foto: avatar,
+          foto: adrianaOliveira,
           tema: "Panorama do SISBI no Brasil",
           sala: "Sala 4"
         },
@@ -197,7 +201,7 @@ const palestrantes = {
         },
         {
           nome: "Ana Flávia Amâncio",
-          foto: avatar,
+          foto: anaFlavia,
           tema: "Boas práticas de manipulação de alimentos",
           sala: "Sala 4"
         },
@@ -237,7 +241,7 @@ const palestrantes = {
         },
         {
           nome: "Paulo Sérgio",
-          foto: avatar,
+          foto: pauloSergio,
           tema: "A Atuação Prática do Acadêmico de Medicina Veterinária no Amazonas",
           sala: "Sala 3"
         },

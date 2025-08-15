@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 import uninorte from "../assets/patrocinadores/UNINORTE VERTICAL - COLORIDO(1).png";
 import maraFrios from "../assets/patrocinadores/maraFrios.jpeg";
 import hossokawa from "../assets/patrocinadores/hossokawa.jpeg";
-
+import jungleHotel from "../assets/patrocinadores/jungleHotel.png";
 
 import hgservice from "../assets/organização/HGservice.png";
 
@@ -184,6 +184,10 @@ export default function AgroAmazonasSite() {
     {
       name: "Hossokawa",
       src: hossokawa
+    },
+    {
+      name: "Amazonia Jungle Hotel",
+      src: jungleHotel
     }
   ];
 
