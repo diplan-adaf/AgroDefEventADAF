@@ -198,7 +198,7 @@ const palestrantes = {
       palestrantes: [
         {
           nome: "Raiane Áila",
-          foto: raineAila,
+          foto: raianeAila,
           tema: "Populações expostas aos agrotóxicos",
           sala: "Sala 1"
         },
