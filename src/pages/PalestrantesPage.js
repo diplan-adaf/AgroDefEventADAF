@@ -26,11 +26,9 @@ import airton from "../assets/airton.jpeg";
 import claudioEmanuel from "../assets/claudioEmanuel.jpeg";
 import raineAila from "../assets/raianeAila.jpeg";
 import Layout from "../components/Layout";
-import ModalPalestrante from "./ModalPalestrante";
 
 export default function PalestrantesPage() {
   const [activeTab, setActiveTab] = useState("02-09");
-  const [openModal, setOpenModal] = useState(false);
 
   useEffect(() => {
     window.scrollTo({
@@ -313,30 +311,11 @@ export default function PalestrantesPage() {
                     {sessao.palestrantes.map(
                       (palestrante, palestranteIndex) => (
                         <>
-                          <ModalPalestrante
-                            isOpen={openModal}
-                            setModalOpen={() => setOpenModal(!openModal)}
-                            palestrante={palestrante}
-                          />
                           <div
                             key={palestranteIndex}
                             className="palestrante-card"
                           >
-                            <div>
-                              <button
-                                onClick={() => setOpenModal(true)}
-                                style={{
-                                  backgroundColor: "#007bff",
-                                  color: "white",
-                                  padding: "8px 16px",
-                                  border: "none",
-                                  borderRadius: "6px",
-                                  cursor: "pointer",
-                                }}
-                              >
-                                Abrir palestrante
-                              </button>
-                            </div>
+                            <div></div>
                             <div className="palestrante-foto">
                               <img
                                 src={palestrante.foto}
