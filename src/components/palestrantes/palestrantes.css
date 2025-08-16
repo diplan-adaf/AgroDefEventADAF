@@ -26,7 +26,8 @@
 
 .palestrante-card {
   background: linear-gradient(145deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e1 100%);
-  border-radius: 20px;
+
+  border-radius: 15px;
   padding: 2rem;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.6);
@@ -56,11 +57,12 @@
 .palestrante-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
-  background: linear-gradient(145deg, #e2e8f0 0%, #cbd5e1 50%, #94a3b8 100%);
+  background: linear-gradient(145deg, #e2e8f0 0%, #ffffff 50%, #80bd87 100%);
 }
 
 .palestrante-card:hover::before {
   transform: scaleX(1);
+
 }
 
 .palestrante-foto {
@@ -69,15 +71,16 @@
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 1.5rem;
-  border: 4px solid #10b981;
+  border: 2px solid #10b981;
   box-shadow: 0 8px 25px rgba(16, 185, 129, 0.3);
   transition: all 0.3s ease;
+  
   position: relative;
 }
 
 .palestrante-card:hover .palestrante-foto {
   border-color: #059669;
-  transform: scale(1.05);
+  transform: scale(1.3);
   box-shadow: 0 12px 30px rgba(16, 185, 129, 0.4);
 }
 
@@ -408,4 +411,4 @@
     font-size: 1rem;
     padding: 0.75rem 1rem;
   }
-} 
+}

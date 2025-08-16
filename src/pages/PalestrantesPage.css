@@ -36,7 +36,7 @@
 
 .speaker-card {
   background: linear-gradient(145deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e1 100%);
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 2rem;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.6);
@@ -67,6 +67,7 @@
   transform: translateY(-6px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
   background: linear-gradient(145deg, #e2e8f0 0%, #ffffff 50%, #80bd87 100%);
+
 }
 
 .speaker-card:hover::before {
@@ -87,7 +88,7 @@
 
 .speaker-card:hover .speaker-photo {
   border-color: #059669;
-  transform: scale(1.05);
+  transform: scale(1.5);
   box-shadow: 0 12px 30px rgba(16, 185, 129, 0.4);
 }
 
