@@ -40,10 +40,13 @@
 
 #description-one{
   font-size: 1rem;
+  font-weight: bold;
+
 }
 
 #description-two{
   font-size: 2rem;
+  font-weight: bold;
 }
 
 .hero-data{
@@ -52,7 +55,10 @@
   border-radius: 0.5rem;
   font-weight: bold;
   position: relative;
-  top: 60%;
+  top: 55%;
+  left: 20%;
+  font-size: 1.2rem;
+  width: 300px;
 }
 
 
@@ -73,17 +79,11 @@
     left: 20%;
   }
 
-  #description-one{
-    font-size: 1.2rem;
-  }
-
-  #description-two{
-    font-size: 2rem;
-  }
-
   .hero-data{
+    width: 600px;
     top: 60%;
-    left: 10%;
+    left: 30%;
+    font-size: 1.5rem;
   }
 }
 
@@ -106,34 +106,16 @@
     left: 25%;
   }
 
-  #description-one{
-    font-size: 1.2rem;
-  }
-  
-  #description-two{
-    font-size: 2rem;
-  }
-  
   .hero-data{
-    top: 60%;
-    left: 20%;
+    left: 35%;
   }
-
 }
 
 @media(min-width: 1200px){
 
-
-  .hero-img img {
-    top: 0rem;
-    right: 55px;
-    width: 400px;
-    left: auto;
-  }
-
   .hero-description{
     left: 30%;
-    top: 60%
+    top: 65%;
   }
 
   #description-one{
@@ -146,7 +128,7 @@
   
   .hero-data{
     top: 70%;
-    left: 30%;
+    left: 50%;
   }
 }
 

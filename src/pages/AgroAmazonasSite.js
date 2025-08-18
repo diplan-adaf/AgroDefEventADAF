@@ -204,9 +204,9 @@ export default function AgroAmazonasSite() {
         <section id="medias">
           <Card title={"FIQUE POR DENTRO ATRAVÉS DAS NOSSAS REDES SOCIAIS"} align={"center"}>
             <div className="media-buttons">
-                <Button cls={"adaf"}><Chrome className="icon"/> Site ADAF</Button>
-                <Button cls={"instagram"}><Instagram className="icon"/> Perfil da ADAF</Button>
-                <Button cls={"instagram"}><Instagram className="icon"/> Perfil do Evento</Button>
+                <Button cls={"adaf"} ref={"https://www.adaf.am.gov.br/"}><Chrome className="icon"/> Site ADAF</Button>
+                <Button cls={"instagram"} ref={"https://www.instagram.com/adafamazonas/?utm_source=ig_web_button_share_sheet&igsh=cjhpNGU0em5ncjJu"}><Instagram className="icon"/> Perfil da ADAF</Button>
+                <Button cls={"instagram"} ref={"https://www.instagram.com/agro_defesa_evento/?igsh=MXRoeTRkaDJuNHRtZw%3D%3D"}><Instagram className="icon"/> Perfil do Evento</Button>
             </div>
           </Card>
         </section>

@@ -16,7 +16,7 @@ export default function Hero() {
 
         
 
-        <span className="hero-data">2 e 3 de Setembro - Vasco Vasques | Etapa 1</span>
+        <div className="hero-data">2 e 3 de Setembro - Vasco Vasques | Etapa 1</div>
       </div>
     </>
       
