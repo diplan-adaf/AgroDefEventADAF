@@ -14,6 +14,8 @@ import uninorte from "../assets/patrocinadores/UNINORTE VERTICAL - COLORIDO(1).p
 import maraFrios from "../assets/patrocinadores/maraFrios.jpeg";
 import hossokawa from "../assets/patrocinadores/hossokawa.jpeg";
 import jungleHotel from "../assets/patrocinadores/jungleHotel.png";
+import masterCleam from "../assets/patrocinadores/masterClean.jpeg";
+
 
 import hgservice from "../assets/organização/HGservice.png";
 
@@ -185,6 +187,10 @@ export default function AgroAmazonasSite() {
     {
       name: "Amazonia Jungle Hotel",
       src: jungleHotel
+    },
+    {
+      name: "Master Cleam",
+      src: masterCleam
     }
   ];
 
