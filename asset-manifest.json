@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/AgroDefEventADAF/static/css/main.d7945079.css",
-    "main.js": "/AgroDefEventADAF/static/js/main.daf7c21c.js",
+    "main.js": "/AgroDefEventADAF/static/js/main.820e3915.js",
     "static/css/449.90365e93.chunk.css": "/AgroDefEventADAF/static/css/449.90365e93.chunk.css",
     "static/js/449.719d8e78.chunk.js": "/AgroDefEventADAF/static/js/449.719d8e78.chunk.js",
     "static/js/453.3b738e01.chunk.js": "/AgroDefEventADAF/static/js/453.3b738e01.chunk.js",
@@ -35,6 +35,7 @@
     "static/media/maraFrios.jpeg": "/AgroDefEventADAF/static/media/maraFrios.1f430b049008baa5c054.jpeg",
     "static/media/andrePrado.png": "/AgroDefEventADAF/static/media/andrePrado.afffa168ee603f0af94c.png",
     "static/media/glauco.png": "/AgroDefEventADAF/static/media/glauco.a3515c8bc062c4d0461d.png",
+    "static/media/masterClean.jpeg": "/AgroDefEventADAF/static/media/masterClean.73f66ceaa8c0d0911d5f.jpeg",
     "static/media/abrahimSena.jpeg": "/AgroDefEventADAF/static/media/abrahimSena.ac3085321b2038b03d1e.jpeg",
     "static/media/adrianaOliveira.jpeg": "/AgroDefEventADAF/static/media/adrianaOliveira.162284fb376d2b1d07cf.jpeg",
     "static/media/raianeAila.jpeg": "/AgroDefEventADAF/static/media/raianeAila.8597aec53fda07a176d5.jpeg",
@@ -54,13 +55,13 @@
     "static/media/avatarPlaceholder.jpg": "/AgroDefEventADAF/static/media/avatarPlaceholder.0afd77fbd3ef1c358f31.jpg",
     "index.html": "/AgroDefEventADAF/index.html",
     "main.d7945079.css.map": "/AgroDefEventADAF/static/css/main.d7945079.css.map",
-    "main.daf7c21c.js.map": "/AgroDefEventADAF/static/js/main.daf7c21c.js.map",
+    "main.820e3915.js.map": "/AgroDefEventADAF/static/js/main.820e3915.js.map",
     "449.90365e93.chunk.css.map": "/AgroDefEventADAF/static/css/449.90365e93.chunk.css.map",
     "449.719d8e78.chunk.js.map": "/AgroDefEventADAF/static/js/449.719d8e78.chunk.js.map",
     "453.3b738e01.chunk.js.map": "/AgroDefEventADAF/static/js/453.3b738e01.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d7945079.css",
-    "static/js/main.daf7c21c.js"
+    "static/js/main.820e3915.js"
   ]
 }
