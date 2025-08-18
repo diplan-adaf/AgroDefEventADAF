@@ -10,6 +10,10 @@
       content="Agro Amazonas - Evento de Defesa Agropecuária"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/icons/logoAgroDefesa.svg" />
+    <meta
+      http-equiv="refresh"
+      content="0; url=https://www.agrodefesaam.com  .br"
+    />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -27,16 +31,22 @@
     <title>Agro Amazonas - Defesa Agropecuária</title>
     <!-- Single Page Apps for GitHub Pages -->
     <script type="text/javascript">
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
           );
         }
-      }(window.location))
+      })(window.location);
     </script>
   </head>
   <body>
