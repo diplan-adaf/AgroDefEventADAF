@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./palestrantes.css";
-import palestrantes2 from "../../assets/brunoHenrique.JPG";
-import avatarPlaceHolder from "../../assets/avatarPlaceholder.jpg"
-import abrahimSena from "../../assets/abrahimSena.jpeg";
+import palestrantes2 from "../../assets/imgs/palestrantes/DrBrunoHenrique.svg";
+import abrahimSena from "../../assets/imgs/palestrantes/AbrahimSena.svg";
 
 import { Link } from "react-router-dom";
 import Card from "../card/Card";

@@ -8,28 +8,31 @@ import Collaborators from "../components/collaborators/Collaborators";
 import Button from "../components/button/Button";
 import Card from "../components/card/Card";
 import { Instagram } from "lucide-react";
-import { Link } from "react-router-dom";
 
-import uninorte from "../assets/patrocinadores/UNINORTE VERTICAL - COLORIDO(1).png";
-import maraFrios from "../assets/patrocinadores/maraFrios.jpeg";
-import hossokawa from "../assets/patrocinadores/hossokawa.jpeg";
-import jungleHotel from "../assets/patrocinadores/jungleHotel.png";
+import uninorte from "../assets/imgs/patrocinadores/UninortePatrocinador.svg";
+import maraFrios from "../assets/imgs/patrocinadores/MaraFriosPatrocinador.svg";
+import hossokawa from "../assets/imgs/patrocinadores/HossokawaPatrocinador.svg";
+import masterCleam from "../assets/imgs/patrocinadores/MasterCleamPatrocinador.svg";
+import fatiare from "../assets/imgs/patrocinadores/FatiarePatrocinador.svg";
+import cba from "../assets/imgs/patrocinadores/CBAPatrocinadores.svg";
+import senar from "../assets/imgs/patrocinadores/SenarPatrocinador.svg";
 
-import hgservice from "../assets/organização/HGservice.png";
+import jungleHotel from "../assets/imgs/apoio/jungleHotelApoio.svg";
+import gov from "../assets/imgs/apoio/MDICSApoio.svg";
+import duprado from "../assets/imgs/apoio/DupradoApoio.svg";
 
-import adaf from "../assets/adaf.png";
-import idam from "../assets/logo-idam.png";
+import hgservice from "../assets/imgs/organizacao/HGServicesOrganizacao.svg";
 
 
-import standDiamante from "../assets/saida-2.svg";
-import standOuro from "../assets/saida-3.svg";
-import standPrata from "../assets/saida-4.svg";
-import standBronze from "../assets/saida-5.svg";
-import totem from "../assets/saida-6.svg";
-import gastronomia from "../assets/saida-7.svg";
-import pagamento from "../assets/saida-8.svg";
-import standPlanta1 from "../assets/planta-1.svg";
-import standPlanta2 from "../assets/planta-2.svg";
+import standDiamante from "../assets/imgs/stands/saida-2.svg";
+import standOuro from "../assets/imgs/stands/saida-3.svg";
+import standPrata from "../assets/imgs/stands/saida-4.svg";
+import standBronze from "../assets/imgs/stands/saida-5.svg";
+import totem from "../assets/imgs/stands/saida-6.svg";
+import gastronomia from "../assets/imgs/stands/saida-7.svg";
+import pagamento from "../assets/imgs/stands/saida-8.svg";
+import standPlanta1 from "../assets/imgs/stands/planta-1.svg";
+import standPlanta2 from "../assets/imgs/stands/planta-2.svg";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Brands from "../components/brands/Brands";
@@ -183,20 +186,36 @@ export default function AgroAmazonasSite() {
       src: hossokawa
     },
     {
-      name: "Amazonia Jungle Hotel",
-      src: jungleHotel
+      name: "Master Cleam",
+      src: masterCleam
+    },
+    {
+      name: "Fatiare",
+      src: fatiare
+    },
+    {
+      name: "cba",
+      src: cba
+    },
+    {
+      name: "Senar",
+      src: senar
     }
   ];
 
-  const realizadores = [
+  const apoio = [
     {
-      name: "ADAF",
-      src: adaf,
+      name: "Amazonia Jungle Hotel",
+      src: jungleHotel
     },
     {
-      name: "IDAM",
-      src: idam,
+      name: "duPrado",
+      src: duprado
     },
+    {
+      name: "gov",
+      src: gov
+    }
   ];
 
   return (
@@ -296,10 +315,6 @@ export default function AgroAmazonasSite() {
           <Collaborators className="flex-item" />
         </section>
 
-        {/* <section>
-          <Carousel className="flex-item" images={stands} title="NÍVEIS" />
-        </section> */}
-
         <section>
           <Carousel className="flex-item" images={stands} title="STANDS" />
         </section>
@@ -331,7 +346,7 @@ export default function AgroAmazonasSite() {
         </section>
 
         <Brands title={"PATROCINADORES"} images={patrocinadores} />
-        {/* <Brands title={"REALIZADORES"} images={realizadores} /> */}
+        <Brands title={"APOIO"} images={apoio} />
         <Brands title={"ORGANIZAÇÃO"} images={organização} />
       </Layout>
     </div>

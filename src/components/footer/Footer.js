@@ -1,7 +1,5 @@
-import { Mail, Phone } from "lucide-react";
-import "./footer.css"; // Assuming you have a CSS file for styling
-import logo from "../../assets/descricaoBanner.png"; // Adjust the path as necessary
-import triade from "../../assets/triade.png"; // Adjust the path as necessary
+import "./footer.css";
+import logo from "../../assets/logoAgroDefesa.svg"; 
 import regua from "../../assets/REGUA BRANCA.png"
 export default function Footer(){
     return(
