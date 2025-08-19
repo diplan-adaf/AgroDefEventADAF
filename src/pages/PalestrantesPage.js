@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "../components/palestrantes/palestrantes.css";
 import "./PalestrantesPage.css";
 import brunoHenrique from "../assets/imgs/palestrantes/DrBrunoHenrique.svg";

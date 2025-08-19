@@ -1,4 +1,3 @@
-import { Mail, Phone } from "lucide-react";
 import "./footer.css";
 import logo from "../../assets/descricaoBanner.png"; 
 import regua from "../../assets/REGUA BRANCA.png"

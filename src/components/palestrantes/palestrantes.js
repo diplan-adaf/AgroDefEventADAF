@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./palestrantes.css";
 import palestrantes2 from "../../assets/imgs/palestrantes/DrBrunoHenrique.svg";
 import abrahimSena from "../../assets/imgs/palestrantes/AbrahimSena.svg";
