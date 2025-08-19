@@ -6,9 +6,9 @@ import { Suspense, lazy } from "react";
 const PalestrantesPage = lazy(() => import("./pages/PalestrantesPage"));
 
 function App() {
-  useEffect(() => {
-    window.location.replace("https://www.agrodefesaam.com.br");
-  }, []);
+  // useEffect(() => {
+  //   window.location.replace("https://www.agrodefesaam.com.br");
+  // }, []);
 
   return (
     <Router>

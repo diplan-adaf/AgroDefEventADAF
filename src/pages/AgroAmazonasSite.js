@@ -10,17 +10,19 @@ import Card from "../components/card/Card";
 import { Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
 
-import uninorte from "../assets/patrocinadores/UNINORTE VERTICAL - COLORIDO(1).png";
-import maraFrios from "../assets/patrocinadores/maraFrios.jpeg";
-import hossokawa from "../assets/patrocinadores/hossokawa.jpeg";
-import jungleHotel from "../assets/patrocinadores/jungleHotel.png";
-import masterCleam from "../assets/patrocinadores/masterClean.jpeg";
+import uninorte from "../assets/imgs/patrocinadores/UninortePatrocinador.svg";
+import maraFrios from "../assets/imgs/patrocinadores/MaraFriosPatrocinador.svg";
+import hossokawa from "../assets/imgs/patrocinadores/HossokawaPatrocinador.svg";
+import masterCleam from "../assets/imgs/patrocinadores/MasterCleamPatrocinador.svg";
+import fatiare from "../assets/imgs/patrocinadores/FatiarePatrocinador.svg";
+import cba from "../assets/imgs/patrocinadores/CBAPatrocinadores.svg";
+import senar from "../assets/imgs/patrocinadores/SenarPatrocinador.svg";
 
+import jungleHotel from "../assets/imgs/apoio/jungleHotelApoio.svg";
+import gov from "../assets/imgs/apoio/MDICSApoio.svg";
+import duprado from "../assets/imgs/apoio/DupradoApoio.svg";
 
 import hgservice from "../assets/organização/HGservice.png";
-
-import adaf from "../assets/adaf.png";
-import idam from "../assets/logo-idam.png";
 
 
 import standDiamante from "../assets/saida-2.svg";
@@ -185,24 +187,36 @@ export default function AgroAmazonasSite() {
       src: hossokawa
     },
     {
+      name: "Master Cleam",
+      src: masterCleam
+    },
+    {
+      name: "Fatiare",
+      src: fatiare
+    },
+    {
+      name: "cba",
+      src: cba
+    },
+    {
+      name: "Senar",
+      src: senar
+    }
+  ];
+
+  const apoio = [
+    {
       name: "Amazonia Jungle Hotel",
       src: jungleHotel
     },
     {
-      name: "Master Cleam",
-      src: masterCleam
+      name: "duPrado",
+      src: duprado
+    },
+    {
+      name: "gov",
+      src: gov
     }
-  ];
-
-  const realizadores = [
-    {
-      name: "ADAF",
-      src: adaf,
-    },
-    {
-      name: "IDAM",
-      src: idam,
-    },
   ];
 
   return (
@@ -337,7 +351,7 @@ export default function AgroAmazonasSite() {
         </section>
 
         <Brands title={"PATROCINADORES"} images={patrocinadores} />
-        {/* <Brands title={"REALIZADORES"} images={realizadores} /> */}
+        <Brands title={"APOIO"} images={apoio} />
         <Brands title={"ORGANIZAÇÃO"} images={organização} />
       </Layout>
     </div>
