@@ -1,5 +1,5 @@
 import "./hero.css";
-import descricaoBanner from "../../assets/descricaoBanner.png";
+import descricaoBanner from "../../assets/logoAgroDefesa.svg";
 import { Instagram } from "lucide-react";
 import Button from "../button/Button";
 export default function Hero() {

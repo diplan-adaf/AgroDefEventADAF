@@ -1,5 +1,5 @@
 import "./footer.css";
-import logo from "../../assets/descricaoBanner.png"; 
+import logo from "../../assets/logoAgroDefesa.svg"; 
 import regua from "../../assets/REGUA BRANCA.png"
 export default function Footer(){
     return(

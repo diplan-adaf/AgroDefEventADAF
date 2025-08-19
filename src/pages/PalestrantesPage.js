@@ -14,7 +14,7 @@ import michelSilva from "../assets/imgs/palestrantes/MichellDaSilva.svg";
 import sivandro from "../assets/imgs/palestrantes/Silvandro.svg";
 import wilson from "../assets/imgs/palestrantes/DrWilson.svg";
 import diogoLima from "../assets/imgs/palestrantes/DiogoLima.svg";
-import avatar from "../assets/avatarPlaceholder.jpg";
+import avatar from "../assets/avatarPlaceholder.webp";
 import abrahimSena from "../assets/imgs/palestrantes/AbrahimSena.svg";
 import marciaSeixas from "../assets/imgs/palestrantes/MarciaSeixas.svg";
 import airton from "../assets/imgs/palestrantes/AirtonReisDeJesus.svg";
