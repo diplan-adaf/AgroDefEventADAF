@@ -1,14 +1,12 @@
 import { useState } from "react";
 import "./collaborators.css";
 
-import standImg1 from "../../assets/saida-1.svg";
-import standDiamante from "../../assets/saida-2.svg";
-import standOuro from "../../assets/saida-3.svg";
-import standPrata from "../../assets/saida-4.svg";
-import standBronze from "../../assets/saida-5.svg";
-import totem from "../../assets/saida-6.svg";
-import gastronomia from "../../assets/saida-7.svg";
-import pagamento from "../../assets/saida-8.svg";
+import standDiamante from "../../assets/imgs/stands/saida-2.svg";
+import standOuro from "../../assets/imgs/stands/saida-3.svg";
+import standPrata from "../../assets/imgs/stands/saida-4.svg";
+import standBronze from "../../assets/imgs/stands/saida-5.svg";
+import totem from "../../assets/imgs/stands/saida-6.svg";
+import gastronomia from "../../assets/imgs/stands/saida-7.svg";
 
 const stands = [
   {

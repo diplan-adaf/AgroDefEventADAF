@@ -8,7 +8,6 @@ import Collaborators from "../components/collaborators/Collaborators";
 import Button from "../components/button/Button";
 import Card from "../components/card/Card";
 import { Instagram } from "lucide-react";
-import { Link } from "react-router-dom";
 
 import uninorte from "../assets/imgs/patrocinadores/UninortePatrocinador.svg";
 import maraFrios from "../assets/imgs/patrocinadores/MaraFriosPatrocinador.svg";
@@ -22,18 +21,18 @@ import jungleHotel from "../assets/imgs/apoio/jungleHotelApoio.svg";
 import gov from "../assets/imgs/apoio/MDICSApoio.svg";
 import duprado from "../assets/imgs/apoio/DupradoApoio.svg";
 
-import hgservice from "../assets/organização/HGservice.png";
+import hgservice from "../assets/imgs/organizacao/HGServicesOrganizacao.svg";
 
 
-import standDiamante from "../assets/saida-2.svg";
-import standOuro from "../assets/saida-3.svg";
-import standPrata from "../assets/saida-4.svg";
-import standBronze from "../assets/saida-5.svg";
-import totem from "../assets/saida-6.svg";
-import gastronomia from "../assets/saida-7.svg";
-import pagamento from "../assets/saida-8.svg";
-import standPlanta1 from "../assets/planta-1.svg";
-import standPlanta2 from "../assets/planta-2.svg";
+import standDiamante from "../assets/imgs/stands/saida-2.svg";
+import standOuro from "../assets/imgs/stands/saida-3.svg";
+import standPrata from "../assets/imgs/stands/saida-4.svg";
+import standBronze from "../assets/imgs/stands/saida-5.svg";
+import totem from "../assets/imgs/stands/saida-6.svg";
+import gastronomia from "../assets/imgs/stands/saida-7.svg";
+import pagamento from "../assets/imgs/stands/saida-8.svg";
+import standPlanta1 from "../assets/imgs/stands/planta-1.svg";
+import standPlanta2 from "../assets/imgs/stands/planta-2.svg";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Brands from "../components/brands/Brands";
@@ -315,10 +314,6 @@ export default function AgroAmazonasSite() {
         <section id="collaborators">
           <Collaborators className="flex-item" />
         </section>
-
-        {/* <section>
-          <Carousel className="flex-item" images={stands} title="NÍVEIS" />
-        </section> */}
 
         <section>
           <Carousel className="flex-item" images={stands} title="STANDS" />
