@@ -3,13 +3,29 @@
   height: 40vh;
   padding: 1rem 0.5rem;
   text-align: center;
-  background: linear-gradient(to bottom, #064e3b, #047857);
   color: #ffffff;
   background-image: url("../../assets/velho.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
+
+}
+
+
+.hero-img::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2); /* Cor escura com opacidade baixa */
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Garanta que os elementos fiquem acima da camada escura */
+.hero-img > * {
+  position: relative;
+  z-index: 20;
 }
 
 
@@ -41,12 +57,15 @@
 #description-one{
   font-size: 1rem;
   font-weight: bold;
+  font-family: 'Alverata', sans-serif;
 
 }
 
 #description-two{
   font-size: 2rem;
   font-weight: bold;
+  font-family: 'Alverata', sans-serif;
+
 }
 
 .hero-data{
