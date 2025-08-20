@@ -27,6 +27,9 @@ import anaFlavia from "../assets/imgs/palestrantes/AnaFlavia.svg";
 import joaoVitor from "../assets/imgs/palestrantes/JoãoVictorCarneiro.svg";
 import andrePrado from "../assets/imgs/palestrantes/AndrePadro.svg";
 import adriana from "../assets/imgs/palestrantes/AdrianaOliveira.svg";
+import micheleLins from "../assets/imgs/palestrantes/michelleLins 1.svg";
+import larissaGomes from "../assets/imgs/palestrantes/larissaGomes 1.svg"
+
 
 import Layout from "../components/Layout";
 
@@ -64,6 +67,12 @@ export default function PalestrantesPage() {
             tema: "Preenchimento de ART",
             sala: "Sala 1",
           },
+          {
+            nome: "Larissa Gomes Silva de Souza ",
+            foto: larissaGomes,
+            tema: "Da Bancada ao Produto: O Papel da Análise de Alimentos no P&D ",
+            sala: "Sala 4", 
+          }
         ],
       },
       {
@@ -91,6 +100,17 @@ export default function PalestrantesPage() {
             foto: andrePrado,
             tema: "Da Granja à mesa: Fatores para se obter um ovo de qualidade",
             sala: "Sala 4",
+          },
+        ],
+      },
+      {
+        horario: "13:00 - 14:00",
+        palestrantes: [
+          {
+            nome: "Michele Lins Aracaty e Silva",
+            foto: micheleLins,
+            tema: "Segurança Alimentar e Desenvolvimento Regional",
+            sala: "Palco Principal",
           },
         ],
       },
