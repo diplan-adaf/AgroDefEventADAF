@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/AgroDefEventADAF/static/css/main.0abf8fa5.css",
-    "main.js": "/AgroDefEventADAF/static/js/main.9331a7ef.js",
-    "static/css/666.e69f8e45.chunk.css": "/AgroDefEventADAF/static/css/666.e69f8e45.chunk.css",
-    "static/js/666.7658844c.chunk.js": "/AgroDefEventADAF/static/js/666.7658844c.chunk.js",
+    "main.js": "/AgroDefEventADAF/static/js/main.16a58ebd.js",
+    "static/css/314.bafbf9b3.chunk.css": "/AgroDefEventADAF/static/css/314.bafbf9b3.chunk.css",
+    "static/js/314.c9bc47d1.chunk.js": "/AgroDefEventADAF/static/js/314.c9bc47d1.chunk.js",
     "static/js/453.c8b3b5c0.chunk.js": "/AgroDefEventADAF/static/js/453.c8b3b5c0.chunk.js",
     "static/media/planta-1.svg": "/AgroDefEventADAF/static/media/planta-1.3e2293f26fc119b5cffef450e10c2c4e.svg",
     "static/media/planta-2.svg": "/AgroDefEventADAF/static/media/planta-2.ad9a29078974d7065c2f9a37ae0b9363.svg",
@@ -21,6 +21,7 @@
     "static/media/Silvandro.svg": "/AgroDefEventADAF/static/media/Silvandro.33af74731cdaf7f1ae8349a16af4ddb2.svg",
     "static/media/JoselenaTavares.svg": "/AgroDefEventADAF/static/media/JoselenaTavares.2dcdb092c885e722edb78f5f4a9020eb.svg",
     "static/media/DrBrunoHenrique.svg": "/AgroDefEventADAF/static/media/DrBrunoHenrique.4a3ad4222329c3ff343270ee1737e096.svg",
+    "static/media/larissaGomes 1.svg": "/AgroDefEventADAF/static/media/larissaGomes 1.15d7e6d4f9fd11cdc306646b989f30e6.svg",
     "static/media/MichellDaSilva.svg": "/AgroDefEventADAF/static/media/MichellDaSilva.7c54fb04dab6b9b9053667ea052268fc.svg",
     "static/media/AdrianaOliveira.svg": "/AgroDefEventADAF/static/media/AdrianaOliveira.df2b41fd50107b81b2fb2cf18d467e89.svg",
     "static/media/DrWilson.svg": "/AgroDefEventADAF/static/media/DrWilson.89924f3ea68d5eff8a1a05c5ed200c55.svg",
@@ -47,6 +48,7 @@
     "static/media/colaborador.webp": "/AgroDefEventADAF/static/media/colaborador.9e17731368bce996c3b9.webp",
     "static/media/jungleHotelApoio.svg": "/AgroDefEventADAF/static/media/jungleHotelApoio.8720943646128888bc259348edee4282.svg",
     "static/media/AirtonReisDeJesus.svg": "/AgroDefEventADAF/static/media/AirtonReisDeJesus.4a7e3acf27d5c83c693aa5481f5fa8fc.svg",
+    "static/media/michelleLins 1.svg": "/AgroDefEventADAF/static/media/michelleLins 1.cbd3a78e97f0f8a011d488eab88e2d64.svg",
     "static/media/PauloBarreto.svg": "/AgroDefEventADAF/static/media/PauloBarreto.5b007246eefe5ae03cbe25f1d7d297b4.svg",
     "static/media/FatiarePatrocinador.svg": "/AgroDefEventADAF/static/media/FatiarePatrocinador.d7b52792e8fe12af0c847f25252df604.svg",
     "static/media/vascoVasques.webp": "/AgroDefEventADAF/static/media/vascoVasques.2fe2e8d283efa6baae14.webp",
@@ -58,13 +60,13 @@
     "static/media/UninortePatrocinador.svg": "/AgroDefEventADAF/static/media/UninortePatrocinador.93765a5ee8930d36e30971498e8f8e56.svg",
     "index.html": "/AgroDefEventADAF/index.html",
     "main.0abf8fa5.css.map": "/AgroDefEventADAF/static/css/main.0abf8fa5.css.map",
-    "main.9331a7ef.js.map": "/AgroDefEventADAF/static/js/main.9331a7ef.js.map",
-    "666.e69f8e45.chunk.css.map": "/AgroDefEventADAF/static/css/666.e69f8e45.chunk.css.map",
-    "666.7658844c.chunk.js.map": "/AgroDefEventADAF/static/js/666.7658844c.chunk.js.map",
+    "main.16a58ebd.js.map": "/AgroDefEventADAF/static/js/main.16a58ebd.js.map",
+    "314.bafbf9b3.chunk.css.map": "/AgroDefEventADAF/static/css/314.bafbf9b3.chunk.css.map",
+    "314.c9bc47d1.chunk.js.map": "/AgroDefEventADAF/static/js/314.c9bc47d1.chunk.js.map",
     "453.c8b3b5c0.chunk.js.map": "/AgroDefEventADAF/static/js/453.c8b3b5c0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0abf8fa5.css",
-    "static/js/main.9331a7ef.js"
+    "static/js/main.16a58ebd.js"
   ]
 }
