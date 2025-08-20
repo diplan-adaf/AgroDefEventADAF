@@ -27,6 +27,9 @@ import anaFlavia from "../assets/imgs/palestrantes/AnaFlavia.svg";
 import joaoVitor from "../assets/imgs/palestrantes/JoãoVictorCarneiro.svg";
 import andrePrado from "../assets/imgs/palestrantes/AndrePadro.svg";
 import adrianaOliveira from "../assets/imgs/palestrantes/AdrianaOliveira.svg";
+import SergioRocha from "../assets/imgs/palestrantes/SergioRocha.svg";
+import MicheleLins from "../assets/imgs/palestrantes/MichelleLins.svg";
+import LarissaGomes from "../assets/imgs/palestrantes/LarissaGomes.svg";
 
 import Layout from "../components/Layout";
 
@@ -63,6 +66,18 @@ export default function PalestrantesPage() {
             foto: joaoVitor,
             tema: "Preenchimento de ART",
             sala: "Sala 1",
+          },
+          {
+            nome: "Michele Lins Aracaty e Silva",
+            foto: MicheleLins,
+            tema: "Segurança Alimentar e Desenvolvimento Regional",
+            sala: "Palco Principal",
+          },
+          {
+            nome: "Larissa Gomes Silva de Souza",
+            foto: LarissaGomes,
+            tema: "Da Bancada ao Produto: O Papel da Análise de Alimentos no P&D",
+            sala: "Sala 4",
           },
         ],
       },
@@ -121,6 +136,12 @@ export default function PalestrantesPage() {
             foto: marciaSeixas,
             tema: "A Saúde Única como Estratégia para a Defesa Agropecuária.",
             sala: "Sala 3",
+          },
+          {
+            nome: "Sérgio Rocha Muniz",
+            foto: SergioRocha,
+            tema: "Regularização fundiária em áreas da suframa",
+            sala: "Palco Principal",
           },
         ],
       },
