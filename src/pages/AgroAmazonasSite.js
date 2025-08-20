@@ -7,7 +7,6 @@ import Palestrantes from "../components/palestrantes/palestrantes";
 import Collaborators from "../components/collaborators/Collaborators";
 import Button from "../components/button/Button";
 import Card from "../components/card/Card";
-import { Instagram } from "lucide-react";
 
 import uninorte from "../assets/imgs/patrocinadores/UninortePatrocinador.svg";
 import maraFrios from "../assets/imgs/patrocinadores/MaraFriosPatrocinador.svg";
@@ -23,7 +22,7 @@ import duprado from "../assets/imgs/apoio/DupradoApoio.svg";
 
 import hgservice from "../assets/imgs/organizacao/HGServicesOrganizacao.svg";
 
-
+import { Instagram, Chrome } from "lucide-react";
 import standDiamante from "../assets/imgs/stands/saida-2.svg";
 import standOuro from "../assets/imgs/stands/saida-3.svg";
 import standPrata from "../assets/imgs/stands/saida-4.svg";
@@ -43,7 +42,7 @@ export default function AgroAmazonasSite() {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      const headerHeight = 60; 
+      const headerHeight = 60;
       const elementPosition = element.offsetTop - headerHeight;
       window.scrollTo({
         top: elementPosition,
@@ -179,57 +178,99 @@ export default function AgroAmazonasSite() {
     },
     {
       name: "Marafrios",
-      src: maraFrios
+      src: maraFrios,
     },
     {
       name: "Hossokawa",
-      src: hossokawa
+      src: hossokawa,
     },
     {
       name: "Master Cleam",
-      src: masterCleam
+      src: masterCleam,
     },
     {
       name: "Fatiare",
-      src: fatiare
+      src: fatiare,
     },
     {
       name: "cba",
-      src: cba
+      src: cba,
     },
     {
       name: "Senar",
-      src: senar
-    }
+      src: senar,
+    },
   ];
 
   const apoio = [
     {
       name: "Amazonia Jungle Hotel",
-      src: jungleHotel
+      src: jungleHotel,
     },
     {
       name: "duPrado",
-      src: duprado
+      src: duprado,
     },
     {
       name: "gov",
-      src: gov
-    }
+      src: gov,
+    },
   ];
 
   return (
     <div className="site-container">
       <Layout>
         <Hero className="flex-item" />
+        <section id="medias">
+          <Card
+            title={"FIQUE POR DENTRO ATRAVÉS DAS NOSSAS REDES SOCIAIS"}
+            align={"center"}
+          >
+            <div className="media-buttons">
+              <Button cls={"adaf"}>
+                <a
+                  href="https://www.adaf.am.gov.br/"
+                  style={{
+                    color: "inherit",
+                  }}
+                >
+                  <Chrome className="icon" /> Site da ADAF
+                </a>
+              </Button>
+              <Button cls={"instagram"}>
+                <a
+                  href="https://www.instagram.com/adafamazonas/?hl=en"
+                  style={{
+                    color: "inherit",
+                  }}
+                >
+                  <Instagram className="icon" /> Perfil da ADAF
+                </a>
+              </Button>
+              <Button cls={"instagram"}>
+                <a
+                  href="https://www.instagram.com/reel/DNYLFvAx2B2/?igsh=MWpmbDB5Znkyb2Ywag=="
+                  style={{
+                    color: "inherit",
+                  }}
+                >
+                  <Instagram className="icon" /> Perfil do Evento
+                </a>
+              </Button>
+            </div>
+          </Card>
+        </section>
+
         <section id="event">
           <Card title="AGRO AMAZONAS">
             <p>
               Uma grande celebração da agricultura e da segurança alimentar no
-              nosso estado. Organizado pela <strong>ADAF – Agência de Defesa
-              Agropecuária e Florestal do Amazonas</strong>, o evento mostra como a
-              produção rural pode crescer com qualidade, saúde e respeito ao
-              meio ambiente.
+              nosso estado. Organizado pela{" "}
+              <strong>
+                ADAF – Agência de Defesa Agropecuária e Florestal do Amazonas
+              </strong>
+              , o evento mostra como a produção rural pode crescer com
+              qualidade, saúde e respeito ao meio ambiente.
             </p>
             <br />
             <p>
