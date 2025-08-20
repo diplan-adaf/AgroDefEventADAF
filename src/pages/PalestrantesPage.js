@@ -1,34 +1,6 @@
 import { useState, useEffect } from "react";
 import "../components/palestrantes/palestrantes.css";
 import "./PalestrantesPage.css";
-<<<<<<< HEAD
-import brunoHenrique from "../assets/brunoHenrique.JPG";
-import joselenaTavares from "../assets/JoselenaTavares.jpeg";
-import raquelSilva from "../assets/raquelSilva.jpeg";
-import anaMariaNobrega from "../assets/anaMariaNobrega.png";
-import franciscoLoureco from "../assets/franciscoLourenco.png";
-import pauloRoberto from "../assets/pauloRoberto.jpeg";
-import geraldo from "../assets/geraldo.png";
-import glauco from "../assets/glauco.png";
-import guilhermeSouza from "../assets/guilhermeSouza.png";
-import michelSilva from "../assets/michelSilva.png";
-import sivandro from "../assets/sivandro.png";
-import wilson from "../assets/wilson.png";
-import diogoLima from "../assets/diogoLima.jpeg";
-import avatar from "../assets/avatarPlaceholder.jpg";
-import abrahimSena from "../assets/abrahimSena.jpeg";
-import marciaSeixas from "../assets/marciaSeixas.jpeg";
-
-import airton from "../assets/airtonSena.jpeg";
-import silvanaPimentel from "../assets/silvanaPimentel.jpeg";
-import andrePrado from "../assets/andrePrado.png";
-import claudioEmanuel from "../assets/claudioEmanuel.jpeg";
-import raianeAila from "../assets/raianeAila.jpeg";
-import pauloBarreto from "../assets/pauloBarreto.png";
-import pauloSergio from "../assets/pauloSergio.png";
-import anaFlavia from "../assets/anaFlavia.jpeg";
-import adrianaOliveira from "../assets/adrianaOliveira.jpeg";
-=======
 import brunoHenrique from "../assets/imgs/palestrantes/DrBrunoHenrique.svg";
 import joselenaTavares from "../assets/imgs/palestrantes/JoselenaTavares.svg";
 import raquelSilva from "../assets/imgs/palestrantes/RaquelSilva.svg";
@@ -54,8 +26,7 @@ import pauloSergio from "../assets/imgs/palestrantes/PauloSergio.svg";
 import anaFlavia from "../assets/imgs/palestrantes/AnaFlavia.svg";
 import joaoVitor from "../assets/imgs/palestrantes/JoãoVictorCarneiro.svg";
 import andrePrado from "../assets/imgs/palestrantes/AndrePadro.svg";
-import adriana from "../assets/imgs/palestrantes/AdrianaOliveira.svg";
->>>>>>> 6977d3ccf89f5912c1e645bdff87d9a94f00a1e2
+import adrianaOliveira from "../assets/imgs/palestrantes/AdrianaOliveira.svg";
 
 import Layout from "../components/Layout";
 
@@ -118,13 +89,7 @@ export default function PalestrantesPage() {
           {
             nome: "André do Prado Oliveira",
             foto: andrePrado,
-<<<<<<< HEAD
-            titulacao: "Médico veterinário",
-            foto: avatar,
-            tema: "Da granja à mesa: Fatores para se obter um ovo de qualidade",
-=======
             tema: "Da Granja à mesa: Fatores para se obter um ovo de qualidade",
->>>>>>> 6977d3ccf89f5912c1e645bdff87d9a94f00a1e2
             sala: "Sala 4",
           },
         ],
@@ -156,12 +121,6 @@ export default function PalestrantesPage() {
             foto: marciaSeixas,
             tema: "A Saúde Única como Estratégia para a Defesa Agropecuária.",
             sala: "Sala 3",
-          },
-          {
-            nome: "Adriana Aguiar Oliveira",
-            foto: adriana,
-            tema: "Panorama do SISBI no Brasil",
-            sala: "Sala 4"
           },
         ],
       },

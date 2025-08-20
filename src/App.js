@@ -5,13 +5,6 @@ import { Suspense, lazy } from "react";
 const PalestrantesPage = lazy(() => import("./pages/PalestrantesPage"));
 
 function App() {
-<<<<<<< HEAD
-=======
-  // useEffect(() => {
-  //   window.location.replace("https://www.agrodefesaam.com.br");
-  // }, []);
-
->>>>>>> 6977d3ccf89f5912c1e645bdff87d9a94f00a1e2
   return (
     <Router>
       <Suspense fallback={<div>Carregando...</div>}>
