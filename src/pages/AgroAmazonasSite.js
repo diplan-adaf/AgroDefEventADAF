@@ -15,6 +15,7 @@ import masterCleam from "../assets/imgs/patrocinadores/MasterCleamPatrocinador.s
 import fatiare from "../assets/imgs/patrocinadores/FatiarePatrocinador.svg";
 import cba from "../assets/imgs/patrocinadores/CBAPatrocinadores.svg";
 import senar from "../assets/imgs/patrocinadores/SenarPatrocinador.svg";
+import MartaFalcao from "../assets/imgs/patrocinadores/MartaFalcao.svg";
 
 import jungleHotel from "../assets/imgs/apoio/jungleHotelApoio.svg";
 import gov from "../assets/imgs/apoio/MDICSApoio.svg";
@@ -199,6 +200,10 @@ export default function AgroAmazonasSite() {
     {
       name: "Senar",
       src: senar,
+    },
+    {
+      name: "MartaFalcao",
+      src: MartaFalcao,
     },
   ];
 

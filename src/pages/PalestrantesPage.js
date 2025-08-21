@@ -30,7 +30,7 @@ import adrianaOliveira from "../assets/imgs/palestrantes/AdrianaOliveira.svg";
 import SergioRocha from "../assets/imgs/palestrantes/SergioRocha.svg";
 import MicheleLins from "../assets/imgs/palestrantes/MichelleLins.svg";
 import LarissaGomes from "../assets/imgs/palestrantes/LarissaGomes.svg";
-
+import Fredson from "../assets/imgs/palestrantes/Fredson.svg";
 import Layout from "../components/Layout";
 
 export default function PalestrantesPage() {
@@ -203,7 +203,7 @@ export default function PalestrantesPage() {
           },
           {
             nome: "Fredson",
-            foto: avatar,
+            foto: Fredson,
             tema: "Recolhimento de embalagens",
             sala: "Sala 1",
           },
