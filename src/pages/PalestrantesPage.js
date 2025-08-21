@@ -22,15 +22,15 @@ import silvanaPimentel from "../assets/imgs/palestrantes/SilvanaPimentel.svg";
 import claudioEmanuel from "../assets/imgs/palestrantes/claudioEmanuel 1.svg";
 import raianeAila from "../assets/imgs/palestrantes/RaianeAila.svg";
 import pauloBarreto from "../assets/imgs/palestrantes/PauloBarreto.svg";
+import Fredson from "../assets/imgs/palestrantes/Fredson.svg";
+import adrianaOliveira from "../assets/imgs/palestrantes/AdrianaOliveira.svg";
+import SergioRocha from "../assets/imgs/palestrantes/SergioRocha.svg";
 import pauloSergio from "../assets/imgs/palestrantes/PauloSergio.svg";
 import anaFlavia from "../assets/imgs/palestrantes/AnaFlavia.svg";
 import joaoVitor from "../assets/imgs/palestrantes/JoãoVictorCarneiro.svg";
 import andrePrado from "../assets/imgs/palestrantes/AndrePadro.svg";
-import adrianaOliveira from "../assets/imgs/palestrantes/AdrianaOliveira.svg";
-import SergioRocha from "../assets/imgs/palestrantes/SergioRocha.svg";
-import MicheleLins from "../assets/imgs/palestrantes/MichelleLins.svg";
-import LarissaGomes from "../assets/imgs/palestrantes/LarissaGomes.svg";
-import Fredson from "../assets/imgs/palestrantes/Fredson.svg";
+import adriana from "../assets/imgs/palestrantes/AdrianaOliveira.svg";
+import micheleLins from "../assets/imgs/palestrantes/MichelleLins.svg";
 import Layout from "../components/Layout";
 
 export default function PalestrantesPage() {
@@ -67,18 +67,6 @@ export default function PalestrantesPage() {
             tema: "Preenchimento de ART",
             sala: "Sala 1",
           },
-          {
-            nome: "Michele Lins Aracaty e Silva",
-            foto: MicheleLins,
-            tema: "Segurança Alimentar e Desenvolvimento Regional",
-            sala: "Palco Principal",
-          },
-          {
-            nome: "Larissa Gomes Silva de Souza",
-            foto: LarissaGomes,
-            tema: "Da Bancada ao Produto: O Papel da Análise de Alimentos no P&D",
-            sala: "Sala 4",
-          },
         ],
       },
       {
@@ -106,6 +94,17 @@ export default function PalestrantesPage() {
             foto: andrePrado,
             tema: "Da Granja à mesa: Fatores para se obter um ovo de qualidade",
             sala: "Sala 4",
+          },
+        ],
+      },
+      {
+        horario: "13:00 - 14:00",
+        palestrantes: [
+          {
+            nome: "Michele Lins Aracaty e Silva",
+            foto: micheleLins,
+            tema: "Segurança Alimentar e Desenvolvimento Regional",
+            sala: "Palco Principal",
           },
         ],
       },

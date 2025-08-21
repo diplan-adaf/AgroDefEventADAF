@@ -2,12 +2,14 @@ import { useState } from "react";
 import "./palestrantes.css";
 import palestrantes2 from "../../assets/imgs/palestrantes/DrBrunoHenrique.svg";
 import abrahimSena from "../../assets/imgs/palestrantes/AbrahimSena.svg";
-
+import micheleLins from "../../assets/imgs/palestrantes/michelleLins 1.svg"
 import { Link } from "react-router-dom";
 import Card from "../card/Card";
 
 export default function Palestrantes() {
   const [activeTab, setActiveTab] = useState("02-09");
+
+  
 
   const palestrantes = {
     "02-09": [
@@ -25,6 +27,12 @@ export default function Palestrantes() {
             foto: palestrantes2,
             tema: "Segurança dos Alimentos na Era da Sustentabilidade: Desafios e Oportunidades",
             sala: "Palco Principal"
+          },
+          {
+            nome: "Michele Lins Aracaty e Silva",
+            foto: micheleLins,
+            tema: "Segurança Alimentar e Desenvolvimento Regional",
+            sala: "Palco Principal",
           },
         ]
       }
