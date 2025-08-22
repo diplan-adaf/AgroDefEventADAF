@@ -29,8 +29,10 @@ import pauloSergio from "../assets/imgs/palestrantes/PauloSergio.svg";
 import anaFlavia from "../assets/imgs/palestrantes/AnaFlavia.svg";
 import joaoVitor from "../assets/imgs/palestrantes/JoãoVictorCarneiro.svg";
 import andrePrado from "../assets/imgs/palestrantes/AndrePadro.svg";
-import adriana from "../assets/imgs/palestrantes/AdrianaOliveira.svg";
 import micheleLins from "../assets/imgs/palestrantes/MichelleLins.svg";
+import larissaGomes from "../assets/imgs/palestrantes/LarissaGomes.svg"
+
+
 import Layout from "../components/Layout";
 import juarez from "../assets/imgs/palestrantes/Juarez.svg";
 
@@ -51,6 +53,12 @@ export default function PalestrantesPage() {
         horario: "10:00 - 11:00",
         palestrantes: [
           {
+            nome: "João Vitor Aquino Carneiro",
+            foto: joaoVitor,
+            tema: "Preenchimento de ART",
+            sala: "Sala 1",
+          },
+          {
             nome: "Sivandro Campos",
             foto: sivandro,
             tema: "Panorama da Monilíase no Estado do Amazonas",
@@ -63,11 +71,11 @@ export default function PalestrantesPage() {
             sala: "Sala 3",
           },
           {
-            nome: "João Vitor Aquino Carneiro",
-            foto: joaoVitor,
-            tema: "Preenchimento de ART",
-            sala: "Sala 1",
-          },
+            nome: "Larissa Gomes Silva de Souza",
+            foto: larissaGomes,
+            tema: "Da bancada ao Produto: O papel da análise de Alimentos no P&D",
+            sala: "Sala 4", 
+          }
         ],
       },
       {
@@ -102,7 +110,7 @@ export default function PalestrantesPage() {
         horario: "13:00 - 14:00",
         palestrantes: [
           {
-            nome: "Michele Lins Aracaty e Silva",
+            nome: "Dra. Michele Lins Aracaty e Silva",
             foto: micheleLins,
             tema: "Segurança Alimentar e Desenvolvimento Regional",
             sala: "Palco Principal",
@@ -111,19 +119,12 @@ export default function PalestrantesPage() {
       },
       {
         horario: "14:00 - 15:00",
-        palestrantes: [
+        palestrantes: [          
           {
-            nome: "Adriana Aguiar Oliveira",
-            foto: adrianaOliveira,
-            tema: "Panorama do SISBI no Brasil",
-            sala: "Sala 4",
-            // profissão: "Auditoria federal fiscal agropecuária",
-          },
-          {
-            nome: "Ana Maria Nóbrega",
-            foto: anaMariaNobrega,
-            tema: "Projeto Sanitarista Mirim - Roraima",
-            sala: "Sala 2",
+            nome: "Sérgio Rocha Muniz",
+            foto: SergioRocha,
+            tema: "Regularização fundiária em áreas da suframa",
+            sala: "Palco Principal",
           },
           {
             nome: "Cláudio Emanuel Magalhães Gurgel",
@@ -131,6 +132,12 @@ export default function PalestrantesPage() {
             tema: "Boas práticas na Aplicação de Agrotóxicos",
             sala: "Sala 1",
           },
+        {
+            nome: "Ana Maria Nóbrega",
+            foto: anaMariaNobrega,
+            tema: "Projeto Sanitarista Mirim - Roraima",
+            sala: "Sala 2",
+          },    
           {
             nome: "Márcia Seixas de Castro Bader",
             foto: marciaSeixas,
@@ -138,28 +145,30 @@ export default function PalestrantesPage() {
             sala: "Sala 3",
           },
           {
-            nome: "Sérgio Rocha Muniz",
-            foto: SergioRocha,
-            tema: "Regularização fundiária em áreas da suframa",
-            sala: "Palco Principal",
+            nome: "Adriana Aguiar Oliveira",
+            foto: adrianaOliveira,
+            tema: "Panorama do SISBI no Brasil",
+            sala: "Sala 4",
           },
+
         ],
       },
       {
         horario: "15:30 - 16:30",
         palestrantes: [
           {
-            nome: "Raquel Silva e Sousa",
-            foto: raquelSilva,
-            tema: "Uso Racional de Antimicrobianos em Ruminantes: Desafios Clínicos, Formação Acadêmica e Impactos na Segurança Alimentar",
-            sala: "Sala 4",
-          },
-          {
             nome: "Wilson da Silva Moraes",
             foto: wilson,
             tema: "Ações do Plano Nacional de Prevenção e Vigilância da Fusariose da Bananeira - Raça 4 Tropical ( FOC R4T)",
             sala: "Sala 2",
           },
+          {
+            nome: "Raquel Silva e Sousa",
+            foto: raquelSilva,
+            tema: "Uso Racional de Antimicrobianos em Ruminantes: Desafios Clínicos, Formação Acadêmica e Impactos na Segurança Alimentar",
+            sala: "Sala 4",
+          },
+
         ],
       },
       {
@@ -202,9 +211,9 @@ export default function PalestrantesPage() {
             sala: "Palco Principal",
           },
           {
-            nome: "Fredson",
+            nome: "José Fredson Simões de Lima",
             foto: Fredson,
-            tema: "Recolhimento de embalagens",
+            tema: "A importância do uso correto dos Agrotoxicos e da devolução das embalagens vazias.",
             sala: "Sala 1",
           },
           {
@@ -223,6 +232,12 @@ export default function PalestrantesPage() {
             foto: raianeAila,
             tema: "Populações expostas aos agrotóxicos",
             sala: "Sala 1",
+          },          
+          {
+            nome: "Glauco Antonio Teixeira",
+            foto: glauco,
+            tema: "Programa Nacional de Prevenção da Vassoura-de-Bruxa da Mandioca",
+            sala: "Sala 2",
           },
           {
             nome: "Ana Flávia Amâncio",
@@ -230,12 +245,7 @@ export default function PalestrantesPage() {
             tema: "Boas práticas de manipulação de alimentos",
             sala: "Sala 4",
           },
-          {
-            nome: "Glauco Antonio Teixeira",
-            foto: glauco,
-            tema: "Programa Nacional de Prevenção da Vassoura-de-Bruxa da Mandioca",
-            sala: "Sala 2",
-          },
+
         ],
       },
       {
@@ -265,17 +275,18 @@ export default function PalestrantesPage() {
             sala: "Sala 1",
           },
           {
-            nome: "Paulo Sérgio",
-            foto: pauloSergio,
-            tema: "A Atuação Prática do Acadêmico de Medicina Veterinária no Amazonas",
-            sala: "Sala 3",
-          },
-          {
             nome: "Joselena Tavares",
             foto: joselenaTavares,
             tema: "Selo de Produção Artesanal da Adepará e Requisitos para Regularização Higiênico-Sanitária de Estabelecimentos de Produtos de Origem Vegetal do Estado do Pará",
             sala: "Sala 2",
           },
+          {
+            nome: "Paulo Sérgio",
+            foto: pauloSergio,
+            tema: "A Atuação Prática do Acadêmico de Medicina Veterinária no Amazonas",
+            sala: "Sala 3",
+          },
+
         ],
       },
       {
@@ -308,13 +319,6 @@ export default function PalestrantesPage() {
       <Layout>
         <div className="container">
           <h1 className="page-title">Programação de Palestrantes</h1>
-          {/* <p className="palestrantes-descricao">
-            Conheça os renomados especialistas que irão compartilhar conhecimento e experiências 
-            sobre defesa agropecuária, inovação tecnológica e sustentabilidade na agricultura amazônica. 
-            Nossos palestrantes são referências em suas áreas de atuação, trazendo insights valiosos 
-            para o desenvolvimento do setor agropecuário na região.
-          </p> */}
-
           <p>
             O evento é aberto ao público e voltado para{" "}
             <strong>produtores rurais</strong>,{" "}
