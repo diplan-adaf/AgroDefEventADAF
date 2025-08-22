@@ -11,12 +11,11 @@ import Card from "../components/card/Card";
 import uninorte from "../assets/imgs/patrocinadores/UninortePatrocinador.svg";
 import maraFrios from "../assets/imgs/patrocinadores/MaraFriosPatrocinador.svg";
 import hossokawa from "../assets/imgs/patrocinadores/HossokawaPatrocinador.svg";
-import masterCleam from "../assets/imgs/patrocinadores/MasterCleamPatrocinador.svg";
 import fatiare from "../assets/imgs/patrocinadores/FatiarePatrocinador.svg";
 import cba from "../assets/imgs/patrocinadores/CBAPatrocinadores.svg";
 import senar from "../assets/imgs/patrocinadores/SenarPatrocinador.svg";
 import MartaFalcao from "../assets/imgs/patrocinadores/MartaFalcao.svg";
-
+import MasterCleamPatrocinador from "../assets/imgs/patrocinadores/MasterCleamPatrocinador.svg";
 import jungleHotel from "../assets/imgs/apoio/jungleHotelApoio.svg";
 import gov from "../assets/imgs/apoio/MDICSApoio.svg";
 import duprado from "../assets/imgs/apoio/DupradoApoio.svg";
@@ -185,13 +184,14 @@ export default function AgroAmazonasSite() {
       name: "Hossokawa",
       src: hossokawa,
     },
-    {
-      name: "Master Cleam",
-      src: masterCleam,
-    },
+
     {
       name: "Fatiare",
       src: fatiare,
+    },
+    {
+      name: "MasterCleam",
+      src: MasterCleamPatrocinador,
     },
     {
       name: "cba",

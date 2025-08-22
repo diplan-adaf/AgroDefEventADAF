@@ -1,23 +1,35 @@
 .site-footer {
-  /* background-color: #064e3b; */
+  /* --- 1. SEU GRADIENTE RESTAURADO --- */
+  /* Esta é a regra principal para o fundo. */
   background: linear-gradient(
     to right,
     #8da05f 0%,
     /* Começa claro à esquerda */ #193218 25%,
     /* Transição rápida para o escuro */ #0a1d0f 35%,
     /* Atinge o tom mais escuro */ #0a1d0f 75%,
-    /* Mantém o tom mais escuro até 75% */ #4f6539 95%
-      /* Clareia suavemente no final */
+    /* Mantém o tom mais escuro */ #4f6539 95% /* Clareia suavemente no final */
   );
 
+  /* Uma cor sólida como fallback caso o gradiente não carregue. */
   background-color: #064e3b;
   color: #f3f4f6;
-  text-align: center;
-  padding: 1rem 1rem;
+
+  /* --- 2. CÓDIGO PARA EXPANDIR NAS LATERAIS --- */
+  /* Força o footer a ocupar 100% da largura da janela. */
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+  box-sizing: border-box; /* Garante que o padding não afete a largura total */
+
+  /* --- 3. LAYOUT E ESPAÇAMENTO INTERNO --- */
+  /* Padding ajustado para que o conteúdo não cole nas bordas da tela. */
+  padding: 2rem 5%;
   margin-top: 4rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .site-logo {

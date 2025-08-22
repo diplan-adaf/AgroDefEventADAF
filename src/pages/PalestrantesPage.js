@@ -32,6 +32,7 @@ import andrePrado from "../assets/imgs/palestrantes/AndrePadro.svg";
 import adriana from "../assets/imgs/palestrantes/AdrianaOliveira.svg";
 import micheleLins from "../assets/imgs/palestrantes/MichelleLins.svg";
 import Layout from "../components/Layout";
+import juarez from "../assets/imgs/palestrantes/Juarez.svg";
 
 export default function PalestrantesPage() {
   const [activeTab, setActiveTab] = useState("02-09");
@@ -274,6 +275,17 @@ export default function PalestrantesPage() {
             foto: joselenaTavares,
             tema: "Selo de Produção Artesanal da Adepará e Requisitos para Regularização Higiênico-Sanitária de Estabelecimentos de Produtos de Origem Vegetal do Estado do Pará",
             sala: "Sala 2",
+          },
+        ],
+      },
+      {
+        horario: "17:00 - 18:00",
+        palestrantes: [
+          {
+            nome: "Juarez Dinelly de Souza",
+            foto: juarez,
+            tema: "Segurança Alimentar na pratica: Do campo ao consumidor",
+            sala: "Sala 3",
           },
         ],
       },
