@@ -219,10 +219,6 @@ export default function AgroAmazonasSite() {
       name: "mdic",
       src: mdic,
     },
-    {
-      name: "afeam",
-      src: afeam,
-    },
   ];
 
   const apoio = [
@@ -237,6 +233,10 @@ export default function AgroAmazonasSite() {
     {
       name: "gov",
       src: gov,
+    },
+    {
+      name: "afeam",
+      src: afeam,
     },
   ];
 
