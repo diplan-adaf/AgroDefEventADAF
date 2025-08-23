@@ -30,8 +30,8 @@ import anaFlavia from "../assets/imgs/palestrantes/AnaFlavia.svg";
 import joaoVitor from "../assets/imgs/palestrantes/JoãoVictorCarneiro.svg";
 import andrePrado from "../assets/imgs/palestrantes/AndrePadro.svg";
 import micheleLins from "../assets/imgs/palestrantes/MichelleLins.svg";
-import larissaGomes from "../assets/imgs/palestrantes/LarissaGomes.svg"
-
+import larissaGomes from "../assets/imgs/palestrantes/LarissaGomes.svg";
+import FernandoRodrigues from "../assets/imgs/palestrantes/FernandoRodrigues.svg";
 
 import Layout from "../components/Layout";
 import juarez from "../assets/imgs/palestrantes/Juarez.svg";
@@ -74,8 +74,8 @@ export default function PalestrantesPage() {
             nome: "Larissa Gomes Silva de Souza",
             foto: larissaGomes,
             tema: "Da bancada ao Produto: O papel da análise de Alimentos no P&D",
-            sala: "Sala 4", 
-          }
+            sala: "Sala 4",
+          },
         ],
       },
       {
@@ -119,7 +119,7 @@ export default function PalestrantesPage() {
       },
       {
         horario: "14:00 - 15:00",
-        palestrantes: [          
+        palestrantes: [
           {
             nome: "Sérgio Rocha Muniz",
             foto: SergioRocha,
@@ -132,12 +132,12 @@ export default function PalestrantesPage() {
             tema: "Boas práticas na Aplicação de Agrotóxicos",
             sala: "Sala 1",
           },
-        {
+          {
             nome: "Ana Maria Nóbrega",
             foto: anaMariaNobrega,
             tema: "Projeto Sanitarista Mirim - Roraima",
             sala: "Sala 2",
-          },    
+          },
           {
             nome: "Márcia Seixas de Castro Bader",
             foto: marciaSeixas,
@@ -150,7 +150,6 @@ export default function PalestrantesPage() {
             tema: "Panorama do SISBI no Brasil",
             sala: "Sala 4",
           },
-
         ],
       },
       {
@@ -168,7 +167,6 @@ export default function PalestrantesPage() {
             tema: "Uso Racional de Antimicrobianos em Ruminantes: Desafios Clínicos, Formação Acadêmica e Impactos na Segurança Alimentar",
             sala: "Sala 4",
           },
-
         ],
       },
       {
@@ -182,7 +180,7 @@ export default function PalestrantesPage() {
           },
           {
             nome: "Fernando Rodrigues da Silva",
-            foto: avatar,
+            foto: FernandoRodrigues,
             tema: "Avaliação nas Linhas de Inspeção de Abatedouro",
             sala: "Sala 4",
           },
@@ -232,7 +230,7 @@ export default function PalestrantesPage() {
             foto: raianeAila,
             tema: "Populações expostas aos agrotóxicos",
             sala: "Sala 1",
-          },          
+          },
           {
             nome: "Glauco Antonio Teixeira",
             foto: glauco,
@@ -245,7 +243,6 @@ export default function PalestrantesPage() {
             tema: "Boas práticas de manipulação de alimentos",
             sala: "Sala 4",
           },
-
         ],
       },
       {
@@ -286,7 +283,6 @@ export default function PalestrantesPage() {
             tema: "A Atuação Prática do Acadêmico de Medicina Veterinária no Amazonas",
             sala: "Sala 3",
           },
-
         ],
       },
       {

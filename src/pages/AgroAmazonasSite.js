@@ -19,9 +19,11 @@ import MasterCleamPatrocinador from "../assets/imgs/patrocinadores/MasterCleamPa
 import jungleHotel from "../assets/imgs/apoio/jungleHotelApoio.svg";
 import gov from "../assets/imgs/apoio/MDICSApoio.svg";
 import duprado from "../assets/imgs/apoio/DupradoApoio.svg";
-
+import Biotecnologia from "../assets/imgs/patrocinadores/Biotecnologia.svg";
+import afeam from "../assets/imgs/apoio/afeam.svg";
+import mdic from "../assets/imgs/patrocinadores/mdic.svg";
+import Connecthus from "../assets/imgs/patrocinadores/Connecthus.svg";
 import hgservice from "../assets/imgs/organizacao/HGServicesOrganizacao.svg";
-
 import { Instagram, Chrome } from "lucide-react";
 import standDiamante from "../assets/imgs/stands/saida-2.svg";
 import standOuro from "../assets/imgs/stands/saida-3.svg";
@@ -204,6 +206,22 @@ export default function AgroAmazonasSite() {
     {
       name: "MartaFalcao",
       src: MartaFalcao,
+    },
+    {
+      name: "biotecnologia",
+      src: Biotecnologia,
+    },
+    {
+      name: "connecthus",
+      src: Connecthus,
+    },
+    {
+      name: "mdic",
+      src: mdic,
+    },
+    {
+      name: "afeam",
+      src: afeam,
     },
   ];
 
