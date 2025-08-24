@@ -4,6 +4,9 @@ import palestrantes2 from "../../assets/imgs/palestrantes/DrBrunoHenrique.svg";
 import abrahimSena from "../../assets/imgs/palestrantes/AbrahimSena.svg";
 import micheleLins from "../../assets/imgs/palestrantes/MichelleLins.svg";
 import sergioRocha from "../../assets/imgs/palestrantes/SergioRocha.svg";
+import OlindaMarinho from "../../assets/imgs/palestrantes/OlindaMarinho.svg";
+import MarceloDias from "../../assets/imgs/palestrantes/MarceloDias.svg";
+
 import { Link } from "react-router-dom";
 import Card from "../card/Card";
 
@@ -28,9 +31,21 @@ export default function Palestrantes() {
             sala: "Palco Principal",
           },
           {
+            nome: "Profa. Msc. Olinda Marinho",
+            foto: OlindaMarinho,
+            tema: "Tema Central",
+            sala: "Palco Principal",
+          },
+          {
             nome: "Pós-Dra. Michele Lins Aracaty e Silva",
             foto: micheleLins,
             tema: "Segurança Alimentar e Desenvolvimento Regional",
+            sala: "Palco Principal",
+          },
+          {
+            nome: "Marcelo Dias",
+            foto: MarceloDias,
+            tema: "Agricultura Familiar",
             sala: "Palco Principal",
           },
           {

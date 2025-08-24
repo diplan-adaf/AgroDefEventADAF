@@ -36,6 +36,7 @@ import Ezequiel from "../assets/imgs/palestrantes/Ezequiel.svg";
 import MarceloDias from "../assets/imgs/palestrantes/MarceloDias.svg";
 import Moisesfelix from "../assets/imgs/palestrantes/MoisesFelix.svg";
 import OlindaMarinho from "../assets/imgs/palestrantes/OlindaMarinho.svg";
+import AlexandreVictor from "../assets/imgs/palestrantes/AlexandreVictor.svg";
 
 import Layout from "../components/Layout";
 import juarez from "../assets/imgs/palestrantes/Juarez.svg";
@@ -177,6 +178,12 @@ export default function PalestrantesPage() {
         horario: "17:00 - 18:00",
         palestrantes: [
           {
+            nome: "Marcelo Dias",
+            foto: MarceloDias,
+            tema: "Agricultura Familiar",
+            sala: "Palco Principal",
+          },
+          {
             nome: "Paulo Roberto de Faria Pinto",
             foto: pauloRoberto,
             tema: "Sistema gerenciamento em áreas Protegidas",
@@ -193,6 +200,12 @@ export default function PalestrantesPage() {
       {
         horario: "18:30 - 19:30",
         palestrantes: [
+          {
+            nome: "Alexandre Victor S. Ribeiro",
+            foto: AlexandreVictor,
+            tema: "Agroecologia: Plantas Alimentícias Não Convencionais, Soberania Alimentar e Bebidas Fermentadas",
+            sala: "Sala 2",
+          },
           {
             nome: "Airton Reis de Jesus",
             foto: airton,
@@ -250,6 +263,17 @@ export default function PalestrantesPage() {
         ],
       },
       {
+        horario: "13:00 - 14:00",
+        palestrantes: [
+          {
+            nome: "Profa. Msc. Olinda Marinho",
+            foto: OlindaMarinho,
+            tema: "Tema Central",
+            sala: "Palco Principal",
+          },
+        ],
+      },
+      {
         horario: "14:00 - 15:00",
         palestrantes: [
           {
@@ -263,6 +287,17 @@ export default function PalestrantesPage() {
             foto: geraldo,
             tema: "Beneficiamento primário do cacau",
             sala: "Sala 2",
+          },
+        ],
+      },
+      {
+        horario: "15:00 - 16:00",
+        palestrantes: [
+          {
+            nome: "Ezequiel Gonçalves Souza",
+            foto: Ezequiel,
+            tema: "Projeto Prato Cheio",
+            sala: "Palco Principal",
           },
         ],
       },
@@ -292,6 +327,12 @@ export default function PalestrantesPage() {
       {
         horario: "17:00 - 18:00",
         palestrantes: [
+          {
+            nome: "Moisés Felix de Carvalho Neto",
+            foto: Moisesfelix,
+            tema: "Manejo Agroecológico de Pragas Agrícolas",
+            sala: "Sala 1",
+          },
           {
             nome: "Juarez Dinelly de Souza",
             foto: juarez,

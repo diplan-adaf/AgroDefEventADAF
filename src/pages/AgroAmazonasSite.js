@@ -25,6 +25,8 @@ import ufam from "../assets/imgs/apoio/ufam.svg";
 import Peiex from "../assets/imgs/apoio/Peiex.svg";
 import Inpa from "../assets/imgs/apoio/Inpa.svg";
 import minc from "../assets/imgs/apoio/minc.svg";
+import PratoCheio from "../assets/imgs/apoio/PratoCheio.svg";
+import Seas from "../assets/imgs/apoio/Seas.svg";
 import mdic from "../assets/imgs/patrocinadores/mdic.svg";
 import Connecthus from "../assets/imgs/patrocinadores/Connecthus.svg";
 import hgservice from "../assets/imgs/organizacao/HGServicesOrganizacao.svg";
@@ -245,6 +247,14 @@ export default function AgroAmazonasSite() {
     {
       name: "peiex",
       src: Peiex,
+    },
+    {
+      name: "Seas",
+      src: Seas,
+    },
+    {
+      name: "PratoCheio",
+      src: PratoCheio,
     },
     {
       name: "minc",
