@@ -32,6 +32,10 @@ import andrePrado from "../assets/imgs/palestrantes/AndrePadro.svg";
 import micheleLins from "../assets/imgs/palestrantes/MichelleLins.svg";
 import larissaGomes from "../assets/imgs/palestrantes/LarissaGomes.svg";
 import FernandoRodrigues from "../assets/imgs/palestrantes/FernandoRodrigues.svg";
+import Ezequiel from "../assets/imgs/palestrantes/Ezequiel.svg";
+import MarceloDias from "../assets/imgs/palestrantes/MarceloDias.svg";
+import Moisesfelix from "../assets/imgs/palestrantes/MoisesFelix.svg";
+import OlindaMarinho from "../assets/imgs/palestrantes/OlindaMarinho.svg";
 
 import Layout from "../components/Layout";
 import juarez from "../assets/imgs/palestrantes/Juarez.svg";

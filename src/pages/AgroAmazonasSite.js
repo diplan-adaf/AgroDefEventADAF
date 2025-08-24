@@ -21,6 +21,10 @@ import gov from "../assets/imgs/apoio/MDICSApoio.svg";
 import duprado from "../assets/imgs/apoio/DupradoApoio.svg";
 import Biotecnologia from "../assets/imgs/patrocinadores/Biotecnologia.svg";
 import afeam from "../assets/imgs/apoio/afeam.svg";
+import ufam from "../assets/imgs/apoio/ufam.svg";
+import Peiex from "../assets/imgs/apoio/Peiex.svg";
+import Inpa from "../assets/imgs/apoio/Inpa.svg";
+import minc from "../assets/imgs/apoio/minc.svg";
 import mdic from "../assets/imgs/patrocinadores/mdic.svg";
 import Connecthus from "../assets/imgs/patrocinadores/Connecthus.svg";
 import hgservice from "../assets/imgs/organizacao/HGServicesOrganizacao.svg";
@@ -215,10 +219,6 @@ export default function AgroAmazonasSite() {
       name: "connecthus",
       src: Connecthus,
     },
-    {
-      name: "mdic",
-      src: mdic,
-    },
   ];
 
   const apoio = [
@@ -237,6 +237,22 @@ export default function AgroAmazonasSite() {
     {
       name: "afeam",
       src: afeam,
+    },
+    {
+      name: "ufam",
+      src: ufam,
+    },
+    {
+      name: "peiex",
+      src: Peiex,
+    },
+    {
+      name: "minc",
+      src: minc,
+    },
+    {
+      name: "inpa",
+      src: Inpa,
     },
   ];
 
