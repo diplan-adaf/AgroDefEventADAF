@@ -63,7 +63,7 @@
 
 @media (max-width: 480px) {
   .brands-imgs {
-    gap: 0.75rem;
+    padding: 1.5rem 0.5rem;
   }
 
   .brands-imgs img {
