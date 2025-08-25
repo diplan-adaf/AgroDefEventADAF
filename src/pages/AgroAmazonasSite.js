@@ -366,7 +366,7 @@ export default function AgroAmazonasSite() {
           <Palestrantes className="flex-item" />
         </section>
 
-        {/* <div className="site-buttons">
+         <div className="site-buttons">
           <Button
             text={"Inscreva-se (Simpla)"}
             ref={
@@ -383,7 +383,7 @@ export default function AgroAmazonasSite() {
           >
             <Instagram className="icon" />
           </Button>
-        </div> */}
+        </div>
 
         <section id="collaborators">
           <Collaborators className="flex-item" />

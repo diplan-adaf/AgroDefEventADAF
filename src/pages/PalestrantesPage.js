@@ -103,9 +103,9 @@ export default function PalestrantesPage() {
             sala: "Sala 2",
           },
           {
-            nome: "André do Prado Oliveira",
+            nome: "André Duprado",
             foto: andrePrado,
-            tema: "Da Granja à mesa: Fatores para se obter um ovo de qualidade",
+            tema: "Da Granja à mesa: Fatores para se obter um ovo",
             sala: "Sala 4",
           },
         ],
