@@ -124,7 +124,7 @@
   font-weight: 700;
   font-size: 1.125rem;
   padding: 2rem;
-  width: 60%;
+  width: 80%;
   border-radius: 50px;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -136,6 +136,7 @@
   overflow: hidden;
   color: #ffffff;
 }
+
 
 .instagram:hover {
   box-shadow: 0 12px 30px rgba(233, 30, 99, 0.4) !important;
@@ -256,25 +257,22 @@
   }
 } */
 
-@media (min-width: 576px) {
-}
 
-@media (min-width: 768px) {
-  .site-buttons {
-    flex-direction: row;
-    margin: 5rem 0;
-  }
 
-  .instagram {
-    width: 55%;
-  }
-
-  .simpla {
-    width: 30%;
-  }
-}
 
 @media (min-width: 992px) {
+  .media-buttons{
+    flex-direction: row !important;
+  }
+
+  .instagram{
+    width: 30% !important;
+  }
+
+  .adaf{
+    width: 30% !important;
+  }
+  
 }
 
 @media (min-width: 1200px) {
@@ -284,9 +282,9 @@
   background: linear-gradient(135deg, #facc15 0%, #fde047 100%);
   color: #1f2937;
   font-weight: 700;
-  width: 60%;
+  width: 80%;
   font-size: 1.125rem;
-  padding: 2.4rem;
+  padding: 2rem;
   border-radius: 50px;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -325,15 +323,16 @@
   left: 100%;
 }
 .media-buttons {
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin-top: 0.3rem;
-  margin-bottom: 0.7rem;
+  margin-top: 0rem;
+  margin-bottom: 0.5rem;
 }
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
   .media-buttons {
     display: flex;
     flex-direction: column;
@@ -349,4 +348,4 @@
   .instagram {
     width: 100%;
   }
-}
+} */

@@ -30,6 +30,7 @@ import Seas from "../assets/imgs/apoio/Seas.svg";
 import mdic from "../assets/imgs/patrocinadores/mdic.svg";
 import Connecthus from "../assets/imgs/patrocinadores/Connecthus.svg";
 import hgservice from "../assets/imgs/organizacao/HGServicesOrganizacao.svg";
+import chefeProibido from "../assets/imgs/apoio/chefeProibido 1.svg";
 import { Instagram, Chrome } from "lucide-react";
 import standDiamante from "../assets/imgs/stands/saida-2.svg";
 import standOuro from "../assets/imgs/stands/saida-3.svg";
@@ -264,6 +265,10 @@ export default function AgroAmazonasSite() {
       name: "inpa",
       src: Inpa,
     },
+    {
+      name: "Chefe Proibido",
+      src: chefeProibido
+    }
   ];
 
   return (
@@ -276,35 +281,14 @@ export default function AgroAmazonasSite() {
             align={"center"}
           >
             <div className="media-buttons">
-              <Button cls={"adaf"}>
-                <a
-                  href="https://www.adaf.am.gov.br/"
-                  style={{
-                    color: "inherit",
-                  }}
-                >
+              <Button cls={"adaf"} ref={"https://www.adaf.am.gov.br/"}>
                   <Chrome className="icon" /> Site da ADAF
-                </a>
               </Button>
-              <Button cls={"instagram"}>
-                <a
-                  href="https://www.instagram.com/adafamazonas/?hl=en"
-                  style={{
-                    color: "inherit",
-                  }}
-                >
+              <Button cls={"instagram"} ref={"https://www.instagram.com/adafamazonas/?hl=en"}>
                   <Instagram className="icon" /> Perfil da ADAF
-                </a>
               </Button>
-              <Button cls={"instagram"}>
-                <a
-                  href="https://www.instagram.com/reel/DNYLFvAx2B2/?igsh=MWpmbDB5Znkyb2Ywag=="
-                  style={{
-                    color: "inherit",
-                  }}
-                >
+              <Button cls={"instagram"} ref={"https://www.instagram.com/reel/DNYLFvAx2B2/?igsh=MWpmbDB5Znkyb2Ywag=="}>
                   <Instagram className="icon" /> Perfil do Evento
-                </a>
               </Button>
             </div>
           </Card>
@@ -382,7 +366,7 @@ export default function AgroAmazonasSite() {
           <Palestrantes className="flex-item" />
         </section>
 
-        <div className="site-buttons">
+        {/* <div className="site-buttons">
           <Button
             text={"Inscreva-se (Simpla)"}
             ref={
@@ -399,7 +383,7 @@ export default function AgroAmazonasSite() {
           >
             <Instagram className="icon" />
           </Button>
-        </div>
+        </div> */}
 
         <section id="collaborators">
           <Collaborators className="flex-item" />
