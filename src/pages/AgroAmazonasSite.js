@@ -31,6 +31,11 @@ import mdic from "../assets/imgs/patrocinadores/mdic.svg";
 import Connecthus from "../assets/imgs/patrocinadores/Connecthus.svg";
 import hgservice from "../assets/imgs/organizacao/HGServicesOrganizacao.svg";
 import chefeProibido from "../assets/imgs/apoio/chefeProibido 1.svg";
+import ids from "../assets/imgs/apoio/Cópia de Marca_IDS_maps 1.svg";
+import prefeitura from "../assets/imgs/apoio/prefeitura.svg";
+import terekuno from "../assets/imgs/apoio/Terakuno 1.svg";
+
+
 import { Instagram, Chrome } from "lucide-react";
 import standDiamante from "../assets/imgs/stands/saida-2.svg";
 import standOuro from "../assets/imgs/stands/saida-3.svg";
@@ -268,6 +273,18 @@ export default function AgroAmazonasSite() {
     {
       name: "Chefe Proibido",
       src: chefeProibido
+    },
+    {
+      name: "ids",
+      src: ids
+    },
+    {
+      name: "prefeitura",
+      src: prefeitura
+    },
+    {
+      name: "terakuno",
+      src: terekuno
     }
   ];
 
