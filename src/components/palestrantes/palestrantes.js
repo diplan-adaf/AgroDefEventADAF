@@ -1,63 +1,11 @@
 import { useState } from "react";
 import "./palestrantes.css";
-import palestrantes2 from "../../assets/imgs/palestrantes/DrBrunoHenrique.svg";
-import abrahimSena from "../../assets/imgs/palestrantes/AbrahimSena.svg";
-import micheleLins from "../../assets/imgs/palestrantes/MichelleLins.svg";
-import sergioRocha from "../../assets/imgs/palestrantes/SergioRocha.svg";
-import OlindaMarinho from "../../assets/imgs/palestrantes/OlindaMarinho.svg";
-import MarceloDias from "../../assets/imgs/palestrantes/MarceloDias.svg";
-
 import { Link } from "react-router-dom";
 import Card from "../card/Card";
+import { palestrantesPrincipais as palestrantes} from "../../data/Palestrante";
 
 export default function Palestrantes() {
   const [activeTab, setActiveTab] = useState("02-09");
-
-  const palestrantes = {
-    "02-09": [
-      {
-        horario: "08:00 - 09:00",
-        palestrantes: [
-          {
-            nome: "Me. Abrahim Sena Baze Junior",
-            foto: abrahimSena,
-            tema: "Valorização da Gastronomia Amazônica na Cadeia do Agro",
-            sala: "Palco Principal",
-          },
-          {
-            nome: "Dr. Bruno Henrique dos Santos",
-            foto: palestrantes2,
-            tema: "Segurança dos Alimentos na Era da Sustentabilidade: Desafios e Oportunidades",
-            sala: "Palco Principal",
-          },
-          {
-            nome: "Profa. Msc. Olinda Marinho",
-            foto: OlindaMarinho,
-            tema: "Tema Central",
-            sala: "Palco Principal",
-          },
-          {
-            nome: "Pós-Dra. Michele Lins Aracaty e Silva",
-            foto: micheleLins,
-            tema: "Segurança Alimentar e Desenvolvimento Regional",
-            sala: "Palco Principal",
-          },
-          {
-            nome: "Marcelo Dias",
-            foto: MarceloDias,
-            tema: "Agricultura Familiar",
-            sala: "Palco Principal",
-          },
-          {
-            nome: "Sérgio Rocha Muniz",
-            foto: sergioRocha,
-            tema: "Regularização fundiária em áreas da suframa",
-            sala: "Palco Principal",
-          },
-        ],
-      },
-    ],
-  };
 
   return (
     <Card title={"Palestrantes"}>
