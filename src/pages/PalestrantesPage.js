@@ -36,6 +36,9 @@ import MarceloDias from "../assets/imgs/palestrantes/MarceloDias.svg";
 import Moisesfelix from "../assets/imgs/palestrantes/MoisesFelix.svg";
 import OlindaMarinho from "../assets/imgs/palestrantes/OlindaMarinho.svg";
 import AlexandreVictor from "../assets/imgs/palestrantes/AlexandreVictor.svg";
+import antonioAzevedo from "../assets/imgs/palestrantes/antonioAzevedo 1.svg";
+import dionisia from "../assets/imgs/palestrantes/dionisia 1.svg";
+
 
 import Layout from "../components/Layout";
 import juarez from "../assets/imgs/palestrantes/juarez.svg";
@@ -103,11 +106,17 @@ export default function PalestrantesPage() {
             sala: "Sala 2",
           },
           {
+            nome: "Antonio de Azevedo maia",
+            foto: antonioAzevedo,
+            tema: "Direito Ambiental, Água e Agropecuária: Desafios e Convergências para o Futuro Sustentável",
+            sala: "Sala 3",
+          },
+          {
             nome: "André Duprado",
             foto: andrePrado,
             tema: "Da Granja à mesa: Fatores para se obter um ovo",
             sala: "Sala 4",
-          },
+          }
         ],
       },
       {
@@ -275,6 +284,12 @@ export default function PalestrantesPage() {
       {
         horario: "14:00 - 15:00",
         palestrantes: [
+          {
+            nome: "Dionísia Soares Campos",
+            foto: dionisia,
+            tema: "Selos de Identificação Artesanal: Selo Arte e Selo Queijo Artesana",
+            sala: "Palco principal",
+          },
           {
             nome: "Michaell Silva",
             foto: michelSilva,
