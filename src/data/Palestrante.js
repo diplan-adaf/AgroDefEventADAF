@@ -143,7 +143,7 @@ export const palestrantes = {
             sala: "Sala 3",
           },
           {
-            nome: "André Duprado",
+            nome: "André do Prado Oliveria",
             foto: andrePrado,
             tema: "Da Granja à mesa: Fatores para se obter um ovo",
             sala: "Sala 4",
