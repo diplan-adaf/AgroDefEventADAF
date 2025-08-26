@@ -23,8 +23,8 @@ const stands = [
       "Vídeo de 30 segundos no telão do Evento",
       "10 convites VIP para coquetel/recepção de abertura",
     ],
-    size: "4m x 3m",
-    footage: "12",
+    size: "6m x 3m",
+    footage: "18",
     price: "50.000,00",
     color: "#FFD700",
     icon: "💎"
@@ -81,8 +81,8 @@ const stands = [
       "Wi-fi",
       "2 Credenciais"
     ],
-    size: "3m x 3m",
-    footage: "9",
+    size: "3m x 2m",
+    footage: "6",
     price: "2.500,00",
     color: "#CD7F32",
     icon: "🥉"
