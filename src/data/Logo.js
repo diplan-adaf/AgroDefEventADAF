@@ -25,118 +25,112 @@ import ids from "../assets/imgs/apoio/Cópia de Marca_IDS_maps 1.svg";
 import prefeitura from "../assets/imgs/apoio/prefeitura.svg";
 import terekuno from "../assets/imgs/apoio/Terakuno 1.svg";
 
-
-
-
 export const organizacao = [
-    {
-      name: "hg service",
-      src: hgservice,
-    },
-  ];
-
+  {
+    name: "hg service",
+    src: hgservice,
+  },
+];
 
 export const patrocinadores = [
-    {
-      name: "Uninorte",
-      src: uninorte,
-    },
-    {
-      name: "Marafrios",
-      src: maraFrios,
-    },
-    {
-      name: "Hossokawa",
-      src: hossokawa,
-    },
+  {
+    name: "Uninorte",
+    src: uninorte,
+  },
+  {
+    name: "Marafrios",
+    src: maraFrios,
+  },
+  {
+    name: "Hossokawa",
+    src: hossokawa,
+  },
 
-    {
-      name: "Fatiare",
-      src: fatiare,
-    },
-    {
-      name: "MasterCleam",
-      src: MasterCleamPatrocinador,
-    },
-    {
-      name: "cba",
-      src: cba,
-    },
-    {
-      name: "Senar",
-      src: senar,
-    },
-    {
-      name: "MartaFalcao",
-      src: MartaFalcao,
-    },
-    {
-      name: "biotecnologia",
-      src: Biotecnologia,
-    },
-    {
-      name: "connecthus",
-      src: Connecthus,
-    },
-  ];
-
+  {
+    name: "Fatiare",
+    src: fatiare,
+  },
+  {
+    name: "MasterCleam",
+    src: MasterCleamPatrocinador,
+  },
+  {
+    name: "cba",
+    src: cba,
+  },
+  {
+    name: "Senar",
+    src: senar,
+  },
+  {
+    name: "MartaFalcao",
+    src: MartaFalcao,
+  },
+  {
+    name: "biotecnologia",
+    src: Biotecnologia,
+  },
+  {
+    name: "connecthus",
+    src: Connecthus,
+  },
+];
 
 export const apoio = [
-    {
-      name: "Amazonia Jungle Hotel",
-      src: jungleHotel,
-    },
-    {
-      name: "duPrado",
-      src: duprado,
-    },
-    {
-      name: "gov",
-      src: gov,
-    },
-    {
-      name: "afeam",
-      src: afeam,
-    },
-    {
-      name: "ufam",
-      src: ufam,
-    },
-    {
-      name: "peiex",
-      src: Peiex,
-    },
-    {
-      name: "Seas",
-      src: Seas,
-    },
-    {
-      name: "PratoCheio",
-      src: PratoCheio,
-    },
-    {
-      name: "minc",
-      src: minc,
-    },
-    {
-      name: "inpa",
-      src: Inpa,
-    },
-    {
-      name: "Chefe Proibido",
-      src: chefeProibido
-    },
-    {
-      name: "ids",
-      src: ids
-    },
-    {
-      name: "prefeitura",
-      src: prefeitura
-    },
-    {
-      name: "terakuno",
-      src: terekuno
-    }
-  ];
-
+  {
+    name: "Amazonia Jungle Hotel",
+    src: jungleHotel,
+  },
+  {
+    name: "duPrado",
+    src: duprado,
+  },
+  {
+    name: "gov",
+    src: gov,
+  },
+  {
+    name: "afeam",
+    src: afeam,
+  },
+  {
+    name: "ufam",
+    src: ufam,
+  },
+  {
+    name: "peiex",
+    src: Peiex,
+  },
+  {
+    name: "Seas",
+    src: Seas,
+  },
+  {
+    name: "PratoCheio",
+    src: PratoCheio,
+  },
+  {
+    name: "minc",
+    src: minc,
+  },
+  {
+    name: "inpa",
+    src: Inpa,
+  },
+  {
+    name: "Chefe Proibido",
+    src: chefeProibido,
+  },
+  {
+    name: "ids",
+    src: ids,
+  },
+  {
+    name: "prefeitura",
+    src: prefeitura,
+  },
+  {
+    name: "terakuno",
+    src: terekuno,
+  },
+];
