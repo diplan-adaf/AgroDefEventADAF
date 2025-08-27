@@ -7,7 +7,7 @@ import Palestrantes from "../components/palestrantes/palestrantes";
 import Collaborators from "../components/collaborators/Collaborators";
 import Button from "../components/button/Button";
 import Card from "../components/card/Card";
-import { organizacao, patrocinadores, apoio } from "../data/Logo";
+import { organizacao, patrocinadores, apoio, realizacao } from "../data/Logo";
 import { stands, standsPlanta } from "../data/Stand";
 import { Instagram, Chrome } from "lucide-react";
 import { useEffect } from "react";
@@ -191,6 +191,7 @@ export default function AgroAmazonasSite() {
         <Brands title={"PATROCINADORES"} images={patrocinadores} />
         <Brands title={"APOIO"} images={apoio} />
         <Brands title={"ORGANIZAÇÃO"} images={organizacao} />
+        <Brands title={"REALIZAÇÃO"} images={realizacao} />
       </Layout>
     </div>
   );
