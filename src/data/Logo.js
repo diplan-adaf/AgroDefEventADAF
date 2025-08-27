@@ -19,13 +19,14 @@ import PratoCheio from "../assets/imgs/apoio/PratoCheio.svg";
 import Seas from "../assets/imgs/apoio/Seas.svg";
 import mdic from "../assets/imgs/patrocinadores/mdic.svg";
 import Connecthus from "../assets/imgs/patrocinadores/Connecthus.svg";
-import hgservice from "../assets/imgs/organizacao/HGServicesOrganizacao.svg";
+import hgservice from "../assets/imgs/organizacao/Logo HG para ADAF_page-0001 1.svg";
 import chefeProibido from "../assets/imgs/apoio/chefeProibido 1.svg";
 import ids from "../assets/imgs/apoio/Cópia de Marca_IDS_maps 1.svg";
 import prefeitura from "../assets/imgs/apoio/prefeitura.svg";
 import terekuno from "../assets/imgs/apoio/Terakuno 1.svg";
-
-
+import mapa from "../assets/imgs/apoio/mapa 1.svg";
+import redeAmazonica from "../assets/imgs/apoio/redeAmazonica 1.svg";
+import adaf from "../assets/imgs/realizacao/adaf 1(1).svg";
 
 
 export const organizacao = [
@@ -137,6 +138,20 @@ export const apoio = [
     {
       name: "terakuno",
       src: terekuno
+    },
+    {
+      name: "Mapa",
+      src: mapa
+    },
+    {
+      name: "Rede amazonica",
+      src: redeAmazonica
     }
   ];
 
+export const realizacao = [
+  {
+    name: "Adaf",
+    src: adaf
+  }
+]

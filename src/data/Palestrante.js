@@ -36,6 +36,9 @@ import AlexandreVictor from "../assets/imgs/palestrantes/AlexandreVictor.svg";
 import antonioAzevedo from "../assets/imgs/palestrantes/antonioAzevedo 1.svg";
 import dionisia from "../assets/imgs/palestrantes/dionisia 1.svg";
 import juarez from "../assets/imgs/palestrantes/juarez.svg";
+import amandaBessa from "../assets/imgs/palestrantes/amandaBessa 1.svg";
+import djalmaJacauna from "../assets/imgs/palestrantes/Djalma-foto perfil 1.svg";
+
 
 
 export const palestrantesPrincipais = {
@@ -137,12 +140,6 @@ export const palestrantes = {
             sala: "Sala 2",
           },
           {
-            nome: "Antonio de Azevedo maia",
-            foto: antonioAzevedo,
-            tema: "Direito Ambiental, Água e Agropecuária: Desafios e Convergências para o Futuro Sustentável",
-            sala: "Sala 3",
-          },
-          {
             nome: "André do Prado Oliveria",
             foto: andrePrado,
             tema: "Da Granja à mesa: Fatores para se obter um ovo",
@@ -223,10 +220,22 @@ export const palestrantes = {
             sala: "Palco Principal",
           },
           {
+            nome: "Djalma Jacaúna Neves Pereira Júnior",
+            foto: djalmaJacauna,
+            tema: "Tecnologias que otimizam processos e economizam insumos no campo",
+            sala: "Sala 1",
+          },
+          {
             nome: "Paulo Roberto de Faria Pinto",
             foto: pauloRoberto,
             tema: "Sistema gerenciamento em áreas Protegidas",
             sala: "Sala 2",
+          },
+          {
+            nome: "Antonio de Azevedo maia",
+            foto: antonioAzevedo,
+            tema: "Direito Ambiental, Água e Agropecuária: Desafios e Convergências para o Futuro Sustentável",
+            sala: "Sala 3",
           },
           {
             nome: "Fernando Rodrigues da Silva",
@@ -372,6 +381,12 @@ export const palestrantes = {
       {
         horario: "17:00 - 18:00",
         palestrantes: [
+          {
+            nome: "Amanda Elisa Bessa Farias",
+            foto: amandaBessa,
+            tema: "Sisan: Estrutura, desafios e perspectivas para segurança alimentar e nutricional no estado do amazonas",
+            sala: "Palco Principal"
+          },
           {
             nome: "Moisés Felix de Carvalho Neto",
             foto: Moisesfelix,
