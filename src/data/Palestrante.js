@@ -15,7 +15,7 @@ import abrahimSena from "../assets/imgs/palestrantes/AbrahimSena.svg";
 import marciaSeixas from "../assets/imgs/palestrantes/MarciaSeixas.svg";
 import airton from "../assets/imgs/palestrantes/AirtonReisDeJesus.svg";
 import silvanaPimentel from "../assets/imgs/palestrantes/SilvanaPimentel.svg";
-import claudioEmanuel from "../assets/imgs/palestrantes/claudioEmanuel 1.svg";
+import claudioEmanuel from "../assets/imgs/palestrantes/claudioEmanuel.svg";
 import raianeAila from "../assets/imgs/palestrantes/RaianeAila.svg";
 import pauloBarreto from "../assets/imgs/palestrantes/PauloBarreto.svg";
 import Fredson from "../assets/imgs/palestrantes/Fredson.svg";
@@ -33,11 +33,11 @@ import MarceloDias from "../assets/imgs/palestrantes/MarceloDias.svg";
 import Moisesfelix from "../assets/imgs/palestrantes/MoisesFelix.svg";
 import OlindaMarinho from "../assets/imgs/palestrantes/OlindaMarinho.svg";
 import AlexandreVictor from "../assets/imgs/palestrantes/AlexandreVictor.svg";
-import antonioAzevedo from "../assets/imgs/palestrantes/antonioAzevedo 1.svg";
-import dionisia from "../assets/imgs/palestrantes/dionisia 1.svg";
-import juarez from "../assets/imgs/palestrantes/juarez.svg";
-import amandaBessa from "../assets/imgs/palestrantes/amandaBessa 1.svg";
-import djalmaJacauna from "../assets/imgs/palestrantes/Djalma-foto perfil 1.svg";
+import antonioAzevedo from "../assets/imgs/palestrantes/antonioAzevedo.svg";
+import dionisia from "../assets/imgs/palestrantes/dionisia.svg";
+import juarez from "../assets/imgs/palestrantes/Juarez.svg";
+import amandaBessa from "../assets/imgs/palestrantes/amandaBessa.svg";
+import djalmaJacauna from "../assets/imgs/palestrantes/Djalma-foto.svg";
 
 export const palestrantesPrincipais = {
   "02-09": [
