@@ -35,7 +35,7 @@ import OlindaMarinho from "../assets/imgs/palestrantes/OlindaMarinho.svg";
 import AlexandreVictor from "../assets/imgs/palestrantes/AlexandreVictor.svg";
 import antonioAzevedo from "../assets/imgs/palestrantes/antonioAzevedo.svg";
 import dionisia from "../assets/imgs/palestrantes/dionisia.svg";
-import juarez from "../assets/imgs/palestrantes/juarez.svg";
+import juarez from "../assets/imgs/palestrantes/Juarez.svg";
 import amandaBessa from "../assets/imgs/palestrantes/amandaBessa.svg";
 import djalmaJacauna from "../assets/imgs/palestrantes/Djalma-foto.svg";
 import Leilane from "../assets/imgs/palestrantes/Leilaine.svg";
@@ -49,7 +49,11 @@ import augustoBucker from "../assets/imgs/palestrantes/augustoBucker.png";
 import adrianoSilva from "../assets/imgs/palestrantes/adrianoSilva 1.svg";
 import arivanRibeiro from "../assets/imgs/palestrantes/arivanRibeiro 1.svg";
 import mariaFatima from "../assets/imgs/palestrantes/mariaFatima 1.svg";
-
+import Janicleide from "../assets/imgs/palestrantes/Janicleide.svg";
+import MarcosVinicius from "../assets/imgs/palestrantes/MarcosVinicius.svg";
+import MariaGeralda from "../assets/imgs/palestrantes/MariaGeralda.svg";
+import GeraldoMarcos from "../assets/imgs/palestrantes/GeraldoMarcos.svg";
+import Hedinaldo from "../assets/imgs/palestrantes/Hedinaldo.svg";
 
 export const palestrantesPrincipais = {
   "02-09": [
@@ -120,7 +124,7 @@ export const palestrantesPrincipais = {
           nome: "Adriano da Silva",
           foto: adrianoSilva,
           tema: "Padaria Artesanal",
-          sala: "Palco Principal"
+          sala: "Palco Principal",
         },
       ],
     },
@@ -219,12 +223,6 @@ export const palestrantes = {
           sala: "Sala 2",
         },
         {
-          nome: "Márcia Seixas de Castro Bader",
-          foto: marciaSeixas,
-          tema: "A Saúde Única como Estratégia para a Defesa Agropecuária.",
-          sala: "Sala 3",
-        },
-        {
           nome: "Adriana Aguiar Oliveira",
           foto: adrianaOliveira,
           tema: "Panorama do SISBI no Brasil",
@@ -300,6 +298,23 @@ export const palestrantes = {
           tema: "Avaliação nas Linhas de Inspeção de Abatedouro",
           sala: "Sala 4",
         },
+        {
+          nome: "Hedinaldo Narciso Lima",
+          foto: Hedinaldo,
+          tema: "Inovação com propósito: FAPEAM e o apoio à ciência aplicada à defesa agropecuaria no Amazonas",
+          sala: "Palco Principal",
+        },
+      ],
+    },
+    {
+      horario: "16:00 - 17:00",
+      palestrantes: [
+        {
+          nome: "Geraldo Marcos de Moraes",
+          foto: GeraldoMarcos,
+          tema: "Desafios e estratégias para manutenção de zonas livres de febre aftosa sem vacinação",
+          sala: "Palco Principal",
+        },
       ],
     },
     {
@@ -309,7 +324,7 @@ export const palestrantes = {
           nome: "Dr. Augusto Bücker",
           foto: augustoBucker,
           tema: "Bioinsumos para o Controle de Pragas em uma Agricultura Sustentável",
-          sala: "Sala 1"
+          sala: "Sala 1",
         },
         {
           nome: "Alexandre Victor S. Ribeiro",
@@ -320,7 +335,7 @@ export const palestrantes = {
         {
           nome: "Josiani Nunes do Nascimento",
           foto: josianiNunes,
-          tema: "Esporotricose humana: recomendações da  e fluxo de atendimento na Atenção Primária.",
+          tema: "Esporotricose humana: recomendações da e fluxo de atendimento na Atenção Primária.",
           sala: "Sala 3",
         },
         {
@@ -360,6 +375,12 @@ export const palestrantes = {
           tema: "Sala de Classificação de ovos: cuidados, higienização, manutenção e calibração das maquinas de classificação",
           sala: "Sala 4",
         },
+        {
+          nome: "Marcos Vinicius Bastos Garcia",
+          foto: MarcosVinicius,
+          tema: "Greening dos citros (HLB) - a maior ameaça á citricultura",
+          sala: "Sala 2",
+        },
       ],
     },
     {
@@ -369,9 +390,9 @@ export const palestrantes = {
           nome: "Secretário de Pesca e Aquicultura Alessandro Cohen",
           foto: alessandroCohen,
           tema: "Criação da Secretaria Estadual de Pesca e Aquicultura",
-          sala: "Palco Principal"
-        }
-      ]
+          sala: "Palco Principal",
+        },
+      ],
     },
     {
       horario: "11:30 - 12:30",
@@ -397,13 +418,13 @@ export const palestrantes = {
       ],
     },
     {
-      horario: "13:00 - 14:00",
+      horario: "18:00 - 19:00",
       palestrantes: [
         {
           nome: "Profa. Msc. Olinda Marinho",
           foto: OlindaMarinho,
           tema: "Tema Central",
-          sala: "Palco Principal",
+          sala: "Roda de conversa no palco Principal",
         },
       ],
     },
@@ -437,17 +458,6 @@ export const palestrantes = {
       ],
     },
     {
-      horario: "14:00 - 18:00",
-      palestrantes: [
-        {
-          nome: "Maria de Fátima Moreira",
-          foto: mariaFatima,
-          tema: "Progra",
-          sala: "Sala 4",
-        },
-      ]
-    },
-    {
       horario: "15:00 - 15:30",
       palestrantes: [
         {
@@ -459,13 +469,13 @@ export const palestrantes = {
       ],
     },
     {
-      horario: "15:30 - 16:30",
+      horario: "15:30 - 16:00",
       palestrantes: [
         {
           nome: "Adriano da Silva",
           foto: adrianoSilva,
           tema: "Padaria Artesanal",
-          sala: "Palco Principal"
+          sala: "Palco Principal",
         },
         {
           nome: "Arivan Ribeiro Reis",
@@ -488,15 +498,15 @@ export const palestrantes = {
       ],
     },
     {
-      horario: "17:00 - 17:30",
+      horario: "16:30 - 18:00",
       palestrantes: [
         {
-          nome: "Amanda Elisa Bessa Farias",
-          foto: amandaBessa,
-          tema: "Sisan: Estrutura, desafios e perspectivas para segurança alimentar e nutricional no estado do amazonas",
+          nome: "Janicleide da Conceição Silva",
+          foto: Janicleide,
+          tema: "Orientação como funciona o Credito Rosa",
           sala: "Palco Principal",
         },
-      ]
+      ],
     },
     {
       horario: "17:00 - 18:00",
@@ -512,6 +522,18 @@ export const palestrantes = {
           foto: juarez,
           tema: "Segurança Alimentar na pratica: Do campo ao consumidor",
           sala: "Sala 3",
+        },
+        {
+          nome: "Maria Greralda de souza",
+          foto: MariaGeralda,
+          tema: "Ações de pesquisa da EMBRAPA com relação à Moliniáse do Cacau e Cupuaceiro",
+          sala: "Sala 2",
+        },
+        {
+          nome: "Amanda Elisa Bessa Farias",
+          foto: amandaBessa,
+          tema: "Sisan: Estrutura, desafios e perspectivas para segurança alimentar e nutricional no estado do amazonas",
+          sala: "Palco Principal",
         },
       ],
     },

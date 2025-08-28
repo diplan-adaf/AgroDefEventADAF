@@ -53,40 +53,115 @@ export default function PalestrantesPage() {
                   </div>
                   <div className="palestrantes-grid">
                     {sessao.palestrantes.map(
-                      (palestrante, palestranteIndex) => (
-                        <div
-                          key={palestranteIndex}
-                          className="palestrante-card"
-                        >
-                          <div className="palestrante-foto">
-                            <img
-                              src={palestrante.foto}
-                              alt={palestrante.nome}
-                            />
-                          </div>
-                          <div className="palestrante-info">
-                            <h3 className="palestrante-nome">
-                              {palestrante.nome}
-                            </h3>
-                            <p className="palestrante-tema">
-                              <strong>Tema:</strong> {palestrante.tema}
-                            </p>
-                            <p className="palestrante-sala">
-                              <span className="sala-badge-page">
-                                {palestrante.sala}
-                              </span>
-                            </p>
-                          </div>
+                      (palestrante, palestranteIndex) => {
+                        // Verifica se é Rosane Cavalcante ou Leilane Saburi Cintas Ruiz
+                        const isRosaneOrLeilane = 
+                          palestrante.nome === "Rosane Cavalcante" || 
+                          palestrante.nome === "Leilane Saburi Cintas Ruiz";
+                        
+                        // Se for Rosane, renderiza o card combinado
+                        if (palestrante.nome === "Rosane Cavalcante") {
+                          const leilane = sessao.palestrantes.find(p => p.nome === "Leilane Saburi Cintas Ruiz");
+                          
+                          return (
+                            <div
+                              key={palestranteIndex}
+                              className="palestrante-card palestrante-card-combinado"
+                            >
+                              <div className="palestrantes-combinados">
+                                <div className="palestrante-item">
+                                  <div className="palestrante-foto">
+                                    <img
+                                      src={palestrante.foto}
+                                      alt={palestrante.nome}
+                                    />
+                                  </div>
+                                  <div className="palestrante-info">
+                                    <h3 className="palestrante-nome">
+                                      {palestrante.nome}
+                                    </h3>
+                                  </div>
+                                </div>
+                                
+                                {leilane && (
+                                  <div className="palestrante-item">
+                                    <div className="palestrante-foto">
+                                      <img
+                                        src={leilane.foto}
+                                        alt={leilane.nome}
+                                      />
+                                    </div>
+                                    <div className="palestrante-info">
+                                      <h3 className="palestrante-nome">
+                                        {leilane.nome}
+                                      </h3>
+                                    </div>
+                                  </div>
+                                )}
+                              </div>
+                              
+                              <div className="palestrante-tema-combinado">
+                                <strong>Tema:</strong> {palestrante.tema}
+                              </div>
+                              
+                              <div className="palestrante-sala">
+                                <span className="sala-badge-page">
+                                  {palestrante.sala}
+                                </span>
+                              </div>
 
-                          <a
-                            href="https://docs.google.com/forms/d/e/1FAIpQLSdqJDjN4tujp3fRNAFnXfyL9jpGuyuvJGPvxIFlf0yPdD-hWQ/viewform"
-                            className="button-subscribe"
-                            target="_blank"
+                              <a
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSdqJDjN4tujp3fRNAFnXfyL9jpGuyuvJGPvxIFlf0yPdD-hWQ/viewform"
+                                className="button-subscribe"
+                                target="_blank"
+                              >
+                                Inscreva-se
+                              </a>
+                            </div>
+                          );
+                        }
+                        
+                        // Se for Leilane, não renderiza (já foi renderizada com Rosane)
+                        if (palestrante.nome === "Leilane Saburi Cintas Ruiz") {
+                          return null;
+                        }
+                        
+                        // Para todos os outros palestrantes, renderiza normalmente
+                        return (
+                          <div
+                            key={palestranteIndex}
+                            className="palestrante-card"
                           >
-                            Inscreva-se
-                          </a>
-                        </div>
-                      )
+                            <div className="palestrante-foto">
+                              <img
+                                src={palestrante.foto}
+                                alt={palestrante.nome}
+                              />
+                            </div>
+                            <div className="palestrante-info">
+                              <h3 className="palestrante-nome">
+                                {palestrante.nome}
+                              </h3>
+                              <p className="palestrante-tema">
+                                <strong>Tema:</strong> {palestrante.tema}
+                              </p>
+                              <p className="palestrante-sala">
+                                <span className="sala-badge-page">
+                                  {palestrante.sala}
+                                </span>
+                              </p>
+                            </div>
+
+                            <a
+                              href="https://docs.google.com/forms/d/e/1FAIpQLSdqJDjN4tujp3fRNAFnXfyL9jpGuyuvJGPvxIFlf0yPdD-hWQ/viewform"
+                              className="button-subscribe"
+                              target="_blank"
+                            >
+                              Inscreva-se
+                            </a>
+                          </div>
+                        );
+                      }
                     )}
                   </div>
                 </div>

@@ -27,6 +27,8 @@ import terekuno from "../assets/imgs/apoio/Terakuno.svg";
 import mapa from "../assets/imgs/apoio/mapa.svg";
 import redeAmazonica from "../assets/imgs/apoio/redeAmazonica.svg";
 import adaf from "../assets/imgs/realizacao/adaf.svg";
+import Setemp from "../assets/imgs/apoio/Setemp.svg";
+import Sebrae1 from "../assets/imgs/apoio/Sebrae 1.svg";
 
 export const organizacao = [
   {
@@ -97,7 +99,6 @@ export const apoio = [
     src: mapa,
   },
 
-
   {
     name: "inpa",
     src: Inpa,
@@ -110,6 +111,14 @@ export const apoio = [
   {
     name: "ufam",
     src: ufam,
+  },
+  {
+    name: "sebrae",
+    src: Sebrae1,
+  },
+  {
+    name: "setemp",
+    src: Setemp,
   },
   {
     name: "peiex",
