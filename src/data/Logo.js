@@ -2,8 +2,8 @@ import uninorte from "../assets/imgs/patrocinadores/UninortePatrocinador.svg";
 import maraFrios from "../assets/imgs/patrocinadores/MaraFriosPatrocinador.svg";
 import hossokawa from "../assets/imgs/patrocinadores/HossokawaPatrocinador.svg";
 import fatiare from "../assets/imgs/patrocinadores/FatiarePatrocinador.svg";
-import cba from "../assets/imgs/patrocinadores/CBAPatrocinadores.svg";
-import senar from "../assets/imgs/patrocinadores/SenarPatrocinador.svg";
+import cba from "../assets/imgs/patrocinadores/CBAPatrocinadores.png";
+import senar from "../assets/imgs/patrocinadores/SenarPatrocinador.png";
 import MartaFalcao from "../assets/imgs/patrocinadores/MartaFalcao.svg";
 import MasterCleamPatrocinador from "../assets/imgs/patrocinadores/MasterCleamPatrocinador.svg";
 import jungleHotel from "../assets/imgs/apoio/jungleHotelApoio.svg";
@@ -93,6 +93,17 @@ export const apoio = [
     src: gov,
   },
   {
+    name: "Mapa",
+    src: mapa,
+  },
+
+
+  {
+    name: "inpa",
+    src: Inpa,
+  },
+
+  {
     name: "afeam",
     src: afeam,
   },
@@ -116,9 +127,10 @@ export const apoio = [
     name: "minc",
     src: minc,
   },
+
   {
-    name: "inpa",
-    src: Inpa,
+    name: "Rede amazonica",
+    src: redeAmazonica,
   },
   {
     name: "Chefe Proibido",
@@ -135,14 +147,6 @@ export const apoio = [
   {
     name: "terakuno",
     src: terekuno,
-  },
-  {
-    name: "Mapa",
-    src: mapa,
-  },
-  {
-    name: "Rede amazonica",
-    src: redeAmazonica,
   },
 ];
 

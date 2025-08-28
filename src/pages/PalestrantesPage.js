@@ -23,15 +23,11 @@ export default function PalestrantesPage() {
         <div className="container">
           <h1 className="page-title">Programação de Palestrantes</h1>
           <p>
-            O evento é aberto ao público e voltado para{" "}
-            <strong>produtores rurais</strong>,{" "}
-            <strong>empresários do agronegócio</strong>,
-            <strong>instituições governamentais</strong> e{" "}
-            <strong>universitários</strong>. Cada palestra contará com a emissão
-            de <strong>certificado de participação</strong>, que poderá ser
-            utilizado por universitários como{" "}
-            <strong>horas complementares</strong> em sua formação acadêmica.
+            As palestras ocorrerão nos dias <strong>02 e 03 de Setembro </strong>  
+            e acontecerão em quatro salas distintas, de forma simultânea, das <strong>10h00 às 19h30</strong>,
+            com intervalos de 30 minutos entre as apresentações para melhor organização e interação do público.
           </p>
+
 
           <div className="tabs-container">
             <div className="tabs">

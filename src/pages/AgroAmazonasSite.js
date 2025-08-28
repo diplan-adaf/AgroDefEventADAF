@@ -126,6 +126,18 @@ export default function AgroAmazonasSite() {
             </p>
           </Card>
         </section>
+        <section id="programacaoEvento">
+          <Card title={"Programação"}>
+            <p>
+              O evento acontecerá nos dias <strong>02 e 03 de setembro</strong>, 
+              com <strong>início às 9h00</strong> para o credenciamento dos participantes. 
+              As palestras terão <strong>início às 10h00</strong>, acontecendo simultaneamente em quatro salas distintas, 
+              e às 10h30 será realizada a <strong>abertura oficial do evento</strong>. 
+              A programação seguirá até às 19h30, com intervalos de 30 minutos entre as apresentações 
+              para garantir melhor organização e conforto ao público presente.
+            </p>
+          </Card>
+        </section>
 
         <section id="location">
           <Location className="flex-item" />
@@ -135,7 +147,7 @@ export default function AgroAmazonasSite() {
           <Palestrantes className="flex-item" />
         </section>
 
-         <div className="site-buttons">
+         {/* <div className="site-buttons">
           <Button
             text={"Inscreva-se (Simpla)"}
             ref={
@@ -152,7 +164,7 @@ export default function AgroAmazonasSite() {
           >
             <Instagram className="icon" />
           </Button>
-        </div>
+        </div> */}
 
         <section id="collaborators">
           <Collaborators className="flex-item" />
@@ -191,7 +203,6 @@ export default function AgroAmazonasSite() {
         <Brands title={"PATROCINADORES"} images={patrocinadores} />
         <Brands title={"APOIO"} images={apoio} />
         <Brands title={"ORGANIZAÇÃO"} images={organizacao} />
-        <Brands title={"REALIZAÇÃO"} images={realizacao} />
       </Layout>
     </div>
   );

@@ -45,6 +45,8 @@ import rogerioHanada from "../assets/imgs/palestrantes/Rogério Hanada.svg";
 import gigliola from "../assets/imgs/palestrantes/gigliolaPontes 1.svg";
 import luanaRubim from "../assets/imgs/palestrantes/luanaRubim 1.svg";
 import alessandroCohen from "../assets/imgs/palestrantes/alessandroCohen 1.svg";
+import augustoBucker from "../assets/imgs/palestrantes/augustoBucker.png";
+import adrianoSilva from "../assets/imgs/palestrantes/adrianoSilva 1.svg";
 
 export const palestrantesPrincipais = {
   "02-09": [
@@ -92,6 +94,30 @@ export const palestrantesPrincipais = {
           foto: SergioRocha,
           tema: "Regularização fundiária em áreas da suframa",
           sala: "Palco Principal",
+        },
+        {
+          nome: "Amanda Elisa Bessa Farias",
+          foto: amandaBessa,
+          tema: "Sisan: Estrutura, desafios e perspectivas para segurança alimentar e nutricional no estado do amazonas",
+          sala: "Palco Principal",
+        },
+        {
+          nome: "Dionísia Soares Campos",
+          foto: dionisia,
+          tema: "Selos de Identificação Artesanal: Selo Arte e Selo Queijo Artesana",
+          sala: "Palco principal",
+        },
+        {
+          nome: "Ezequiel Gonçalves Souza",
+          foto: Ezequiel,
+          tema: "Projeto Prato Cheio",
+          sala: "Palco Principal",
+        },
+        {
+          nome: "Adriano da Silva",
+          foto: adrianoSilva,
+          tema: "Padaria Artesanal",
+          sala: "Palco Principal"
         },
       ],
     },
@@ -277,10 +303,22 @@ export const palestrantes = {
       horario: "18:30 - 19:30",
       palestrantes: [
         {
+          nome: "Dr. Augusto Bücker",
+          foto: augustoBucker,
+          tema: "Bioinsumos para o Controle de Pragas em uma Agricultura Sustentável",
+          sala: "Sala 1"
+        },
+        {
           nome: "Alexandre Victor S. Ribeiro",
           foto: AlexandreVictor,
           tema: "Agroecologia: Plantas Alimentícias Não Convencionais, Soberania Alimentar e Bebidas Fermentadas",
           sala: "Sala 2",
+        },
+        {
+          nome: "Josiani Nunes do Nascimento",
+          foto: josianiNunes,
+          tema: "Esporotricose humana: recomendações da  e fluxo de atendimento na Atenção Primária.",
+          sala: "Sala 3",
         },
         {
           nome: "Airton Reis de Jesus",
@@ -320,6 +358,17 @@ export const palestrantes = {
           sala: "Sala 4",
         },
       ],
+    },
+    {
+      horario: "11:00 - 12:00",
+      palestrantes: [
+        {
+          nome: "Secretário de Pesca e Aquicultura Alessandro Cohen",
+          foto: alessandroCohen,
+          tema: "Criação da Secretaria Estadual de Pesca e Aquicultura",
+          sala: "Palco Principal"
+        }
+      ]
     },
     {
       horario: "11:30 - 12:30",
@@ -377,7 +426,7 @@ export const palestrantes = {
           sala: "Sala 2",
         },
         {
-          nome: "Professora Luana Rubim",
+          nome: "Luana Rubim",
           foto: luanaRubim,
           tema: "Programa Nacional de Controle de Raiva - Estratégias, Desafios e o Papel do Médico Veterinário na Saúde Única",
           sala: "Sala 3",
@@ -385,7 +434,7 @@ export const palestrantes = {
       ],
     },
     {
-      horario: "15:00 - 16:00",
+      horario: "15:00 - 15:30",
       palestrantes: [
         {
           nome: "Ezequiel Gonçalves Souza",
@@ -399,7 +448,13 @@ export const palestrantes = {
       horario: "15:30 - 16:30",
       palestrantes: [
         {
-          nome: "Silvana Pimentel",
+          nome: "Adriano da Silva",
+          foto: adrianoSilva,
+          tema: "Padaria Artesanal",
+          sala: "Palco Principal"
+        },
+        {
+          nome: "Silvana Pimentel de Oliveira",
           foto: silvanaPimentel,
           tema: "Licenciamento de Estabelecimento de comercio de agrotóxicos",
           sala: "Sala 1",
@@ -419,7 +474,7 @@ export const palestrantes = {
       ],
     },
     {
-      horario: "17:00 - 18:00",
+      horario: "17:00 - 17:30",
       palestrantes: [
         {
           nome: "Amanda Elisa Bessa Farias",
@@ -427,6 +482,11 @@ export const palestrantes = {
           tema: "Sisan: Estrutura, desafios e perspectivas para segurança alimentar e nutricional no estado do amazonas",
           sala: "Palco Principal",
         },
+      ]
+    },
+    {
+      horario: "17:00 - 18:00",
+      palestrantes: [
         {
           nome: "Moisés Felix de Carvalho Neto",
           foto: Moisesfelix,
