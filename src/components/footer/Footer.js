@@ -1,6 +1,6 @@
 import "./footer.css";
 import logo from "../../assets/logoAgroDefesa.svg"; 
-import regua from "../../assets/REGUA BRANCA.png"
+import regua from "../../assets/imgs/realizacao/ReguaBrancaRealizacao.svg"
 export default function Footer(){
     return(
     <footer className="site-footer">

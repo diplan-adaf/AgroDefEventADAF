@@ -47,6 +47,9 @@ import luanaRubim from "../assets/imgs/palestrantes/luanaRubim 1.svg";
 import alessandroCohen from "../assets/imgs/palestrantes/alessandroCohen 1.svg";
 import augustoBucker from "../assets/imgs/palestrantes/augustoBucker.png";
 import adrianoSilva from "../assets/imgs/palestrantes/adrianoSilva 1.svg";
+import arivanRibeiro from "../assets/imgs/palestrantes/arivanRibeiro 1.svg";
+import mariaFatima from "../assets/imgs/palestrantes/mariaFatima 1.svg";
+
 
 export const palestrantesPrincipais = {
   "02-09": [
@@ -434,6 +437,17 @@ export const palestrantes = {
       ],
     },
     {
+      horario: "14:00 - 18:00",
+      palestrantes: [
+        {
+          nome: "Maria de Fátima Moreira",
+          foto: mariaFatima,
+          tema: "Progra",
+          sala: "Sala 4",
+        },
+      ]
+    },
+    {
       horario: "15:00 - 15:30",
       palestrantes: [
         {
@@ -454,9 +468,9 @@ export const palestrantes = {
           sala: "Palco Principal"
         },
         {
-          nome: "Silvana Pimentel de Oliveira",
-          foto: silvanaPimentel,
-          tema: "Licenciamento de Estabelecimento de comercio de agrotóxicos",
+          nome: "Arivan Ribeiro Reis",
+          foto: arivanRibeiro,
+          tema: "Regularização Ambiental de Imóveis Rurais e Licenciamento Ambiental para Revendedores de Agrotóxicos. ",
           sala: "Sala 1",
         },
         {

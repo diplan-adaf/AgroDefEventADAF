@@ -2,7 +2,7 @@ import { Instagram, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./header.css";
-import regua from "../../assets/REGUA BRANCA.png";
+import regua from "../../assets/imgs/realizacao/ReguaBrancaRealizacao.svg";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();

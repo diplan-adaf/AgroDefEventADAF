@@ -130,10 +130,11 @@ export default function AgroAmazonasSite() {
           <Card title={"Programação"}>
             <p>
               O evento acontecerá nos dias <strong>02 e 03 de setembro</strong>, 
-              com <strong>início às 9h00</strong> para o credenciamento dos participantes. 
+              com <strong>início às 9h00</strong> para o credenciamento dos participantes e
+              <strong> finalizará às 21:00</strong>. 
               As palestras terão <strong>início às 10h00</strong>, acontecendo simultaneamente em quatro salas distintas, 
               e às 10h30 será realizada a <strong>abertura oficial do evento</strong>. 
-              A programação seguirá até às 19h30, com intervalos de 30 minutos entre as apresentações 
+              A programação das palestras seguirá até às 19h30, com intervalos de 30 minutos entre as apresentações 
               para garantir melhor organização e conforto ao público presente.
             </p>
           </Card>
