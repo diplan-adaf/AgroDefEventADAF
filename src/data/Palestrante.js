@@ -49,7 +49,7 @@ import augustoBucker from "../assets/imgs/palestrantes/augustoBucker.png";
 import adrianoSilva from "../assets/imgs/palestrantes/adrianoSilva 1.svg";
 import arivanRibeiro from "../assets/imgs/palestrantes/arivanRibeiro 1.svg";
 import mariaFatima from "../assets/imgs/palestrantes/mariaFatima 1.svg";
-
+import hedinaldoNarciso from "../assets/imgs/palestrantes/hedinaldoNarciso 1.svg";
 
 export const palestrantesPrincipais = {
   "02-09": [
@@ -120,6 +120,12 @@ export const palestrantesPrincipais = {
           nome: "Adriano da Silva",
           foto: adrianoSilva,
           tema: "Padaria Artesanal",
+          sala: "Palco Principal"
+        },
+        {
+          nome: "Hedinaldo Narciso Lima",
+          foto: hedinaldoNarciso,
+          tema: "Inovação com Propósito: FAPEAM e o apoio à Ciência Aplicada à Defesa Agropecuária no Amazonas",
           sala: "Palco Principal"
         },
       ],
@@ -231,6 +237,17 @@ export const palestrantes = {
           sala: "Sala 4",
         },
       ],
+    },
+    {
+      horario: "15:00 - 16:00",
+      palestrantes: [
+        {
+          nome: "Hedinaldo Narciso Lima",
+          foto: hedinaldoNarciso,
+          tema: "Inovação com Propósito: FAPEAM e o apoio à Ciência Aplicada à Defesa Agropecuária no Amazonas",
+          sala: "Palco Principal"
+        },
+      ]
     },
     {
       horario: "15:30 - 16:30",
