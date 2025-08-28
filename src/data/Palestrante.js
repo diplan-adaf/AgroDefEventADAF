@@ -44,13 +44,19 @@ import josianiNunes from "../assets/imgs/palestrantes/josianiNunes.svg";
 import rogerioHanada from "../assets/imgs/palestrantes/Rogério Hanada.svg";
 import gigliola from "../assets/imgs/palestrantes/gigliolaPontes 1.svg";
 import luanaRubim from "../assets/imgs/palestrantes/luanaRubim 1.svg";
-
+import alessandroCohen from "../assets/imgs/palestrantes/alessandroCohen 1.svg";
 
 export const palestrantesPrincipais = {
   "02-09": [
     {
       horario: "08:00 - 09:00",
       palestrantes: [
+        {
+          nome: "Secretário de Pesca e Aquicultura Alessandro Cohen",
+          foto: alessandroCohen,
+          tema: "Criação da Secretaria Estadual de Pesca e Aquicultura",
+          sala: "Palco Principal",
+        },
         {
           nome: "Me. Abrahim Sena Baze Junior",
           foto: abrahimSena,
