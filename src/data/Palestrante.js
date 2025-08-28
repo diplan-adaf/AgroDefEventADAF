@@ -38,6 +38,8 @@ import dionisia from "../assets/imgs/palestrantes/dionisia.svg";
 import juarez from "../assets/imgs/palestrantes/Juarez.svg";
 import amandaBessa from "../assets/imgs/palestrantes/amandaBessa.svg";
 import djalmaJacauna from "../assets/imgs/palestrantes/Djalma-foto.svg";
+import Leilane from "../assets/imgs/palestrantes/Leilane.svg";
+import Rosane from "../assets/imgs/palestrantes/Rosane.svg";
 
 export const palestrantesPrincipais = {
   "02-09": [
@@ -194,6 +196,12 @@ export const palestrantes = {
       horario: "15:30 - 16:30",
       palestrantes: [
         {
+          nome: "Leilane Saburi Cintas Ruiz",
+          foto: Leilane,
+          tema: "Seguança alimentar e economia ",
+          sala: "Sala 3",
+        },
+        {
           nome: "Wilson da Silva Moraes",
           foto: wilson,
           tema: "Ações do Plano Nacional de Prevenção e Vigilância da Fusariose da Bananeira - Raça 4 Tropical ( FOC R4T)",
@@ -204,6 +212,12 @@ export const palestrantes = {
           foto: raquelSilva,
           tema: "Uso Racional de Antimicrobianos em Ruminantes: Desafios Clínicos, Formação Acadêmica e Impactos na Segurança Alimentar",
           sala: "Sala 4",
+        },
+        {
+          nome: "Rosane Cavalcante",
+          foto: Rosane,
+          tema: "Seguança Alimentar e economia ",
+          sala: "Sala 3",
         },
       ],
     },
