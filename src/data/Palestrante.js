@@ -35,11 +35,16 @@ import OlindaMarinho from "../assets/imgs/palestrantes/OlindaMarinho.svg";
 import AlexandreVictor from "../assets/imgs/palestrantes/AlexandreVictor.svg";
 import antonioAzevedo from "../assets/imgs/palestrantes/antonioAzevedo.svg";
 import dionisia from "../assets/imgs/palestrantes/dionisia.svg";
-import juarez from "../assets/imgs/palestrantes/Juarez.svg";
+import juarez from "../assets/imgs/palestrantes/juarez.svg";
 import amandaBessa from "../assets/imgs/palestrantes/amandaBessa.svg";
 import djalmaJacauna from "../assets/imgs/palestrantes/Djalma-foto.svg";
-import Leilane from "../assets/imgs/palestrantes/Leilane.svg";
+import Leilane from "../assets/imgs/palestrantes/Leilaine.svg";
 import Rosane from "../assets/imgs/palestrantes/Rosane.svg";
+import josianiNunes from "../assets/imgs/palestrantes/josianiNunes.svg";
+import rogerioHanada from "../assets/imgs/palestrantes/Rogério Hanada.svg";
+import gigliola from "../assets/imgs/palestrantes/gigliolaPontes 1.svg";
+import luanaRubim from "../assets/imgs/palestrantes/luanaRubim 1.svg";
+
 
 export const palestrantesPrincipais = {
   "02-09": [
@@ -196,10 +201,10 @@ export const palestrantes = {
       horario: "15:30 - 16:30",
       palestrantes: [
         {
-          nome: "Leilane Saburi Cintas Ruiz",
-          foto: Leilane,
-          tema: "Seguança alimentar e economia ",
-          sala: "Sala 3",
+          nome: "Rogério Eiji Hanada",
+          foto: rogerioHanada,
+          tema: "Contribuições do INPA para a agricultura sustentável na Amazônia Central: Pesquisas e novas abordagens para o controle fitossanitário. ",
+          sala: "Sala 1",
         },
         {
           nome: "Wilson da Silva Moraes",
@@ -208,16 +213,22 @@ export const palestrantes = {
           sala: "Sala 2",
         },
         {
+          nome: "Rosane Cavalcante",
+          foto: Rosane,
+          tema: "Segurança Alimentar e Economia",
+          sala: "Sala 3",
+        },
+        {
+          nome: "Leilane Saburi Cintas Ruiz",
+          foto: Leilane,
+          tema: "Segurança Alimentar e Economia",
+          sala: "Sala 3",
+        },
+        {
           nome: "Raquel Silva e Sousa",
           foto: raquelSilva,
           tema: "Uso Racional de Antimicrobianos em Ruminantes: Desafios Clínicos, Formação Acadêmica e Impactos na Segurança Alimentar",
           sala: "Sala 4",
-        },
-        {
-          nome: "Rosane Cavalcante",
-          foto: Rosane,
-          tema: "Seguança Alimentar e economia ",
-          sala: "Sala 3",
         },
       ],
     },
@@ -291,6 +302,12 @@ export const palestrantes = {
           sala: "Sala 1",
         },
         {
+          nome: "Gigliola Pontes Verardo",
+          foto: gigliola,
+          tema: "Leptospirose em Ruminantes - Impacto na produção Animal e na Saúde Pública",
+          sala: "Sala 3",
+        },
+        {
           nome: "Paulo Barreto",
           foto: pauloBarreto,
           tema: "Sala de Classificação de ovos: cuidados, higienização, manutenção e calibração das maquinas de classificação",
@@ -352,6 +369,12 @@ export const palestrantes = {
           foto: geraldo,
           tema: "Beneficiamento primário do cacau",
           sala: "Sala 2",
+        },
+        {
+          nome: "Professora Luana Rubim",
+          foto: luanaRubim,
+          tema: "Programa Nacional de Controle de Raiva - Estratégias, Desafios e o Papel do Médico Veterinário na Saúde Única",
+          sala: "Sala 3",
         },
       ],
     },
