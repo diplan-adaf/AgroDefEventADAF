@@ -457,7 +457,7 @@ export const palestrantes = {
       ],
     },
     {
-      horario: "14:00 - 15:00",
+      horario: "13:00 - 14:00",
       palestrantes: [
         {
           nome: "Caio Perecin",
