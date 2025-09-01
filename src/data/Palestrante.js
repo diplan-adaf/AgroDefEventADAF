@@ -49,6 +49,7 @@ import augustoBucker from "../assets/imgs/palestrantes/augustoBucker.png";
 import adrianoSilva from "../assets/imgs/palestrantes/adrianoSilva 1.svg";
 import arivanRibeiro from "../assets/imgs/palestrantes/arivanRibeiro 1.svg";
 import mariaFatima from "../assets/imgs/palestrantes/mariaFatima 1.svg";
+import hedinaldoNarciso from "../assets/imgs/palestrantes/hedinaldoNarciso 1.svg";
 import Janicleide from "../assets/imgs/palestrantes/Janicleide.svg";
 import MarcosVinicius from "../assets/imgs/palestrantes/MarcosVinicius.svg";
 import MariaGeralda from "../assets/imgs/palestrantes/MariaGeralda.svg";
@@ -136,6 +137,18 @@ export const palestrantesPrincipais = {
           nome: "Geraldo Marcos de Moraes",
           foto: GeraldoMarcos,
           tema: "Desafios e estratégias para manutenção de zonas livres de febre aftosa sem vacinação",
+          sala: "Palco Principal",
+        },
+        {
+          nome: "Hedinaldo Narciso Lima",
+          foto: hedinaldoNarciso,
+          tema: "Inovação com Propósito: FAPEAM e o apoio à Ciência Aplicada à Defesa Agropecuária no Amazonas",
+          sala: "Palco Principal",
+        },
+        {
+          nome: "Hedinaldo Narciso Lima",
+          foto: hedinaldoNarciso,
+          tema: "Inovação com Propósito: FAPEAM e o apoio à Ciência Aplicada à Defesa Agropecuária no Amazonas",
           sala: "Palco Principal",
         },
       ],
@@ -239,6 +252,17 @@ export const palestrantes = {
           foto: adrianaOliveira,
           tema: "Panorama do SISBI no Brasil",
           sala: "Sala 4",
+        },
+      ],
+    },
+    {
+      horario: "15:00 - 16:00",
+      palestrantes: [
+        {
+          nome: "Hedinaldo Narciso Lima",
+          foto: hedinaldoNarciso,
+          tema: "Inovação com Propósito: FAPEAM e o apoio à Ciência Aplicada à Defesa Agropecuária no Amazonas",
+          sala: "Palco Principal",
         },
       ],
     },
