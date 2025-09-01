@@ -82,7 +82,7 @@ export const palestrantesPrincipais = {
         {
           nome: "Profa. Msc. Olinda Marinho",
           foto: OlindaMarinho,
-          tema: "Tema Central",
+          tema: "Roda de Conversa",
           sala: "Palco Principal",
         },
         {
@@ -454,17 +454,6 @@ export const palestrantes = {
       ],
     },
     {
-      horario: "18:00 - 19:00",
-      palestrantes: [
-        {
-          nome: "Profa. Msc. Olinda Marinho",
-          foto: OlindaMarinho,
-          tema: "Tema Central",
-          sala: "Roda de conversa no palco Principal",
-        },
-      ],
-    },
-    {
       horario: "14:00 - 15:00",
       palestrantes: [
         {
@@ -490,6 +479,17 @@ export const palestrantes = {
           foto: luanaRubim,
           tema: "Programa Nacional de Controle de Raiva - Estratégias, Desafios e o Papel do Médico Veterinário na Saúde Única",
           sala: "Sala 3",
+        },
+      ],
+    },
+    {
+      horario: "14:00 - 18:00",
+      palestrantes: [
+        {
+          nome: "Maria de Fátima Moreira",
+          foto: mariaFatima,
+          tema: "Empreendedorismo no Campo",
+          sala: "Sala 4",
         },
       ],
     },
@@ -534,12 +534,23 @@ export const palestrantes = {
       ],
     },
     {
+      horario: "16:00 - 16:30",
+      palestrantes: [
+        {
+          nome: "Amanda Elisa Bessa Farias",
+          foto: amandaBessa,
+          tema: "Sisan: Estrutura, desafios e perspectivas para segurança alimentar e nutricional no estado do amazonas",
+          sala: "Palco Principal",
+        },
+      ],
+    },
+    {
       horario: "16:30 - 18:00",
       palestrantes: [
         {
           nome: "Janicleide da Conceição Silva",
           foto: Janicleide,
-          tema: "Orientação como funciona o Credito Rosa",
+          tema: "Orientação como funciona o Crédito Rosa",
           sala: "Palco Principal",
         },
       ],
@@ -565,11 +576,16 @@ export const palestrantes = {
           tema: "Ações de pesquisa da Embrapa com relação à Monilíase do Cacaueiro e Cupuaçuzeiro",
           sala: "Sala 2",
         },
+      ],
+    },
+    {
+      horario: "18:00 - 19:00",
+      palestrantes: [
         {
-          nome: "Amanda Elisa Bessa Farias",
-          foto: amandaBessa,
-          tema: "Sisan: Estrutura, desafios e perspectivas para segurança alimentar e nutricional no estado do amazonas",
-          sala: "Palco Principal",
+          nome: "Profa. Msc. Olinda Marinho",
+          foto: OlindaMarinho,
+          tema: "Tema Principal",
+          sala: "Roda de converva no Palco Principal",
         },
       ],
     },
