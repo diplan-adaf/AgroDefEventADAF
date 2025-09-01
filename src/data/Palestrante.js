@@ -55,6 +55,9 @@ import MarcosVinicius from "../assets/imgs/palestrantes/MarcosVinicius.svg";
 import MariaGeralda from "../assets/imgs/palestrantes/MariaGeralda.svg";
 import GeraldoMarcos from "../assets/imgs/palestrantes/GeraldoMarcos.svg";
 import Hedinaldo from "../assets/imgs/palestrantes/Hedinaldo.svg";
+import CaioPerecin from "../assets/imgs/palestrantes/CaioPerecin.svg";
+import JoseSandro from "../assets/imgs/palestrantes/JoseSandro.svg";
+import EvertonRabelo from "../assets/imgs/palestrantes/EvertonRabelo.svg";
 
 export const palestrantesPrincipais = {
   "02-09": [
@@ -450,6 +453,29 @@ export const palestrantes = {
           foto: anaFlavia,
           tema: "Boas práticas de manipulação de alimentos",
           sala: "Sala 4",
+        },
+      ],
+    },
+    {
+      horario: "14:00 - 15:00",
+      palestrantes: [
+        {
+          nome: "Caio Perecin",
+          foto: CaioPerecin,
+          tema: "Inovação, Biotecnologia e Conservação da Biodiversidade",
+          sala: "Painel no Palco principal",
+        },
+        {
+          nome: "José Sandro da Mota Ribeiro",
+          foto: JoseSandro,
+          tema: "Uso Sustentável de Recursos da Floresta na Produção Agropecuária",
+          sala: "Painel no Palco principal",
+        },
+        {
+          nome: "Everton Rabelo Cordeiro",
+          foto: EvertonRabelo,
+          tema: "BMediador do Painel",
+          sala: "Painel no Palco principal",
         },
       ],
     },
