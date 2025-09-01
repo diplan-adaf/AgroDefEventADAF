@@ -29,6 +29,20 @@ import redeAmazonica from "../assets/imgs/apoio/redeAmazonica.svg";
 import adaf from "../assets/imgs/realizacao/adaf.svg";
 import Setemp from "../assets/imgs/apoio/Setemp.svg";
 import Sebrae1 from "../assets/imgs/apoio/Sebrae 1.svg";
+import Ceplac from "../assets/imgs/apoio/Ceplac.svg";
+import Ipaam from "../assets/imgs/apoio/Ipaam.svg";
+import Ipiam from "../assets/imgs/apoio/Ipiam.svg";
+import Crea from "../assets/imgs/apoio/Crea.svg";
+import Sepa from "../assets/imgs/apoio/Sepa.svg";
+import Fapeam from "../assets/imgs/apoio/Fapeam.svg";
+import Uniltonlins from "../assets/imgs/apoio/Uniltonlins.svg";
+import Embrapa from "../assets/imgs/apoio/Embrapa.svg";
+import Fvs from "../assets/imgs/apoio/Fvs.svg";
+import Rotta from "../assets/imgs/apoio/Rotta.svg";
+import Aderr from "../assets/imgs/apoio/Aderr.svg";
+import Cee from "../assets/imgs/apoio/Cee.svg";
+import Suframa from "../assets/imgs/apoio/Suframa.svg";
+import Agrega from "../assets/imgs/apoio/Agrega.svg";
 
 export const organizacao = [
   {
@@ -156,6 +170,62 @@ export const apoio = [
   {
     name: "terakuno",
     src: terekuno,
+  },
+  {
+    name: "ceplac",
+    src: Ceplac,
+  },
+  {
+    name: "Ipaam",
+    src: Ipaam,
+  },
+  {
+    name: "Ipiam",
+    src: Ipiam,
+  },
+  {
+    name: "Crea",
+    src: Crea,
+  },
+  {
+    name: "Sepa",
+    src: Sepa,
+  },
+  {
+    name: "Fapeam",
+    src: Fapeam,
+  },
+  {
+    name: "Uniltonlins",
+    src: Uniltonlins,
+  },
+  {
+    name: "Embrapa",
+    src: Embrapa,
+  },
+  {
+    name: "Fvs",
+    src: Fvs,
+  },
+  {
+    name: "Rotta",
+    src: Rotta,
+  },
+  {
+    name: "Aderr",
+    src: Aderr,
+  },
+  {
+    name: "Cee",
+    src: Cee,
+  },
+  {
+    name: "Suframa",
+    src: Suframa,
+  },
+  {
+    name: "Agrega",
+    src: Agrega,
   },
 ];
 
