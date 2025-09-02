@@ -112,12 +112,13 @@ export const palestrantesPrincipais = {
           tema: "Sisan: Estrutura, desafios e perspectivas para segurança alimentar e nutricional no estado do amazonas",
           sala: "Palco Principal",
         },
-        {
-          nome: "Dionísia Soares Campos",
-          foto: dionisia,
-          tema: "Selos de Identificação Artesanal: Selo Arte e Selo Queijo Artesana",
-          sala: "Palco principal",
-        },
+        // {
+        // VINDA CANCELADA
+        //   nome: "Dionísia Soares Campos",
+        //   foto: dionisia,
+        //   tema: "Selos de Identificação Artesanal: Selo Arte e Selo Queijo Artesana",
+        //   sala: "Palco principal",
+        // },
         {
           nome: "Ezequiel Gonçalves Souza",
           foto: Ezequiel,
@@ -471,12 +472,12 @@ export const palestrantes = {
     {
       horario: "14:00 - 15:00",
       palestrantes: [
-        {
-          nome: "Dionísia Soares Campos",
-          foto: dionisia,
-          tema: "Selos de Identificação Artesanal: Selo Arte e Selo Queijo Artesana",
-          sala: "Palco principal",
-        },
+        // {
+        //   nome: "Dionísia Soares Campos",
+        //   foto: dionisia,
+        //   tema: "Selos de Identificação Artesanal: Selo Arte e Selo Queijo Artesana",
+        //   sala: "Palco principal",
+        // },
         {
           nome: "Michaell Silva",
           foto: michelSilva,
