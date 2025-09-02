@@ -10,12 +10,13 @@ import Card from "../components/card/Card";
 import { organizacao, patrocinadores, apoio, realizacao } from "../data/Logo";
 import { stands, standsPlanta } from "../data/Stand";
 import { Instagram, Chrome } from "lucide-react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Brands from "../components/brands/Brands";
 
 export default function AgroAmazonasSite() {
   const location = useLocation();
+  const [activeDay, setActiveDay] = useState("02-09");
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -51,13 +52,21 @@ export default function AgroAmazonasSite() {
           >
             <div className="media-buttons">
               <Button cls={"adaf"} ref={"https://www.adaf.am.gov.br/"}>
-                  <Chrome className="icon" /> Site da ADAF
+                <Chrome className="icon" /> Site da ADAF
               </Button>
-              <Button cls={"instagram"} ref={"https://www.instagram.com/adafamazonas/?hl=en"}>
-                  <Instagram className="icon" /> Perfil da ADAF
+              <Button
+                cls={"instagram"}
+                ref={"https://www.instagram.com/adafamazonas/?hl=en"}
+              >
+                <Instagram className="icon" /> Perfil da ADAF
               </Button>
-              <Button cls={"instagram"} ref={"https://www.instagram.com/reel/DNYLFvAx2B2/?igsh=MWpmbDB5Znkyb2Ywag=="}>
-                  <Instagram className="icon" /> Perfil do Evento
+              <Button
+                cls={"instagram"}
+                ref={
+                  "https://www.instagram.com/reel/DNYLFvAx2B2/?igsh=MWpmbDB5Znkyb2Ywag=="
+                }
+              >
+                <Instagram className="icon" /> Perfil do Evento
               </Button>
             </div>
           </Card>
@@ -129,14 +138,128 @@ export default function AgroAmazonasSite() {
         <section id="programacaoEvento">
           <Card title={"Programação"}>
             <p>
-              O evento acontecerá nos dias <strong>02 e 03 de setembro</strong>, 
-              com <strong>início às 9h00</strong> para o credenciamento dos participantes e
-              <strong> finalizará às 21:00</strong>. 
-              As palestras terão <strong>início às 10h00</strong>, acontecendo simultaneamente em quatro salas distintas, 
-              e às 10h30 será realizada a <strong>abertura oficial do evento</strong>. 
-              A programação das palestras seguirá até às 19h30, com intervalos de 30 minutos entre as apresentações 
-              para garantir melhor organização e conforto ao público presente.
+              O evento acontecerá nos dias <strong>02 e 03 de setembro</strong>,
+              com <strong>início às 9h00</strong> para o credenciamento dos
+              participantes e<strong> finalizará às 21:00</strong>. As palestras
+              terão <strong>início às 10h00</strong>, acontecendo
+              simultaneamente em quatro salas distintas, e às 10h30 será
+              realizada a <strong>abertura oficial do evento</strong>. A
+              programação das palestras seguirá até às 19h30, com intervalos de
+              30 minutos entre as apresentações para garantir melhor organização
+              e conforto ao público presente.
             </p>
+          </Card>
+        </section>
+
+        <section id="cronograma">
+          <Card title={"Cronograma"}>
+            <div className="tabs-container">
+              <div className="tabs">
+                <button
+                  className={`tab ${activeDay === "02-09" ? "active" : ""}`}
+                  onClick={() => setActiveDay("02-09")}
+                >
+                  02/09 - Primeiro Dia
+                </button>
+                <button
+                  className={`tab ${activeDay === "03-09" ? "active" : ""}`}
+                  onClick={() => setActiveDay("03-09")}
+                >
+                  03/09 - Segundo Dia
+                </button>
+              </div>
+
+              <div className="cronograma-content">
+                {activeDay === "02-09" && (
+                  <div className="cronograma-day">
+                    <h3>Dia 02 de setembro (Terça-feira)</h3>
+                    <br />
+                    <p>
+                      <strong>08h00 –</strong> <br />
+                      Abertura dos Portões | Início do Evento <br />
+                      <br />
+                      <strong>08h00 – 09h00</strong> <br />
+                      Credenciamento dos Participantes <br />
+                      <br />
+                      <strong>09h00 – 10h00</strong> <br />
+                      Recepção, visitação e ambientação <br />
+                      <br />
+                      <strong>10h00 – 10h30</strong> <br />
+                      Início das Palestras nas Salas Temáticas <br />
+                      <br />
+                      <strong>10h30 – 11h30</strong> <br />
+                      Cerimonial de Abertura Oficial <br />
+                      <br />
+                      <strong>11h30 – 12h30</strong> <br />
+                      Continuidade das Palestras em Salas Temáticas <br />
+                      <br />
+                      <strong>13h00 – 14h00</strong> <br />
+                      Roda de conversa <br />
+                      <br />
+                      <strong>14h00 – 19h00</strong> <br />
+                      Palestras simultâneas nas quatro salas <br />
+                      <br />
+                      <strong>18h00 – 19h00</strong> <br />
+                      Roda de Conversa dos chefes <br />
+                      <br />
+                      <strong>19h00 – 21h00</strong> <br />
+                      Palestras em Salas Temáticas <br />
+                      <br />
+                      <strong>18h00 – 21h00</strong> <br />
+                      Encerramento da Programação do Dia <br />
+                      <br />
+                      <strong>19h00 –</strong> <br />
+                      Atração cultural: Paulo André Chaves – Toada dos Bois Garantido e
+                      Caprichoso
+                    </p>
+                  </div>
+                )}
+
+                {activeDay === "03-09" && (
+                  <div className="cronograma-day">
+                    <h3>Dia 03 de setembro (Quarta-feira)</h3>
+                    <br />
+                    <p>
+                      <strong>08h00 –</strong> <br />
+                      Abertura dos Portões | Início do Evento <br />
+                      <br />
+                      <strong>08h00 – 09h00</strong> <br />
+                      Credenciamento dos Participantes <br />
+                      <br />
+                      <strong>09h00 – 10h00</strong> <br />
+                      Recepção, visitação e ambientação <br />
+                      <br />
+                      <strong>10h00 – 10h30</strong> <br />
+                      Início das Palestras nas Salas Temáticas <br />
+                      <br />
+                      <strong>10h30 – 11h30</strong> <br />
+                      Cerimonial de Abertura do Dia 2 <br />
+                      <br />
+                      <strong>11h30 – 12h30</strong> <br />
+                      Continuidade das Palestras em Salas Temáticas <br />
+                      <br />
+                      <strong>13h00 – 14h00</strong> <br />
+                      Painel Temático <br />
+                      <br />
+                      <strong>14h00 – 18h00</strong> <br />
+                      Palestras simultâneas nas quatro salas <br />
+                      <br />
+                      <strong>18h00 – 19h00</strong> <br />
+                      Roda de Conversa <br />
+                      <br />
+                      <strong>19h00 – 21h00</strong> <br />
+                      Palestras em Salas Temáticas <br />
+                      <br />
+                      <strong>18h00 – 21h00</strong> <br />
+                      Encerramento Oficial do AgroAmazonas 2025 <br />
+                      <br />
+                      <strong>19h00 –</strong> <br />
+                      Atração cultural: Sertanejo Raiz
+                    </p>
+                  </div>
+                )}
+              </div>
+            </div>
           </Card>
         </section>
 
@@ -148,7 +271,7 @@ export default function AgroAmazonasSite() {
           <Palestrantes className="flex-item" />
         </section>
 
-         {/* <div className="site-buttons">
+        {/* <div className="site-buttons">
           <Button
             text={"Inscreva-se (Simpla)"}
             ref={
