@@ -130,22 +130,11 @@ export const palestrantesPrincipais = {
           tema: "Padaria Artesanal",
           sala: "Palco Principal",
         },
-        {
-          nome: "Hedinaldo Narciso Lima",
-          foto: Hedinaldo,
-          tema: "Inovação com propósito: FAPEAM e o apoio à ciência aplicada à defesa agropecuaria no Amazonas",
-          sala: "Palco Principal",
-        },
+
         {
           nome: "Geraldo Marcos de Moraes",
           foto: GeraldoMarcos,
           tema: "Desafios e estratégias para manutenção de zonas livres de febre aftosa sem vacinação",
-          sala: "Palco Principal",
-        },
-        {
-          nome: "Hedinaldo Narciso Lima",
-          foto: hedinaldoNarciso,
-          tema: "Inovação com Propósito: FAPEAM e o apoio à Ciência Aplicada à Defesa Agropecuária no Amazonas",
           sala: "Palco Principal",
         },
         {

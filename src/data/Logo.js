@@ -43,6 +43,8 @@ import Aderr from "../assets/imgs/apoio/Aderr.svg";
 import Cee from "../assets/imgs/apoio/Cee.svg";
 import Suframa from "../assets/imgs/apoio/Suframa.svg";
 import Agrega from "../assets/imgs/apoio/Agrega.svg";
+import Adepara from "../assets/imgs/apoio/Adepara.svg";
+import Corecon from "../assets/imgs/apoio/Corecon.svg";
 
 export const organizacao = [
   {
@@ -224,8 +226,12 @@ export const apoio = [
     src: Suframa,
   },
   {
-    name: "Agrega",
-    src: Agrega,
+    name: "Adepara",
+    src: Adepara,
+  },
+  {
+    name: "Corecon",
+    src: Corecon,
   },
 ];
 
